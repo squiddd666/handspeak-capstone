@@ -1,0 +1,333 @@
+{
+  "version": 7,
+  "threshold": 0.7,
+  "checkpoint": "beginner-need79-v6.pt",
+  "labels": [
+    "ANGRY",
+    "BAD",
+    "BATHROOM",
+    "BEFORE",
+    "BROTHER",
+    "CHILD",
+    "FAMILY",
+    "FATHER",
+    "FRIEND",
+    "GIVE",
+    "GOOD",
+    "GOOD MORNING",
+    "HAPPY",
+    "HOW",
+    "INSIDE",
+    "KNOW",
+    "MONEY",
+    "MY / MINE",
+    "OKAY",
+    "OUTSIDE",
+    "PHONE",
+    "RUN",
+    "SAD",
+    "SCARED",
+    "SIT",
+    "SLEEP",
+    "SORRY",
+    "STAND",
+    "STORE",
+    "TAKE",
+    "TEACHER",
+    "THERE",
+    "THIS",
+    "TIRED",
+    "TODAY",
+    "TOMORROW",
+    "WAIT",
+    "WAKE UP",
+    "WELCOME",
+    "WHAT",
+    "WHEN",
+    "WHO",
+    "WHY",
+    "WORK",
+    "YESTERDAY",
+    "YOUR / YOURS"
+  ],
+  "accuracy": {
+    "ANGRY": {
+      "correct": 5,
+      "total": 5,
+      "top1": 1.0
+    },
+    "BAD": {
+      "correct": 5,
+      "total": 7,
+      "top1": 0.7143
+    },
+    "BATHROOM": {
+      "correct": 9,
+      "total": 11,
+      "top1": 0.8182
+    },
+    "BEFORE": {
+      "correct": 10,
+      "total": 10,
+      "top1": 1.0
+    },
+    "BROTHER": {
+      "correct": 11,
+      "total": 13,
+      "top1": 0.8462
+    },
+    "CHILD": {
+      "correct": 6,
+      "total": 6,
+      "top1": 1.0
+    },
+    "FAMILY": {
+      "correct": 4,
+      "total": 4,
+      "top1": 1.0
+    },
+    "FATHER": {
+      "correct": 8,
+      "total": 10,
+      "top1": 0.8
+    },
+    "FRIEND": {
+      "correct": 5,
+      "total": 6,
+      "top1": 0.8333
+    },
+    "GIVE": {
+      "correct": 4,
+      "total": 5,
+      "top1": 0.8
+    },
+    "GOOD": {
+      "correct": 9,
+      "total": 12,
+      "top1": 0.75
+    },
+    "GOOD MORNING": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "HAPPY": {
+      "correct": 12,
+      "total": 12,
+      "top1": 1.0
+    },
+    "HOW": {
+      "correct": 4,
+      "total": 5,
+      "top1": 0.8
+    },
+    "INSIDE": {
+      "correct": 10,
+      "total": 11,
+      "top1": 0.9091
+    },
+    "KNOW": {
+      "correct": 9,
+      "total": 11,
+      "top1": 0.8182
+    },
+    "MONEY": {
+      "correct": 18,
+      "total": 25,
+      "top1": 0.72
+    },
+    "MY / MINE": {
+      "correct": 4,
+      "total": 5,
+      "top1": 0.8
+    },
+    "OKAY": {
+      "correct": 10,
+      "total": 10,
+      "top1": 1.0
+    },
+    "OUTSIDE": {
+      "correct": 9,
+      "total": 12,
+      "top1": 0.75
+    },
+    "PHONE": {
+      "correct": 9,
+      "total": 11,
+      "top1": 0.8182
+    },
+    "RUN": {
+      "correct": 15,
+      "total": 21,
+      "top1": 0.7143
+    },
+    "SAD": {
+      "correct": 3,
+      "total": 4,
+      "top1": 0.75
+    },
+    "SCARED": {
+      "correct": 6,
+      "total": 6,
+      "top1": 1.0
+    },
+    "SIT": {
+      "correct": 5,
+      "total": 5,
+      "top1": 1.0
+    },
+    "SLEEP": {
+      "correct": 9,
+      "total": 12,
+      "top1": 0.75
+    },
+    "SORRY": {
+      "correct": 3,
+      "total": 3,
+      "top1": 1.0
+    },
+    "STAND": {
+      "correct": 18,
+      "total": 24,
+      "top1": 0.75
+    },
+    "STORE": {
+      "correct": 4,
+      "total": 5,
+      "top1": 0.8
+    },
+    "TAKE": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "TEACHER": {
+      "correct": 6,
+      "total": 6,
+      "top1": 1.0
+    },
+    "THERE": {
+      "correct": 11,
+      "total": 12,
+      "top1": 0.9167
+    },
+    "THIS": {
+      "correct": 9,
+      "total": 11,
+      "top1": 0.8182
+    },
+    "TIRED": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "TODAY": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "TOMORROW": {
+      "correct": 7,
+      "total": 8,
+      "top1": 0.875
+    },
+    "WAIT": {
+      "correct": 10,
+      "total": 13,
+      "top1": 0.7692
+    },
+    "WAKE UP": {
+      "correct": 6,
+      "total": 6,
+      "top1": 1.0
+    },
+    "WELCOME": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "WHAT": {
+      "correct": 21,
+      "total": 25,
+      "top1": 0.84
+    },
+    "WHEN": {
+      "correct": 11,
+      "total": 13,
+      "top1": 0.8462
+    },
+    "WHO": {
+      "correct": 8,
+      "total": 11,
+      "top1": 0.7273
+    },
+    "WHY": {
+      "correct": 8,
+      "total": 10,
+      "top1": 0.8
+    },
+    "WORK": {
+      "correct": 14,
+      "total": 15,
+      "top1": 0.9333
+    },
+    "YESTERDAY": {
+      "correct": 8,
+      "total": 10,
+      "top1": 0.8
+    },
+    "YOUR / YOURS": {
+      "correct": 5,
+      "total": 6,
+      "top1": 0.8333
+    }
+  },
+  "ids": {
+    "ANGRY": "angry",
+    "BAD": "bad",
+    "BATHROOM": "bathroom",
+    "BEFORE": "before",
+    "BROTHER": "brother",
+    "CHILD": "child",
+    "FAMILY": "family",
+    "FATHER": "father",
+    "FRIEND": "friend",
+    "GIVE": "give",
+    "GOOD": "good",
+    "GOOD MORNING": "good-morning",
+    "HAPPY": "happy",
+    "HOW": "how",
+    "INSIDE": "inside",
+    "KNOW": "know",
+    "MONEY": "money",
+    "MY / MINE": "my-mine",
+    "OKAY": "okay",
+    "OUTSIDE": "outside",
+    "PHONE": "phone",
+    "RUN": "run",
+    "SAD": "sad",
+    "SCARED": "scared",
+    "SIT": "sit",
+    "SLEEP": "sleep",
+    "SORRY": "sorry",
+    "STAND": "stand",
+    "STORE": "store",
+    "TAKE": "take",
+    "TEACHER": "teacher",
+    "THERE": "there",
+    "THIS": "this",
+    "TIRED": "tired",
+    "TODAY": "today",
+    "TOMORROW": "tomorrow",
+    "WAIT": "wait",
+    "WAKE UP": "wake-up",
+    "WELCOME": "welcome",
+    "WHAT": "what",
+    "WHEN": "when",
+    "WHO": "who",
+    "WHY": "why",
+    "WORK": "work",
+    "YESTERDAY": "yesterday",
+    "YOUR / YOURS": "your-yours"
+  }
+}

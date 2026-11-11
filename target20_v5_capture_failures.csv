@@ -1,0 +1,201 @@
+case_id,word,stage,full_window,hand_frames,api_state,prediction,retried,status
+0,HELLO,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+1,HELLO,insufficient_visible_hands,False,7,tracking_failure,,False,Not enough visible-hand frames; record again.
+2,HELLO,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+3,HELLO,insufficient_visible_hands,False,2,,,True,Recording timed out before a complete capture. Nothing was submitted.
+4,HELLO,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+5,HELLO,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+6,HELLO,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+7,HELLO,capture_never_started,False,,,,False,Missed reserved clip slot; no partial recording submitted
+8,HELLO,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+9,HELLO,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+10,THANK YOU,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+11,THANK YOU,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+12,THANK YOU,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+13,THANK YOU,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+14,THANK YOU,model_abstention,True,13,uncertain,,True,No confident match. Sign again.
+15,THANK YOU,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+16,THANK YOU,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+17,THANK YOU,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+18,THANK YOU,model_abstention,True,12,uncertain,,True,No confident match. Sign again.
+19,THANK YOU,insufficient_visible_hands,True,4,tracking_failure,,True,Not enough visible-hand frames; record again.
+20,PLEASE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+21,PLEASE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+22,PLEASE,model_abstention,True,13,uncertain,,True,No confident match. Sign again.
+23,PLEASE,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+24,PLEASE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+25,PLEASE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+26,PLEASE,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+27,PLEASE,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+28,PLEASE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+29,PLEASE,full_source_window_missing,False,8,uncertain,,False,No confident match. Sign again.
+30,SORRY,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+31,SORRY,full_source_window_missing,False,11,unknown,,True,Unknown sign — no word added.
+32,SORRY,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+33,SORRY,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+34,SORRY,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+35,SORRY,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+36,SORRY,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+37,SORRY,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+38,SORRY,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+39,SORRY,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+40,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+41,YES,incorrect,True,11,recognized,NO,True,Possible match: NO. Top five: 1. NO · 2. LIKE · 3. I / ME · 4. WATER · 5. WANT. Verify before adding.
+42,YES,insufficient_visible_hands,True,6,tracking_failure,,True,Not enough visible-hand frames; record again.
+43,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+44,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+45,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+46,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+47,YES,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+48,YES,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+49,YES,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+50,NO,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+51,NO,full_source_window_missing,False,12,uncertain,,True,No confident match. Sign again.
+52,NO,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+53,NO,insufficient_visible_hands,False,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+54,NO,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+55,NO,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+56,NO,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+57,NO,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+58,NO,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+59,NO,full_source_window_missing,False,9,unknown,,False,Unknown sign — no word added.
+60,HELP,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+61,HELP,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+62,HELP,model_abstention,True,20,unknown,,True,Unknown sign — no word added.
+63,HELP,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+64,HELP,insufficient_visible_hands,True,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+65,HELP,model_abstention,True,12,uncertain,,True,No confident match. Sign again.
+66,HELP,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+67,HELP,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+68,HELP,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+69,HELP,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+70,LOVE,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+71,LOVE,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+72,LOVE,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+73,LOVE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+74,LOVE,insufficient_visible_hands,True,8,tracking_failure,,True,Not enough visible-hand frames; record again.
+75,LOVE,insufficient_visible_hands,True,3,tracking_failure,,True,Not enough visible-hand frames; record again.
+76,LOVE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+77,LOVE,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+78,LOVE,incorrect,True,11,recognized,I / ME,True,Possible match: I / ME. Top five: 1. I / ME · 2. SORRY · 3. YOU · 4. NO · 5. HELLO. Verify before adding.
+79,LOVE,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+80,I / ME,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+81,I / ME,model_abstention,True,12,uncertain,,True,No confident match. Sign again.
+82,I / ME,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+83,I / ME,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+84,I / ME,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+85,I / ME,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+86,I / ME,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+87,I / ME,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+88,I / ME,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+89,I / ME,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+90,YOU,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+91,YOU,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+92,YOU,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+93,YOU,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+94,YOU,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+95,YOU,full_source_window_missing,False,8,recognized,YOU,False,Possible match: YOU. Top five: 1. YOU · 2. GOOD · 3. WHO · 4. WATER · 5. NO. Verify before adding.
+96,YOU,insufficient_visible_hands,True,6,tracking_failure,,True,Not enough visible-hand frames; record again.
+97,YOU,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+98,YOU,model_abstention,True,12,uncertain,,True,No confident match. Sign again.
+99,YOU,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+100,WANT,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+101,WANT,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+102,WANT,incorrect,True,10,recognized,NEED,True,Possible match: NEED. Top five: 1. NEED · 2. WHAT · 3. WANT · 4. THANK YOU · 5. EAT. Verify before adding.
+103,WANT,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+104,WANT,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+105,WANT,insufficient_visible_hands,False,7,tracking_failure,,False,Not enough visible-hand frames; record again.
+106,WANT,model_abstention,True,17,uncertain,,True,No confident match. Sign again.
+107,WANT,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+108,WANT,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+109,WANT,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+110,NEED,model_abstention,True,12,uncertain,,True,No confident match. Sign again.
+111,NEED,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+112,NEED,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+113,NEED,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+114,NEED,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+115,NEED,full_source_window_missing,False,11,uncertain,,False,No confident match. Sign again.
+116,NEED,incorrect,True,12,recognized,LIKE,True,Possible match: LIKE. Top five: 1. LIKE · 2. PLEASE · 3. EAT · 4. WHAT · 5. THANK YOU. Verify before adding.
+117,NEED,insufficient_visible_hands,True,6,tracking_failure,,True,Not enough visible-hand frames; record again.
+118,NEED,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+119,NEED,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+120,LIKE,correct,True,15,recognized,LIKE,True,Possible match: LIKE. Top five: 1. LIKE · 2. GOOD · 3. NO · 4. I / ME · 5. WHERE. Verify before adding.
+121,LIKE,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+122,LIKE,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+123,LIKE,model_abstention,True,17,unknown,,True,Unknown sign — no word added.
+124,LIKE,insufficient_visible_hands,False,5,tracking_failure,,True,Not enough visible-hand frames; record again.
+125,LIKE,insufficient_visible_hands,True,6,tracking_failure,,True,Not enough visible-hand frames; record again.
+126,LIKE,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+127,LIKE,full_source_window_missing,False,8,uncertain,,False,No confident match. Sign again.
+128,LIKE,model_abstention,True,12,unknown,,True,Unknown sign — no word added.
+129,LIKE,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+130,GOOD,incorrect,True,12,recognized,BAD,True,Possible match: BAD. Top five: 1. BAD · 2. THANK YOU · 3. YOU · 4. GOOD · 5. EAT. Verify before adding.
+131,GOOD,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+132,GOOD,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+133,GOOD,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+134,GOOD,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+135,GOOD,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+136,GOOD,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+137,GOOD,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+138,GOOD,insufficient_visible_hands,True,7,tracking_failure,,True,Not enough visible-hand frames; record again.
+139,GOOD,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+140,BAD,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+141,BAD,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+142,BAD,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+143,BAD,model_abstention,True,16,uncertain,,True,No confident match. Sign again.
+144,BAD,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+145,BAD,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+146,BAD,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+147,BAD,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+148,BAD,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+149,BAD,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+150,WHAT,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+151,WHAT,incorrect,True,12,recognized,WHERE,True,Possible match: WHERE. Top five: 1. WHERE · 2. YOU · 3. THANK YOU · 4. NO · 5. LIKE. Verify before adding.
+152,WHAT,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+153,WHAT,incorrect,True,10,recognized,WHERE,True,Possible match: WHERE. Top five: 1. WHERE · 2. WATER · 3. WHO · 4. EAT. Verify before adding.
+154,WHAT,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+155,WHAT,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+156,WHAT,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+157,WHAT,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+158,WHAT,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+159,WHAT,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+160,WHERE,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+161,WHERE,insufficient_visible_hands,False,7,tracking_failure,,False,Not enough visible-hand frames; record again.
+162,WHERE,incorrect,True,8,recognized,WHO,True,Possible match: WHO. Top five: 1. WHO · 2. YOU · 3. NO · 4. HELP · 5. LIKE. Verify before adding.
+163,WHERE,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+164,WHERE,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+165,WHERE,model_abstention,True,13,uncertain,,True,No confident match. Sign again.
+166,WHERE,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+167,WHERE,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+168,WHERE,model_abstention,True,20,unknown,,True,Unknown sign — no word added.
+169,WHERE,insufficient_visible_hands,False,3,tracking_failure,,False,Not enough visible-hand frames; record again.
+170,WHO,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+171,WHO,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+172,WHO,model_abstention,True,33,unknown,,True,Unknown sign — no word added.
+173,WHO,insufficient_visible_hands,False,2,,,False,Recording timed out before a complete capture. Nothing was submitted.
+174,WHO,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+175,WHO,full_source_window_missing,False,11,uncertain,,True,No confident match. Sign again.
+176,WHO,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+177,WHO,insufficient_visible_hands,False,6,tracking_failure,,False,Not enough visible-hand frames; record again.
+178,WHO,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+179,WHO,model_abstention,True,17,uncertain,,True,No confident match. Sign again.
+180,EAT,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+181,EAT,model_abstention,True,8,uncertain,,True,No confident match. Sign again.
+182,EAT,incorrect,True,12,recognized,WATER,True,Possible match: WATER. Top five: 1. WATER · 2. LIKE · 3. YOU · 4. NO · 5. LOVE. Verify before adding.
+183,EAT,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+184,EAT,model_abstention,True,16,uncertain,,True,No confident match. Sign again.
+185,EAT,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+186,EAT,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+187,EAT,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+188,EAT,model_abstention,True,9,uncertain,,True,No confident match. Sign again.
+189,EAT,model_abstention,True,14,uncertain,,True,No confident match. Sign again.
+190,WATER,insufficient_visible_hands,False,1,,,False,Recording timed out before a complete capture. Nothing was submitted.
+191,WATER,incorrect,True,13,recognized,HELLO,True,Possible match: HELLO. Top five: 1. HELLO · 2. WANT · 3. LIKE · 4. YOU · 5. GOOD. Verify before adding.
+192,WATER,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+193,WATER,model_abstention,True,10,uncertain,,True,No confident match. Sign again.
+194,WATER,insufficient_visible_hands,True,4,tracking_failure,,True,Not enough visible-hand frames; record again.
+195,WATER,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.
+196,WATER,insufficient_visible_hands,False,0,,,False,Recording timed out before a complete capture. Nothing was submitted.
+197,WATER,insufficient_visible_hands,False,4,tracking_failure,,False,Not enough visible-hand frames; record again.
+198,WATER,model_abstention,True,11,uncertain,,True,No confident match. Sign again.
+199,WATER,insufficient_visible_hands,False,5,tracking_failure,,False,Not enough visible-hand frames; record again.

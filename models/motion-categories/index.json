@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "single-fish",
+      "name": "FISH",
+      "labels": [
+        "FISH"
+      ],
+      "file": "models/motion-categories/single-fish.json",
+      "sha256": "0190b652658cec69ed482de5b9e6532dbf59f89599ad8dae4039d1472cd701ca",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 112,
+        "negativeFalse": 0,
+        "perWord": {
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "afc2105894b48c2cdd77ff1d99a6ccfb7aa6bb6afd5e54feaa1772661facf5c3",
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "id": "single-sick",
+      "name": "SICK",
+      "labels": [
+        "SICK"
+      ],
+      "file": "models/motion-categories/single-sick.json",
+      "sha256": "8bafc0e89fced6a113e157422fab2d02b89068302d77740c7b365d8b3068758b",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 112,
+        "negativeFalse": 0,
+        "perWord": {
+          "SICK": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "d7b14a3bf617078b778073cabd2c42fbe01da94a7948bae312b1cd942a6300b2",
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "id": "single-pain",
+      "name": "PAIN",
+      "labels": [
+        "PAIN"
+      ],
+      "file": "models/motion-categories/single-pain.json",
+      "sha256": "43933be6bafb4d98e3db90ccaac3fcfffd331a152a26eaea5613450ebe8c3bcf",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "PAIN": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "546423b54fcf4a70d4cc9ccf4c1f3b968dc5aa85132d49b004fad92e834dca20",
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "id": "single-night",
+      "name": "NIGHT",
+      "labels": [
+        "NIGHT"
+      ],
+      "file": "models/motion-categories/single-night.json",
+      "sha256": "acc8a02828753f55772546a25019f841591a786968e2685fb925585146a44c8d",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "NIGHT": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "c16dbbac9110a154bb3b871a5cc5fb0e7f2ff9d372b8cf09b8863a12c015eecb",
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "id": "single-see",
+      "name": "SEE",
+      "labels": [
+        "SEE"
+      ],
+      "file": "models/motion-categories/single-see.json",
+      "sha256": "28e4a7842236734020dcecfa9144ee38c5b88e711f58471fff960edbdd1c0ab5",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "SEE": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "8a0112f9f9bc9ce52e90d982445df0ccb8167cd53eaf40b645dbe5f7da2c09a4",
+      "cameraTested": false,
+      "integrationTested": false
+    }
+  ],
+  "status": "experimental",
+  "reason": "Individual words passed recorded accuracy screens. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
+}

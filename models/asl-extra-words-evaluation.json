@@ -1,0 +1,854 @@
+{
+  "candidateSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9",
+  "protocol": "Contiguous frame sampling over the signing window, matching the live camera pipeline. Model, prototypes and parameters unchanged from the uniform-sampling run. Two of the 48 supported clips still produce no usable sequence.",
+  "baseline": {
+    "new": {
+      "total": 24,
+      "correct": 0,
+      "wrong": 9
+    },
+    "existing": {
+      "total": 60,
+      "correct": 29,
+      "wrong": 7
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 24
+    }
+  },
+  "expanded": {
+    "new": {
+      "total": 46,
+      "correct": 30
+    },
+    "negative": {
+      "total": 16,
+      "wrong": 11
+    }
+  },
+  "perWord": {
+    "DRINK": {
+      "total": 8,
+      "correct": 7
+    },
+    "WATER": {
+      "total": 8,
+      "correct": 5
+    },
+    "BOOK": {
+      "total": 8,
+      "correct": 5
+    },
+    "FOOD": {
+      "total": 5,
+      "correct": 5
+    },
+    "HUNGRY": {
+      "total": 5,
+      "correct": 4
+    },
+    "LIKE": {
+      "total": 6,
+      "correct": 3
+    },
+    "GO": {
+      "total": 6,
+      "correct": 1
+    }
+  },
+  "predictions": [
+    {
+      "label": "FOOD",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FOOD",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "FOOD",
+      "baseline": "YES",
+      "expanded": "FOOD",
+      "kind": "supported"
+    },
+    {
+      "label": "FOOD",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FOOD",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FOOD",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": "THANK YOU",
+      "expanded": "HUNGRY",
+      "kind": "supported"
+    },
+    {
+      "label": "HUNGRY",
+      "baseline": "PLEASE",
+      "expanded": "HUNGRY",
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": "THANK YOU",
+      "expanded": "LIKE",
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "LIKE",
+      "baseline": null,
+      "expanded": "LIKE",
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": "BOOK",
+      "expanded": "BOOK",
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "GO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "HELLO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "THANK YOU",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "PLEASE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "supported"
+    },
+    {
+      "label": "YES",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "NO",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": "FINISH",
+      "expanded": "FINISH",
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "FINISH",
+      "baseline": "FINISH",
+      "expanded": "FINISH",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "DRINK",
+      "expanded": "DRINK",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "DRINK",
+      "expanded": "DRINK",
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "DRINK",
+      "baseline": "DRINK",
+      "expanded": "DRINK",
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": "WATER",
+      "expanded": "WATER",
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": "WATER",
+      "expanded": "WATER",
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": "WATER",
+      "expanded": "WATER",
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": "WATER",
+      "expanded": "WATER",
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "WATER",
+      "baseline": "WATER",
+      "expanded": "WATER",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": "BOOK",
+      "expanded": "BOOK",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "supported"
+    },
+    {
+      "label": "BOOK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "supported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": "YES",
+      "expanded": "FOOD",
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "unsupported"
+    },
+    {
+      "label": "APPLE",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": "YES",
+      "expanded": "FOOD",
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": null,
+      "expanded": null,
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": "NO",
+      "expanded": "FOOD",
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": "BOOK",
+      "expanded": "FOOD",
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": "DRINK",
+      "expanded": "DRINK",
+      "kind": "unsupported"
+    },
+    {
+      "label": "MILK",
+      "baseline": "NO",
+      "expanded": "FOOD",
+      "kind": "unsupported"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "FINISH",
+      "expanded": "FINISH",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": "FOOD",
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "YES",
+      "expanded": "YES",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "YES",
+      "expanded": "FOOD",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "THANK YOU",
+      "expanded": "FOOD",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": "FOOD",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "BOOK",
+      "expanded": "FOOD",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "FINISH",
+      "expanded": "FINISH",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "HELLO",
+      "expanded": "HELLO",
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "NO",
+      "expanded": "NO",
+      "kind": "synthetic-still"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "YES",
+      "expanded": "FOOD",
+      "kind": "synthetic-drift"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE",
+      "kind": "synthetic-jitter"
+    },
+    {
+      "label": "UNKNOWN",
+      "baseline": null,
+      "expanded": null,
+      "kind": "synthetic-no-hands"
+    }
+  ],
+  "defaultPromotion": false,
+  "reason": "Optional isolated-word preview; no real-time sentence validation or default accuracy claim.",
+  "protocolNote": "Per-word distance cutoffs were searched on validation only; no combination improved the test result, so the shipped parameters were kept.",
+  "protocolHistory": {
+    "uniformSampling-20261010": {
+      "protocol": "30 frames sampled uniformly across the whole clip",
+      "perWord": {
+        "FOOD": {
+          "total": 6,
+          "correct": 1
+        },
+        "HUNGRY": {
+          "total": 6,
+          "correct": 2
+        },
+        "LIKE": {
+          "total": 6,
+          "correct": 2
+        },
+        "GO": {
+          "total": 6,
+          "correct": 0
+        }
+      },
+      "expanded": {
+        "new": {
+          "total": 24,
+          "correct": 5,
+          "wrong": 5
+        },
+        "existing": {
+          "total": 60,
+          "correct": 29,
+          "wrong": 7
+        },
+        "negative": {
+          "total": 40,
+          "correct": 0,
+          "wrong": 26
+        }
+      },
+      "note": "Predates both the contiguous protocol and the current model file."
+    }
+  },
+  "untracked": {
+    "test": 2
+  }
+}

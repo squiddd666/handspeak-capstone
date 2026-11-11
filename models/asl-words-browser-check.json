@@ -1,0 +1,70 @@
+{
+  "encoding": "two-hand-motion-v3",
+  "modelSha256": "87120aca551e449d8ab8ce1cabb03960744a10938a23377e1f2944bf0eb7ad2f",
+  "purpose": "Functional integration check on selected training examples; not an independent accuracy benchmark.",
+  "method": "Chromium CPU MediaPipe hand detector, 30 uniformly sampled video frames resized to 640 pixels on the long edge, verified seeking and tracking reset between videos.",
+  "passed": 5,
+  "total": 5,
+  "results": [
+    {
+      "name": "hello",
+      "tracked": 19,
+      "valid": true,
+      "prediction": {
+        "label": "HELLO",
+        "distance": 0.16284488391225654
+      },
+      "imageAspect": 1.3333333333333333,
+      "expected": "HELLO",
+      "sha256": "6352aac99b878d074d04a8595261cce937e3f4c79a18a8c1b3dbb6822bf2a0ce"
+    },
+    {
+      "name": "thank-you",
+      "tracked": 25,
+      "valid": true,
+      "prediction": {
+        "label": "THANK YOU",
+        "distance": 0.20832857924390913
+      },
+      "imageAspect": 1.3333333333333333,
+      "expected": "THANK YOU",
+      "sha256": "b2e8d5e6f8524b4743a988bced9e72d6f06afb0cd0830a5d570f3b0665ed7dfe"
+    },
+    {
+      "name": "please",
+      "tracked": 30,
+      "valid": true,
+      "prediction": {
+        "label": "PLEASE",
+        "distance": 0.2714106449764409
+      },
+      "imageAspect": 1.3333333333333333,
+      "expected": "PLEASE",
+      "sha256": "940a0cea5cf50ca0a58676c686695a06ca9c30c2cd7dd3bf55abd6149d138c13"
+    },
+    {
+      "name": "yes",
+      "tracked": 27,
+      "valid": true,
+      "prediction": {
+        "label": "YES",
+        "distance": 0.20433223271901366
+      },
+      "imageAspect": 1.3333333333333333,
+      "expected": "YES",
+      "sha256": "4b1bb842ec91a3869f1599aaa240b5c6fee46d986abfe39a532bbdb793db5b1e"
+    },
+    {
+      "name": "no",
+      "tracked": 30,
+      "valid": true,
+      "prediction": {
+        "label": "NO",
+        "distance": 0.007253436122202134
+      },
+      "imageAspect": 1.3333333333333333,
+      "expected": "NO",
+      "sha256": "c3387d32cd898619d1968d2852b912246bee40090e31497cc969c29acf6daf30"
+    }
+  ]
+}

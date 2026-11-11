@@ -1,0 +1,21 @@
+word,split,attempt_logged,verified_640x480_15fps,full_source_window,decoded_frames,visible_hand_frames,api_status,backend_state,score,gate,prediction,displayed,correct,status
+HELLO,validation,True,True,True,89,7,,,,,,,False,Capture quality insufficient: hand visibility or frame continuity. Nothing was submitted.
+THANK YOU,validation,True,True,True,93,12,200,uncertain,0.617079,0.9750000000000003,,,False,No confident match. Sign again.
+PLEASE,validation,True,True,True,93,11,200,uncertain,0.343431,0.9750000000000003,,,False,No confident match. Sign again.
+SORRY,validation,True,True,True,89,9,200,uncertain,0.426404,0.9750000000000003,,,False,No confident match. Sign again.
+YES,validation,True,True,True,89,12,200,recognized,0.995771,0.9750000000000003,YOU,YOU,False,Possible match: YOU. Top five: 1. YOU · 2. SORRY · 3. GOOD · 4. LOVE · 5. HELLO. Verify before adding.
+NO,validation,True,True,True,90,9,200,uncertain,0.364371,0.9750000000000003,,,False,No confident match. Sign again.
+HELP,validation,True,True,True,90,9,200,uncertain,0.893431,0.9750000000000003,,,False,No confident match. Sign again.
+LOVE,validation,True,True,True,90,11,200,uncertain,0.484572,0.9750000000000003,,,False,No confident match. Sign again.
+I / ME,validation,True,True,True,95,8,200,uncertain,0.676503,0.9750000000000003,,,False,No confident match. Sign again.
+YOU,validation,True,True,True,91,11,200,uncertain,0.665194,0.9750000000000003,,,False,No confident match. Sign again.
+WANT,validation,True,True,True,95,12,200,uncertain,0.960792,0.9750000000000003,,,False,No confident match. Sign again.
+NEED,validation,True,True,True,96,15,200,uncertain,0.883716,0.9750000000000003,,,False,No confident match. Sign again.
+LIKE,validation,True,True,True,87,7,,,,,,,False,Capture quality insufficient: hand visibility or frame continuity. Nothing was submitted.
+GOOD,validation,True,True,True,90,9,200,recognized,0.985965,0.9750000000000003,EAT,EAT,False,Possible match: EAT. Top five: 1. EAT · 2. WHO · 3. WHERE · 4. GOOD · 5. NO. Verify before adding.
+BAD,validation,True,True,True,90,15,200,uncertain,0.939037,0.9750000000000003,,,False,No confident match. Sign again.
+WHAT,validation,True,True,True,89,9,200,uncertain,0.86484,0.9750000000000003,,,False,No confident match. Sign again.
+WHERE,validation,True,True,True,89,11,200,uncertain,0.88459,0.9750000000000003,,,False,No confident match. Sign again.
+WHO,validation,True,True,True,91,10,200,recognized,0.977223,0.9750000000000003,PLEASE,PLEASE,False,Possible match: PLEASE. Top five: 1. PLEASE · 2. LIKE · 3. WHO · 4. LOVE. Verify before adding.
+EAT,validation,True,True,True,91,12,200,uncertain,0.557978,0.9750000000000003,,,False,No confident match. Sign again.
+WATER,validation,True,True,True,97,10,200,uncertain,0.267985,0.9750000000000003,,,False,No confident match. Sign again.

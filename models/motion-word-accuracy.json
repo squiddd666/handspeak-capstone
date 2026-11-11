@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "profiles": {
+    "default": {
+      "model": "Default six-word model with per-word distance cutoffs",
+      "scope": "Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified.",
+      "words": {
+        "HELLO": {
+          "correct": 11,
+          "total": 12
+        },
+        "THANK YOU": {
+          "correct": 11,
+          "total": 12
+        },
+        "PLEASE": {
+          "correct": 11,
+          "total": 12
+        },
+        "YES": {
+          "correct": 9,
+          "total": 12
+        },
+        "NO": {
+          "correct": 10,
+          "total": 12
+        },
+        "FINISH": {
+          "correct": 7,
+          "total": 12
+        }
+      },
+      "note": "2026-10-17: contiguous sampling, then per-word distance cutoffs calibrated on validation. Model prototypes unchanged; recognizer verified in JavaScript. Earlier runs retained in protocolHistory."
+    },
+    "expanded": {
+      "model": "Expanded preview: seven extra words (deployment-faithful frame sampling)",
+      "scope": "Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18.",
+      "words": {
+        "DRINK": {
+          "correct": 7,
+          "total": 8
+        },
+        "WATER": {
+          "correct": 5,
+          "total": 8
+        },
+        "BOOK": {
+          "correct": 5,
+          "total": 8
+        },
+        "FOOD": {
+          "correct": 5,
+          "total": 5
+        },
+        "HUNGRY": {
+          "correct": 4,
+          "total": 5
+        },
+        "LIKE": {
+          "correct": 3,
+          "total": 6
+        },
+        "GO": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "modelSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9",
+      "note": "2026-10-18: frame sampling changed from uniform to contiguous. Two test clips are still untrackable (1 FOOD-class clip and 1 GO clip). Model and parameters unchanged; per-word cutoffs were searched on validation and did not change the test result."
+    },
+    "daily": {
+      "model": "Five-word server preview",
+      "scope": "Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified.",
+      "words": {
+        "NAME": {
+          "correct": 8,
+          "total": 11
+        },
+        "HOME": {
+          "correct": 8,
+          "total": 11
+        },
+        "HAVE": {
+          "correct": 11,
+          "total": 11
+        },
+        "WANT": {
+          "correct": 15,
+          "total": 22
+        },
+        "LOVE": {
+          "correct": 9,
+          "total": 11
+        }
+      },
+      "modelSha256": "ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67",
+      "note": "2026-10-18: contiguous sampling (44/66 -> 50/66) then per-word cutoffs (50/66 -> 51/66). Prototypes unchanged; server matcher verified against the scoring implementation."
+    },
+    "baby": {
+      "model": "Experimental BABY hand-motion model",
+      "scope": "Untouched ASL Citizen recorded test clips: 8/8 recognized, with zero false accepts among 319 negative clips. Live-camera accuracy remains unverified.",
+      "words": {
+        "BABY": {
+          "correct": 8,
+          "total": 8
+        }
+      },
+      "note": "2026-10-21: evaluated on the reserved ASL Citizen test split and verified against the browser scoring implementation."
+    }
+  }
+}

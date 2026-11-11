@@ -1,0 +1,3007 @@
+{
+  "signs": {
+    "hello": {
+      "id": "hello",
+      "duration": 2.1333333333333333,
+      "fps": 30,
+      "samples": 65,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/hello.mp4",
+        "sha256": "bd9e2b2782a1a23428bb5784273577fef1f7d1f8728937f294f57ff172e55147",
+        "fps": 30.0,
+        "frames": 64,
+        "duration": 2.1333333333333333,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/hello.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 64,
+            "trackedFrames": 64,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "hello-reference.glb",
+      "bytes": 74636,
+      "sha256": "e75f1155dd64a27dc6c1b82769ab281e32341b448afef2894697cdb78743217c"
+    },
+    "please": {
+      "id": "please",
+      "duration": 1.1,
+      "fps": 30,
+      "samples": 34,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/please.mp4",
+        "sha256": "510d1a31fe1901efa9dfda3283b342f447b4a31664d1974eb158d5ac14d826c0",
+        "fps": 30.0,
+        "frames": 33,
+        "duration": 1.1,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/please.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 33,
+            "trackedFrames": 33,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "please-reference.glb",
+      "bytes": 53104,
+      "sha256": "ee97b2326a29c423bb1e895f1f8f119891cbacf941fb0c88801636cca83826ab"
+    },
+    "yes": {
+      "id": "yes",
+      "duration": 1.7,
+      "fps": 30,
+      "samples": 52,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/yes.mp4",
+        "sha256": "9dd7261b9736ca35c39c41e05813febc24f286c96d7b89a6a021ee4b15ddb18c",
+        "fps": 30.0,
+        "frames": 51,
+        "duration": 1.7,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/yes.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 51,
+            "trackedFrames": 51,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "yes-reference.glb",
+      "bytes": 65560,
+      "sha256": "8a36636c2ae934ad80304fbd8e9e2ed10e09c4f0288132e93ab01377657bd852"
+    },
+    "no": {
+      "id": "no",
+      "duration": 2.0,
+      "fps": 30,
+      "samples": 61,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/no.mp4",
+        "sha256": "2d7b1512215ceef2d93deeaf7c40560bb40a9c1eaad8a5c6abc4bd30ee0f455d",
+        "fps": 30.0,
+        "frames": 60,
+        "duration": 2.0,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/no.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 60,
+            "trackedFrames": 60,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "no-reference.glb",
+      "bytes": 71772,
+      "sha256": "2dd4d483b76d1838b698c4c328adad400da4c7f7c31b55ed1471de90cab836ac"
+    },
+    "fish": {
+      "id": "fish",
+      "duration": 2.2793296089385477,
+      "fps": 30,
+      "samples": 69,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/fish.mp4",
+        "sha256": "39b9d6608ec05dc313c364376835433cc486519c511d6cbc73205e63815f3d25",
+        "fps": 29.833333333333332,
+        "frames": 68,
+        "duration": 2.2793296089385477,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/fish.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 26,
+            "trackedFrames": 24,
+            "coverage": 0.9231,
+            "maxEstimatedGapSeconds": 0.067
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "fish-reference.glb",
+      "bytes": 77420,
+      "sha256": "f33db53c3e56606e6ae5dbed19d75fc509d55f5996f6f31c81113f5bef2c2539"
+    },
+    "pain": {
+      "id": "pain",
+      "duration": 2.6666666666666665,
+      "fps": 30,
+      "samples": 81,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/pain.mp4",
+        "sha256": "3ca20863c01af684f5ba32ed9e265c1b602c260b801db5fcf3740c5938e4ed72",
+        "fps": 30.0,
+        "frames": 80,
+        "duration": 2.6666666666666665,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/pain.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 79,
+            "trackedFrames": 72,
+            "coverage": 0.9114,
+            "maxEstimatedGapSeconds": 0.1667
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "pain-reference.glb",
+      "bytes": 85712,
+      "sha256": "0c5a693f762c47ed3990957e8aa36f5e52e50b06bb57e049ab0b653be295468a"
+    },
+    "see": {
+      "id": "see",
+      "duration": 2.874651810584958,
+      "fps": 30,
+      "samples": 87,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/see.mp4",
+        "sha256": "11aea8b4b143176828ecf4f764214497d04859b213607c1e1b8392470f9e8f7a",
+        "fps": 29.916666666666668,
+        "frames": 86,
+        "duration": 2.874651810584958,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/see.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 51,
+            "trackedFrames": 44,
+            "coverage": 0.8627,
+            "maxEstimatedGapSeconds": 0.1671
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "see-reference.glb",
+      "bytes": 89876,
+      "sha256": "387cf3f30dca750a7359c2067c42a692c392a0c9dd38c0b62f12f6273d264a0f"
+    },
+    "sick": {
+      "id": "sick",
+      "duration": 2.325,
+      "fps": 30,
+      "samples": 72,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/sick.mp4",
+        "sha256": "2fd29c276ed2a8e4589f6306b95cfcec17cdd757599f2b039c1a09085e6d7f02",
+        "fps": 120.0,
+        "frames": 279,
+        "duration": 2.325,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/sick.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 28,
+            "trackedFrames": 25,
+            "coverage": 0.8929,
+            "maxEstimatedGapSeconds": 0.1
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "sick-reference.glb",
+      "bytes": 79456,
+      "sha256": "85f43b48a1aca5e6f637e745960bc167dcd740fff9ed028bd58073d41286f393"
+    },
+    "night": {
+      "id": "night",
+      "duration": 2.6333333333333333,
+      "fps": 30,
+      "samples": 80,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/night.mp4",
+        "sha256": "2016701026b70df5479047aceb702cca32509a30525bb2da63415dffc0049767",
+        "fps": 30.0,
+        "frames": 79,
+        "duration": 2.6333333333333333,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/night.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 20,
+            "trackedFrames": 19,
+            "coverage": 0.95,
+            "maxEstimatedGapSeconds": 0.0333
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "night-reference.glb",
+      "bytes": 85020,
+      "sha256": "5d2a819500845cbbb16cb58dc0c3af4467d8a62635b6a95f392ec6ae7aaa75d0"
+    },
+    "finish": {
+      "id": "finish",
+      "duration": 1.6916666666666667,
+      "fps": 30,
+      "samples": 53,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/finish.mp4",
+        "sha256": "ad933bd770623e326eef4047a5aaec3b12e5c40a0c4357fe62b32bf628a2d701",
+        "fps": 120.0,
+        "frames": 203,
+        "duration": 1.6916666666666667,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/finish.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 21,
+            "trackedFrames": 20,
+            "coverage": 0.9524,
+            "maxEstimatedGapSeconds": 0.0333
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "finish-reference.glb",
+      "bytes": 66296,
+      "sha256": "d4f17c4af1645a62df768d65c89b4a5a04f546725b3e494cad3e2c3eecf870df"
+    },
+    "thank-you": {
+      "id": "thank-you",
+      "duration": 1.1083333333333334,
+      "fps": 30,
+      "samples": 35,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/thank-you.mp4",
+        "sha256": "f38675a008224e5521329f10a581c31acb76f84902906fdefa03ba18cfebe3ec",
+        "fps": 120.0,
+        "frames": 133,
+        "duration": 1.1083333333333334,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/thank-you.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 34,
+            "trackedFrames": 34,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "thank-you-reference.glb",
+      "bytes": 53836,
+      "sha256": "df1313541433e9d954b74f742b503598715345607713d5ed6cbfb0c217c0e7ae"
+    },
+    "deaf": {
+      "id": "deaf",
+      "duration": 2.4079462225343633,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/deaf.mp4",
+        "sha256": "a2205427ddfa8268a77a132c9be2c8f85c72d9b6e328776331831b9d0620f98d",
+        "fps": 29.901,
+        "frames": 72,
+        "duration": 2.4079462225343633,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/deaf.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 33,
+            "trackedFrames": 33,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "deaf-reference.glb",
+      "bytes": 80172,
+      "sha256": "0ea1714e9cf7b7880f6eac2d62443cad7b87eb3efc4886299788ebbeca64257c"
+    },
+    "baseballcap": {
+      "id": "baseballcap",
+      "duration": 1.5666666666666667,
+      "fps": 30,
+      "samples": 48,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/baseballcap.mp4",
+        "sha256": "5e29d1775e3429a78c540f5f5d74b190f4f83d71fd0534ce04a2f769b573d3a9",
+        "fps": 30.0,
+        "frames": 47,
+        "duration": 1.5666666666666667,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/baseballcap.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 34,
+            "trackedFrames": 33,
+            "coverage": 0.9706,
+            "maxEstimatedGapSeconds": 0.0333
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "baseballcap-reference.glb",
+      "bytes": 62848,
+      "sha256": "b347633ea9f4b6acb23f06ea4796f11e390861646b6242d9fc5f6bb5c88912d7"
+    },
+    "belt": {
+      "id": "belt",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/belt.mp4",
+        "sha256": "1b3245a15433848f57cffe2ddd4be95de7b42ec2e3e8ade9b9b70b6046607fb6",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/belt.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 43,
+            "trackedFrames": 42,
+            "coverage": 0.9767,
+            "maxEstimatedGapSeconds": 0.0333
+          },
+          "Right": {
+            "activeFrames": 41,
+            "trackedFrames": 40,
+            "coverage": 0.9756,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "belt-reference.glb",
+      "bytes": 76000,
+      "sha256": "80d01cfb34245e07be0bdaecdc05ceddd38a480c75f36d183a7f618b5e1f6c6c"
+    },
+    "book": {
+      "id": "book",
+      "duration": 1.3666666666666667,
+      "fps": 30,
+      "samples": 43,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/book.mp4",
+        "sha256": "5d19b4a470108997a36a860f8bbc5b6b9368dd1a514499c8f7b4e48260ba13ce",
+        "fps": 120.0,
+        "frames": 164,
+        "duration": 1.3666666666666667,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/book.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 42,
+            "trackedFrames": 42,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "book-reference.glb",
+      "bytes": 59360,
+      "sha256": "620448d861d8b007fa187d277f9d0d2efe62f83228b3f025dfc8ce3890b44d8b"
+    },
+    "brother": {
+      "id": "brother",
+      "duration": 1.871866295264624,
+      "fps": 30,
+      "samples": 57,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/brother.mp4",
+        "sha256": "afd8748c21f5d59a1393d0375722732da360cf4741d5d110192ee9e6acf47771",
+        "fps": 29.916666666666668,
+        "frames": 56,
+        "duration": 1.871866295264624,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/brother.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 25,
+            "trackedFrames": 21,
+            "coverage": 0.84,
+            "maxEstimatedGapSeconds": 0.0669
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "brother-reference.glb",
+      "bytes": 69076,
+      "sha256": "6bd18bbd00fc308aadf92823f46d5b773e4244fb0c962e03c0132986df43421c"
+    },
+    "demand": {
+      "id": "demand",
+      "duration": 1.9576495154817448,
+      "fps": 30,
+      "samples": 60,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/demand.mp4",
+        "sha256": "255594757a4ea1e06a71d6a51dea7c2b0b695d70699f2ca2bb0d9ab132eb95c2",
+        "fps": 30.649,
+        "frames": 60,
+        "duration": 1.9576495154817448,
+        "width": 640,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/demand.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 24,
+            "trackedFrames": 24,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 18,
+            "trackedFrames": 17,
+            "coverage": 0.9444,
+            "maxEstimatedGapSeconds": 0.0326
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "demand-reference.glb",
+      "bytes": 71148,
+      "sha256": "ea85714f58e7085e3146c97bcfe4c7967ddc36540c626253d2596ff814770611"
+    },
+    "drag": {
+      "id": "drag",
+      "duration": 2.4304916221690296,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/drag.mp4",
+        "sha256": "d799c80135c4b92a4ba4b1705534adfa3a7dc4480c39d535392c6944be6092e9",
+        "fps": 27.155,
+        "frames": 66,
+        "duration": 2.4304916221690296,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/drag.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 57,
+            "trackedFrames": 54,
+            "coverage": 0.9474,
+            "maxEstimatedGapSeconds": 0.0737
+          },
+          "Right": {
+            "activeFrames": 57,
+            "trackedFrames": 45,
+            "coverage": 0.7895,
+            "maxEstimatedGapSeconds": 0.3314
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": true
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "drag-reference.glb",
+      "bytes": 76032,
+      "sha256": "a8b978db27eec76ff4b6209e8eccada8d7bbefd482ef5a02c9e368d8116c32dd"
+    },
+    "drink": {
+      "id": "drink",
+      "duration": 2.0446927374301676,
+      "fps": 30,
+      "samples": 62,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/drink.mp4",
+        "sha256": "21fb77dd73f87ce9f8589817212126f97c5a1cf825c13c1de84e6d7ae884a99e",
+        "fps": 29.833333333333332,
+        "frames": 61,
+        "duration": 2.0446927374301676,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/drink.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 34,
+            "trackedFrames": 32,
+            "coverage": 0.9412,
+            "maxEstimatedGapSeconds": 0.0335
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "drink-reference.glb",
+      "bytes": 72536,
+      "sha256": "3ebf75b71850dc241ce7545d4082c8155d166a9888eb066093491a22533b582c"
+    },
+    "duck": {
+      "id": "duck",
+      "duration": 2.5,
+      "fps": 30,
+      "samples": 76,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/duck.mp4",
+        "sha256": "10b1d5d84049bb2ab33c11edb7b02e2b965a08df964ee5ddd103004a81697186",
+        "fps": 30.0,
+        "frames": 75,
+        "duration": 2.5,
+        "width": 460,
+        "height": 346
+      },
+      "referenceVideo": "./media/signs/duck.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 44,
+            "trackedFrames": 43,
+            "coverage": 0.9773,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "duck-reference.glb",
+      "bytes": 82208,
+      "sha256": "4a328c0d6eced290ead4f35cadb413d0282d341819e088f519e2056404e4ef58"
+    },
+    "eat": {
+      "id": "eat",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/eat.mp4",
+        "sha256": "cd95cf12913b5388ca8f4dbf180471f2e2befa1f3e54ecc9fe9b112c5ac4b34d",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/eat.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 35,
+            "trackedFrames": 30,
+            "coverage": 0.8571,
+            "maxEstimatedGapSeconds": 0.1333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "eat-reference.glb",
+      "bytes": 75988,
+      "sha256": "35ca052b92546e2bdb8d0383eec2762cfe447f67b327a840d7d1ea1a1215b64e"
+    },
+    "edit": {
+      "id": "edit",
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/edit.mp4",
+        "sha256": "133a1758bb8c9cf49d35852252ae433f51fa6c832153c36e00c0ba0b12f9094c",
+        "fps": 30.0,
+        "frames": 72,
+        "duration": 2.4,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/edit.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 42,
+            "trackedFrames": 31,
+            "coverage": 0.7381,
+            "maxEstimatedGapSeconds": 0.1333
+          },
+          "Right": {
+            "activeFrames": 49,
+            "trackedFrames": 39,
+            "coverage": 0.7959,
+            "maxEstimatedGapSeconds": 0.1333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": true
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "edit-reference.glb",
+      "bytes": 80156,
+      "sha256": "bcaebac0516bcebbae9b6f2d8f78242de72d48e1be5bc5c48d5b0d9319bdb8e6"
+    },
+    "empty": {
+      "id": "empty",
+      "duration": 1.9,
+      "fps": 30,
+      "samples": 58,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/empty.mp4",
+        "sha256": "9cdfe24218ae493578b054518b0bfe4a4bea3e846b40ac091131d1e09645accf",
+        "fps": 30.0,
+        "frames": 57,
+        "duration": 1.9,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/empty.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 31,
+            "trackedFrames": 31,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 32,
+            "trackedFrames": 31,
+            "coverage": 0.9688,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "empty-reference.glb",
+      "bytes": 69728,
+      "sha256": "f2a4f97658d74a318205391775ac03380ca071910a4e056477f7f56c645d5e59"
+    },
+    "food": {
+      "id": "food",
+      "duration": 1.3833333333333333,
+      "fps": 30,
+      "samples": 44,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/food.mp4",
+        "sha256": "4b3541dba4b609549f7a485a0fb81fb3e770f4517a57295ae8d94a8da1ca98c1",
+        "fps": 120.0,
+        "frames": 166,
+        "duration": 1.3833333333333333,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/food.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 35,
+            "trackedFrames": 34,
+            "coverage": 0.9714,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "food-reference.glb",
+      "bytes": 60060,
+      "sha256": "b0854c813c7e9a9d07a9d7cece979240e1e85e6fab19b7d21de118b895b567e7"
+    },
+    "go": {
+      "id": "go",
+      "duration": 1.9019,
+      "fps": 30,
+      "samples": 58,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/go.mp4",
+        "sha256": "944d4bfdeb83bec1b208358e41563d39e4179f27a2bc63d247f6de5ca212e0bd",
+        "fps": 29.97002997002997,
+        "frames": 57,
+        "duration": 1.9019,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/go.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 57,
+            "trackedFrames": 33,
+            "coverage": 0.5789,
+            "maxEstimatedGapSeconds": 0.4338
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": true
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "go-reference.glb",
+      "bytes": 69732,
+      "sha256": "44a3f6adf3a01095c3e77f622f61dbff6e7f3903c245bc4ce096f82b9ebed57d"
+    },
+    "have": {
+      "id": "have",
+      "duration": 4.237566666666667,
+      "fps": 30,
+      "samples": 128,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/have.mp4",
+        "sha256": "f5a1290c8ee97d7c2a510142f5b12634831a78da353c89db97e9363da8828cd0",
+        "fps": 29.97002997002997,
+        "frames": 127,
+        "duration": 4.237566666666667,
+        "width": 1944,
+        "height": 2592
+      },
+      "referenceVideo": "./media/signs/have.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 74,
+            "trackedFrames": 74,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "have-reference.glb",
+      "bytes": 118292,
+      "sha256": "cad9f94c384dc49718852b6834ea22f78169c475a2f2d1dbb7794a31b2ea887b"
+    },
+    "home": {
+      "id": "home",
+      "duration": 1.8,
+      "fps": 30,
+      "samples": 55,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/home.mp4",
+        "sha256": "75b04502027256acd246b66bfa40904e121c4145b7a3e75b3803b9395669ab31",
+        "fps": 30.0,
+        "frames": 54,
+        "duration": 1.8,
+        "width": 1080,
+        "height": 1920
+      },
+      "referenceVideo": "./media/signs/home.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 46,
+            "trackedFrames": 29,
+            "coverage": 0.6304,
+            "maxEstimatedGapSeconds": 0.2333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": true
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "home-reference.glb",
+      "bytes": 67644,
+      "sha256": "543a56a8ee6c8092735f7327bb086c9dd39b08e31deb5af28906e8a14525f1d4"
+    },
+    "hungry": {
+      "id": "hungry",
+      "duration": 2.1,
+      "fps": 30,
+      "samples": 64,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/hungry.mp4",
+        "sha256": "54a7dbdfa028670c6dee5ce17c596f7ef8a8b8922984a0ae1d63c7524a5b4bc6",
+        "fps": 30.0,
+        "frames": 63,
+        "duration": 2.1,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/hungry.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 63,
+            "trackedFrames": 61,
+            "coverage": 0.9683,
+            "maxEstimatedGapSeconds": 0.0667
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "hungry-reference.glb",
+      "bytes": 73924,
+      "sha256": "d98f4747e554e793da73c56ec80efb7b5119f3054b423c90dbc61b44823b83b1"
+    },
+    "like": {
+      "id": "like",
+      "duration": 2.191666666666667,
+      "fps": 30,
+      "samples": 68,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/like.mp4",
+        "sha256": "80d5b75e9f550a3888d050842c6e8e021c992b18ecfc00eb77e1d9907c686a73",
+        "fps": 120.0,
+        "frames": 263,
+        "duration": 2.191666666666667,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/like.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 40,
+            "trackedFrames": 38,
+            "coverage": 0.95,
+            "maxEstimatedGapSeconds": 0.0667
+          },
+          "Right": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "like-reference.glb",
+      "bytes": 76712,
+      "sha256": "2cfde0c506bde9cacc37037ea119a70f15e3cfd434128a9e039568eb6ee477a2"
+    },
+    "lock": {
+      "id": "lock",
+      "duration": 2.4066852367688023,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/lock.mp4",
+        "sha256": "7db44c1f007689729810d3214e767e9bc1650d9ee29e9268b5328902206517e3",
+        "fps": 29.916666666666668,
+        "frames": 72,
+        "duration": 2.4066852367688023,
+        "width": 448,
+        "height": 336
+      },
+      "referenceVideo": "./media/signs/lock.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 41,
+            "trackedFrames": 41,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 46,
+            "trackedFrames": 44,
+            "coverage": 0.9565,
+            "maxEstimatedGapSeconds": 0.0334
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "lock-reference.glb",
+      "bytes": 80192,
+      "sha256": "c832a44733387eeabc6b8c911865372627ea33373b8bbd8b1c00d4446af8f812"
+    },
+    "mechanic": {
+      "id": "mechanic",
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/mechanic.mp4",
+        "sha256": "5e063f7ba33d270494516994e504d701e6160a3098d390557245e156c5fcd4e7",
+        "fps": 30.0,
+        "frames": 72,
+        "duration": 2.4,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/mechanic.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 61,
+            "trackedFrames": 56,
+            "coverage": 0.918,
+            "maxEstimatedGapSeconds": 0.1333
+          },
+          "Right": {
+            "activeFrames": 52,
+            "trackedFrames": 49,
+            "coverage": 0.9423,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "mechanic-reference.glb",
+      "bytes": 80168,
+      "sha256": "1045774a7808b341d48fa9ea6e921a182959535a3ef64776b7e3ac4191f703e1"
+    },
+    "microscope": {
+      "id": "microscope",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/microscope.mp4",
+        "sha256": "238922ea530f95a8bdb10515cd1af335e2297ef866fdb9d2d77a3665f9fa88cb",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 434,
+        "height": 326
+      },
+      "referenceVideo": "./media/signs/microscope.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 30,
+            "trackedFrames": 0,
+            "coverage": 0.0,
+            "maxEstimatedGapSeconds": 1.0,
+            "estimatedReason": "Supporting-hand wrist depth, palm orientation and occluded finger curls are manually reconstructed estimates. The dominant hand retains the tracked finger rotations; its thumb/index circle is aligned to Kai's eye during the reference's hold."
+          },
+          "Right": {
+            "activeFrames": 33,
+            "trackedFrames": 33,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": true
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds; exact-video reviewed supporting-forearm grip and eye-contact correction, with occluded supporting fingers explicitly estimated",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "reviewedCorrection": {
+        "referenceSha256": "238922ea530f95a8bdb10515cd1af335e2297ef866fdb9d2d77a3665f9fa88cb",
+        "supportSide": "Left",
+        "dominantSide": "Right",
+        "supportEnvelope": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4666667,
+            0.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            1.3,
+            1.0
+          ],
+          [
+            1.5,
+            0.0
+          ],
+          [
+            2.2,
+            0.0
+          ]
+        ],
+        "faceEnvelope": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4333333,
+            0.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            1.2666667,
+            1.0
+          ],
+          [
+            1.4666667,
+            0.0
+          ],
+          [
+            2.2,
+            0.0
+          ]
+        ],
+        "faceTarget": "RightEye",
+        "faceOffsetM": [
+          0.012,
+          -0.024,
+          0.052
+        ],
+        "contactBelowWristM": 0.095,
+        "contactSurfaceOffsetM": 0.034,
+        "contactPalmFraction": 0.65,
+        "palmForward": [
+          -0.84,
+          0.54,
+          0.0
+        ],
+        "indexAcross": [
+          0.54,
+          0.84,
+          0.0
+        ],
+        "fingerCumulativeDegrees": {
+          "Index": [
+            20,
+            65,
+            95
+          ],
+          "Middle": [
+            25,
+            75,
+            105
+          ],
+          "Ring": [
+            30,
+            85,
+            115
+          ],
+          "Pinky": [
+            35,
+            90,
+            120
+          ]
+        },
+        "thumbDirectionsPalm": [
+          [
+            0.8,
+            0.35,
+            -0.08
+          ],
+          [
+            0.55,
+            0.65,
+            -0.3
+          ],
+          [
+            0.3,
+            0.7,
+            -0.65
+          ]
+        ],
+        "reason": "Frame-by-frame review of this exact recording shows the left hand cupping the right forearm below its wrist while the right C hand is held at the eye. The hand detector misses the entire supporting hand, and its pose wrist is off-screen. Restore only this reviewed contact, not a generic second-hand activation.",
+        "estimatedDetails": "Supporting-hand wrist depth, palm orientation and occluded finger curls are manually reconstructed estimates. The dominant hand retains the tracked finger rotations; its thumb/index circle is aligned to Kai's eye during the reference's hold.",
+        "version": "kai-reference-reviewed-corrections-v1",
+        "file": "scripts/kai-reference-corrections.json",
+        "sha256": "384648e3730a707b576695fab2090d8c5b0a8186569f9119c51e944f9183cc31"
+      },
+      "file": "microscope-reference.glb",
+      "bytes": 77872,
+      "sha256": "16c331d8b182b5c1ae3475752265a50884323e79fe8104ad59d51fcbb813e0e2"
+    },
+    "other": {
+      "id": "other",
+      "duration": 2.3093142340774455,
+      "fps": 30,
+      "samples": 70,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/other.mp4",
+        "sha256": "7c59f2c82cff252c2bd2a1139c2e5203b670da2ecf4dcb1656eccce807ad250b",
+        "fps": 29.879,
+        "frames": 69,
+        "duration": 2.3093142340774455,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/other.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 32,
+            "trackedFrames": 32,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "other-reference.glb",
+      "bytes": 78096,
+      "sha256": "908fcf433970f7bd360d9d80ddb30e26899615ee658a64968e317e0e528388ab"
+    },
+    "party": {
+      "id": "party",
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/party.mp4",
+        "sha256": "8986e7827f62779b3e34ee90b550c3adb4087e5c016f62a60f780fc0d0f207f3",
+        "fps": 30.0,
+        "frames": 72,
+        "duration": 2.4,
+        "width": 640,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/party.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 37,
+            "trackedFrames": 34,
+            "coverage": 0.9189,
+            "maxEstimatedGapSeconds": 0.0667
+          },
+          "Right": {
+            "activeFrames": 40,
+            "trackedFrames": 37,
+            "coverage": 0.925,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "party-reference.glb",
+      "bytes": 80156,
+      "sha256": "e7049794d429831d202181d62871ef581154667fa45670ab2a76005571ccf9e2"
+    },
+    "peg": {
+      "id": "peg",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/peg.mp4",
+        "sha256": "c3942d46f58de6d77e73ce6bacf8a7b8c1853c09f4adedbf81e5bbdb07ae0ca0",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/peg.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 58,
+            "trackedFrames": 58,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 59,
+            "trackedFrames": 58,
+            "coverage": 0.9831,
+            "maxEstimatedGapSeconds": 0.0333
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "peg-reference.glb",
+      "bytes": 75992,
+      "sha256": "f23d2a99287d3e66e47812777db249a64e9e062256cca9ddc06c63e17583d7b1"
+    },
+    "soccer": {
+      "id": "soccer",
+      "duration": 2.2022,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/soccer.mp4",
+        "sha256": "23957f5b2c20ccef6a12450e5c81fbe0e4d9f1db66806c46863c7eea1d2ab8b4",
+        "fps": 29.97002997002997,
+        "frames": 66,
+        "duration": 2.2022,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/soccer.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 53,
+            "trackedFrames": 48,
+            "coverage": 0.9057,
+            "maxEstimatedGapSeconds": 0.1668
+          },
+          "Right": {
+            "activeFrames": 58,
+            "trackedFrames": 52,
+            "coverage": 0.8966,
+            "maxEstimatedGapSeconds": 0.0667
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "soccer-reference.glb",
+      "bytes": 76028,
+      "sha256": "fd4a52d12d5ffe717b8cea72e0d0c22fc70cb64bcb3cbaafa83411fd1e01e8f9"
+    },
+    "squeeze": {
+      "id": "squeeze",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/squeeze.mp4",
+        "sha256": "b621756584c62749ad01ee3d15b26c2982e3bf0dc0f856a9a3fb0d6cba9e1b92",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/squeeze.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 29,
+            "trackedFrames": 29,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "squeeze-reference.glb",
+      "bytes": 75996,
+      "sha256": "35a9921a06b2ab91de9d9a5f163d1d7d4d7172bfc1db7ea70d52f13c0b85fa69"
+    },
+    "vlog": {
+      "id": "vlog",
+      "duration": 2.2,
+      "fps": 30,
+      "samples": 67,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/vlog.mp4",
+        "sha256": "59248fa312c5dd4f6b08ace4f3b8974d38261eeae8fc4d899aeab2c6d1e142c3",
+        "fps": 30.0,
+        "frames": 66,
+        "duration": 2.2,
+        "width": 480,
+        "height": 360
+      },
+      "referenceVideo": "./media/signs/vlog.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 34,
+            "trackedFrames": 34,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 37,
+            "trackedFrames": 37,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "vlog-reference.glb",
+      "bytes": 75988,
+      "sha256": "6985bb8041a465e901dba90b0d13433aa8f91e57b88f22ad9f819dce4c035452"
+    },
+    "water": {
+      "id": "water",
+      "duration": 2.3333333333333335,
+      "fps": 30,
+      "samples": 72,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/water.mp4",
+        "sha256": "361f37f68311f2206e937fed882a67b61c6189743c7e20543f9a51b3da1b0428",
+        "fps": 120.0,
+        "frames": 280,
+        "duration": 2.3333333333333335,
+        "width": 480,
+        "height": 640
+      },
+      "referenceVideo": "./media/signs/water.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 71,
+            "trackedFrames": 71,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "water-reference.glb",
+      "bytes": 79484,
+      "sha256": "448c98ad4bce154b3c62965711769c5672ecbd937088939cba3f9bd87bd17dbd"
+    },
+    "whatfor": {
+      "id": "whatfor",
+      "duration": 2.4,
+      "fps": 30,
+      "samples": 73,
+      "source": {
+        "name": "Bundled reference video",
+        "kind": "reference-video"
+      },
+      "reference": {
+        "file": "media/signs/whatfor.mp4",
+        "sha256": "6d2622658aaa3f5b2f20f8938ddd3b89d7280f6bf37cba6c1f1c7fce69df2319",
+        "fps": 30.0,
+        "frames": 72,
+        "duration": 2.4,
+        "width": 640,
+        "height": 480
+      },
+      "referenceVideo": "./media/signs/whatfor.mp4",
+      "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196",
+      "retargeted": true,
+      "includesFingers": true,
+      "referenceMatched": true,
+      "reconstructed": true,
+      "independentTiming": false,
+      "quality": {
+        "poseCoverage": 1.0,
+        "hands": {
+          "Left": {
+            "activeFrames": 0,
+            "trackedFrames": 0,
+            "coverage": 1,
+            "maxEstimatedGapSeconds": 0.0
+          },
+          "Right": {
+            "activeFrames": 34,
+            "trackedFrames": 34,
+            "coverage": 1.0,
+            "maxEstimatedGapSeconds": 0.0
+          }
+        },
+        "maxWristReachClampM": 0.0,
+        "maxLimbLengthErrorM": 1e-07,
+        "reviewRequired": false
+      },
+      "neutralTemplate": {
+        "file": "media/avatar/clips/hello-studio-galt.glb",
+        "sha256": "6f1126cb2c607b56e7df21213d87fbb8ecc068c28fa70e13ffde1a0835455241",
+        "sample": 0,
+        "license": "CC0-1.0",
+        "purpose": "unseen-hand neutral fallback only"
+      },
+      "method": "Anatomical pose-wrist hand assignment; calibrated 3D palm frames and hierarchical per-segment minimal-swing fingers preserving Kai bind roll; local finger interpolation, quaternion median/depth-spike rejection and neutral feathering; head/chest-relative image paths and two-bone IK; original reference seconds",
+      "trackingVersion": "kai-reference-landmarks-v3",
+      "trackingTools": {
+        "mediapipe": "1.2.2",
+        "opencv": "5.0.0"
+      },
+      "trackingModels": {
+        "pose": {
+          "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+          "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1"
+        },
+        "hands": {
+          "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+          "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+        }
+      },
+      "file": "whatfor-reference.glb",
+      "bytes": 80148,
+      "sha256": "a17741906bcdc42b0af1437030687795b82fb1b9463c122acbb15781c0f6d342"
+    }
+  },
+  "version": "20261105-reference-3",
+  "targetModelSha256": "0818af838616531c6fc053edb1c66d7f4cc71323a0ca3524704f6647e8707196"
+}

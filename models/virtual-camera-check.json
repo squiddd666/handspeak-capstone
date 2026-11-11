@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "site": "https://handspeak.cvsu.dev",
+  "attemptsPerWord": 1,
+  "method": "Production website with each labeled video supplied through a browser canvas MediaStream virtual camera",
+  "words": {
+    "hello": {"result": "no-match", "samePublicClip": true, "reason": "HELLO was the nearest class, but the captured landmark path was outside the model's safe distance limit."},
+    "thank-you": {"result": "recognized", "samePublicClip": true},
+    "please": {"result": "recognized", "samePublicClip": true},
+    "yes": {"result": "recognized", "samePublicClip": true},
+    "no": {"result": "recognized", "samePublicClip": true},
+    "finish": {"result": "recognized", "samePublicClip": true},
+    "drink": {"result": "recognized", "samePublicClip": true},
+    "water": {"result": "recognized", "samePublicClip": true},
+    "book": {"result": "no-match", "samePublicClip": true, "reason": "BOOK was the nearest expanded class, but its distance was 0.9635 against the 0.8000 acceptance limit."},
+    "food": {"result": "recognized", "samePublicClip": true},
+    "hungry": {"result": "recognized", "samePublicClip": true},
+    "like": {"result": "no-match", "samePublicClip": true, "reason": "The captured motion was ambiguous: GO and THANK YOU ranked ahead of LIKE, so the safety checks rejected it."},
+    "go": {"result": "recognized", "samePublicClip": true},
+    "name": {"result": "recognized", "samePublicClip": false},
+    "home": {"result": "recognized", "samePublicClip": true},
+    "have": {"result": "recognized", "samePublicClip": true},
+    "want": {"result": "recognized", "samePublicClip": false},
+    "love": {"result": "recognized", "samePublicClip": false},
+    "fish": {"result": "recognized", "samePublicClip": true},
+    "sick": {"result": "recognized", "samePublicClip": true},
+    "pain": {"result": "recognized", "samePublicClip": true},
+    "night": {"result": "recognized", "samePublicClip": true},
+    "see": {"result": "recognized", "samePublicClip": true}
+  }
+}

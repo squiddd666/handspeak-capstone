@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080909">
+  <meta name="description" content="HandSpeak Web translates selected ASL hand gestures into readable text.">
+  <title>Administrator access · HandSpeak</title><meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261001-auto-cache-1">
+  <link rel="stylesheet" href="studio-theme.css?v=20261002-sign-videos-1">
+  <link rel="stylesheet" href="application.css?v=20261002-catalog-1">
+  <link rel="stylesheet" href="experience.css?v=20261011-sentence-panel-1">
+</head>
+<body data-admin-access="true"><header class="site-header"><a class="brand" href="/">HandSpeak</a><a href="admin.html">Admin dashboard</a><button id="accountButton" class="secondary-button" type="button">Administrator sign in</button></header>  <section class="account-summary" id="accountSummary" aria-label="Your account" hidden><strong id="accountIdentity"></strong><button class="text-button" id="changePasswordButton" type="button">Change password</button><a id="adminLink" href="admin.html" hidden>Admin dashboard</a><button class="text-button" id="signOutButton" type="button">Sign out</button></section>
+  <p id="accountNotice" class="account-notice" role="status"></p>
+<main class="admin-shell"><h1>Administrator access</h1><p>Public recognition and learning do not require an account.</p><p id="historyPrivacy" hidden></p></main>  <dialog class="account-dialog" id="accountDialog" aria-labelledby="accountTitle"><div class="dialog-heading"><h2 id="accountTitle">Welcome back</h2><button class="text-button" id="accountClose" type="button" aria-label="Close account dialog">Close</button></div><form id="accountForm"><label id="accountEmailGroup">Email<input id="accountEmail" type="email" autocomplete="username" maxlength="254" required></label><label id="currentPasswordGroup" hidden>Current password<input id="currentPassword" type="password" autocomplete="current-password" maxlength="128"></label><label>Password<input id="accountPassword" type="password" autocomplete="current-password" maxlength="128" required></label><label id="accountConfirmGroup" hidden>Confirm password<input id="accountConfirm" type="password" autocomplete="new-password" maxlength="128"></label><p id="accountHelp"></p><p id="accountError" class="form-status" role="alert"></p><button id="accountSubmit" class="primary-button" type="submit">Sign in</button></form><button id="accountSwitch" class="text-button" type="button">New here? Create an account</button></dialog><script type="module" src="auth.js?v=20261011-admin-username-1"></script></body></html>

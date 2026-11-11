@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HandSpeak · Motion camera test</title><link rel="stylesheet" href="./style.css"></head>
+<body><main>
+<a href="/">← HandSpeak</a><p class="eyebrow">EXPERIMENTAL CAMERA TEST</p>
+<h1>Try 11 motion words</h1>
+<p>This experimental candidate failed additional recording checks. It can miss signs or suggest a word for an ordinary movement. These words are not approved for the main recognizer.</p>
+<p class="evidence">Additional checks: 30/44 signs recognized correctly, one wrong word, one false suggestion among 92 other signs, and one false HOME among 12 ordinary movements. Earlier small tests had passed, but these later failures prevent release. Live-camera accuracy remains unverified.</p>
+<p id="words">CALL · FIND · FISH · HAVE · HOME · HUNGRY · MORNING · NIGHT · PAIN · SEE · SICK</p>
+<section aria-label="Camera test">
+<div class="camera"><video muted playsinline hidden></video><canvas width="640" height="480" aria-label="Camera view with hand tracking"></canvas><div id="result" role="status" aria-live="polite">Ready to test</div></div>
+<p id="status" role="status">Loading camera test…</p>
+<div class="controls"><button id="start" disabled>Start camera</button><button id="stop" disabled>Stop camera</button><label><input id="mirror" type="checkbox" checked> Mirror view</label></div>
+<p>Sign once, then pause with your hands still. Recognition runs in your browser. Camera frames and landmarks are not uploaded.</p>
+<label for="expected">Expected sign (test log only)</label><select id="expected"><option value="">Choose a sign</option><option>CALL</option><option>FIND</option><option>FISH</option><option>HAVE</option><option>HOME</option><option>HUNGRY</option><option>MORNING</option><option>NIGHT</option><option>PAIN</option><option>SEE</option><option>SICK</option><option>OTHER MOVEMENT</option></select>
+<p class="small">The expected sign never changes the classifier’s answer. Check misses, wrong suggestions, repeated suggestions, and response delay. This test does not add words to a message or speak them.</p>
+<p id="metrics">Camera stopped</p><button id="copy">Copy test report</button><p id="copyStatus" role="status"></p><textarea id="report" aria-label="Test report" rows="10" readonly hidden></textarea>
+</section></main><script type="module" src="./boot.js"></script></body></html>

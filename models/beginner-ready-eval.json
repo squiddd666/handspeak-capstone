@@ -1,0 +1,456 @@
+{
+  "threshold": 0.7,
+  "checkpoint": "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\models\\beginner-phase123-v2.pt",
+  "ready": [
+    {
+      "label": "ANGRY",
+      "total": 5,
+      "correct": 5,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "BAD",
+      "total": 7,
+      "correct": 6,
+      "top1": 0.8571,
+      "pct": 85.7
+    },
+    {
+      "label": "CHILD",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "FAMILY",
+      "total": 4,
+      "correct": 4,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "FATHER",
+      "total": 10,
+      "correct": 8,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "FRIEND",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "GIVE",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "GOOD",
+      "total": 4,
+      "correct": 3,
+      "top1": 0.75,
+      "pct": 75.0
+    },
+    {
+      "label": "GOOD AFTERNOON",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "GOOD MORNING",
+      "total": 11,
+      "correct": 9,
+      "top1": 0.8182,
+      "pct": 81.8
+    },
+    {
+      "label": "GOODBYE",
+      "total": 11,
+      "correct": 8,
+      "top1": 0.7273,
+      "pct": 72.7
+    },
+    {
+      "label": "HAPPY",
+      "total": 11,
+      "correct": 10,
+      "top1": 0.9091,
+      "pct": 90.9
+    },
+    {
+      "label": "HELP",
+      "total": 10,
+      "correct": 8,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "HERE",
+      "total": 5,
+      "correct": 5,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "HOSPITAL",
+      "total": 6,
+      "correct": 6,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "HOW",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "INSIDE",
+      "total": 9,
+      "correct": 7,
+      "top1": 0.7778,
+      "pct": 77.8
+    },
+    {
+      "label": "KNOW",
+      "total": 11,
+      "correct": 9,
+      "top1": 0.8182,
+      "pct": 81.8
+    },
+    {
+      "label": "MOTHER",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "MY / MINE",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "RUN",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "SAD",
+      "total": 4,
+      "correct": 4,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "SCARED",
+      "total": 6,
+      "correct": 6,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "SIT",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "SLEEP",
+      "total": 8,
+      "correct": 6,
+      "top1": 0.75,
+      "pct": 75.0
+    },
+    {
+      "label": "SORRY",
+      "total": 3,
+      "correct": 3,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "STAND",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "STORE",
+      "total": 5,
+      "correct": 4,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "STUDENT",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "TAKE",
+      "total": 11,
+      "correct": 8,
+      "top1": 0.7273,
+      "pct": 72.7
+    },
+    {
+      "label": "TEACHER",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "THAT",
+      "total": 6,
+      "correct": 6,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "TIRED",
+      "total": 11,
+      "correct": 9,
+      "top1": 0.8182,
+      "pct": 81.8
+    },
+    {
+      "label": "WAIT",
+      "total": 11,
+      "correct": 8,
+      "top1": 0.7273,
+      "pct": 72.7
+    },
+    {
+      "label": "WAKE UP",
+      "total": 6,
+      "correct": 6,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "WALK",
+      "total": 6,
+      "correct": 6,
+      "top1": 1.0,
+      "pct": 100.0
+    },
+    {
+      "label": "WE",
+      "total": 11,
+      "correct": 8,
+      "top1": 0.7273,
+      "pct": 72.7
+    },
+    {
+      "label": "WELCOME",
+      "total": 11,
+      "correct": 9,
+      "top1": 0.8182,
+      "pct": 81.8
+    },
+    {
+      "label": "WHEN",
+      "total": 11,
+      "correct": 8,
+      "top1": 0.7273,
+      "pct": 72.7
+    },
+    {
+      "label": "WHERE",
+      "total": 10,
+      "correct": 8,
+      "top1": 0.8,
+      "pct": 80.0
+    },
+    {
+      "label": "WHICH",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "WORK",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    },
+    {
+      "label": "YOUR / YOURS",
+      "total": 6,
+      "correct": 5,
+      "top1": 0.8333,
+      "pct": 83.3
+    }
+  ],
+  "notReady": [
+    {
+      "label": "BATHROOM",
+      "total": 5,
+      "correct": 3,
+      "top1": 0.6,
+      "pct": 60.0
+    },
+    {
+      "label": "BROTHER",
+      "total": 11,
+      "correct": 7,
+      "top1": 0.6364,
+      "pct": 63.6
+    },
+    {
+      "label": "COME",
+      "total": 9,
+      "correct": 4,
+      "top1": 0.4444,
+      "pct": 44.4
+    },
+    {
+      "label": "EVERYONE",
+      "total": 10,
+      "correct": 3,
+      "top1": 0.3,
+      "pct": 30.0
+    },
+    {
+      "label": "GOOD NIGHT",
+      "total": 11,
+      "correct": 7,
+      "top1": 0.6364,
+      "pct": 63.6
+    },
+    {
+      "label": "HE / SHE",
+      "total": 7,
+      "correct": 1,
+      "top1": 0.1429,
+      "pct": 14.3
+    },
+    {
+      "label": "I / ME",
+      "total": 9,
+      "correct": 5,
+      "top1": 0.5556,
+      "pct": 55.6
+    },
+    {
+      "label": "NEED",
+      "total": 10,
+      "correct": 6,
+      "top1": 0.6,
+      "pct": 60.0
+    },
+    {
+      "label": "OKAY",
+      "total": 6,
+      "correct": 3,
+      "top1": 0.5,
+      "pct": 50.0
+    },
+    {
+      "label": "OUTSIDE",
+      "total": 10,
+      "correct": 5,
+      "top1": 0.5,
+      "pct": 50.0
+    },
+    {
+      "label": "SCHOOL",
+      "total": 11,
+      "correct": 5,
+      "top1": 0.4545,
+      "pct": 45.5
+    },
+    {
+      "label": "SISTER",
+      "total": 11,
+      "correct": 4,
+      "top1": 0.3636,
+      "pct": 36.4
+    },
+    {
+      "label": "STOP",
+      "total": 8,
+      "correct": 4,
+      "top1": 0.5,
+      "pct": 50.0
+    },
+    {
+      "label": "THERE",
+      "total": 6,
+      "correct": 3,
+      "top1": 0.5,
+      "pct": 50.0
+    },
+    {
+      "label": "THEY",
+      "total": 11,
+      "correct": 7,
+      "top1": 0.6364,
+      "pct": 63.6
+    },
+    {
+      "label": "THIRSTY",
+      "total": 9,
+      "correct": 6,
+      "top1": 0.6667,
+      "pct": 66.7
+    },
+    {
+      "label": "THIS",
+      "total": 9,
+      "correct": 2,
+      "top1": 0.2222,
+      "pct": 22.2
+    },
+    {
+      "label": "WHAT",
+      "total": 10,
+      "correct": 5,
+      "top1": 0.5,
+      "pct": 50.0
+    },
+    {
+      "label": "WHO",
+      "total": 5,
+      "correct": 2,
+      "top1": 0.4,
+      "pct": 40.0
+    },
+    {
+      "label": "WHY",
+      "total": 8,
+      "correct": 5,
+      "top1": 0.625,
+      "pct": 62.5
+    },
+    {
+      "label": "YOU",
+      "total": 8,
+      "correct": 3,
+      "top1": 0.375,
+      "pct": 37.5
+    }
+  ]
+}

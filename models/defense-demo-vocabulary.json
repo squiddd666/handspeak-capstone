@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "experimental-focused-demo",
+  "liveCameraAccuracyVerified": false,
+  "groups": [
+    {
+      "id": "default-six",
+      "model": "On-device six-word motion model",
+      "labels": ["HELLO", "THANK YOU", "PLEASE", "YES", "NO", "FINISH"],
+      "recordedTest": {"correct": 59, "total": 72},
+      "unsupportedTest": {"falseAccepts": 4, "total": 12},
+      "processing": "on-device"
+    },
+    {
+      "id": "daily-five",
+      "model": "Five-word server preview",
+      "labels": ["NAME", "HOME", "HAVE", "WANT", "LOVE"],
+      "recordedTest": {"correct": 51, "total": 66},
+      "unsupportedTest": {"falseAccepts": 3, "total": 48},
+      "processing": "opt-in landmark coordinates processed in memory"
+    }
+  ],
+  "excludedFromRecommendedDemo": {
+    "extraSeven": {
+      "labels": ["DRINK", "WATER", "BOOK", "FOOD", "HUNGRY", "LIKE", "GO"],
+      "reason": "11 of 16 unsupported recorded clips were falsely accepted"
+    },
+    "capstone100": {
+      "reason": "68.85% recorded top-1 and 87% top-5; live-camera accuracy and per-word reliability are unverified"
+    },
+    "aslCitizen2731": {
+      "reason": "dataset vocabulary is not a deployable recognizer and its license prohibits republishing the complete dataset catalog"
+    }
+  },
+  "requiredUserFlow": ["camera suggestion", "user review", "text draft", "optional interpretation", "speech"]
+}

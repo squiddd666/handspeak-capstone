@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "checkpoint": "beginner-need79-v8.pt",
+  "note": "Closed practice only. These words are >=70% on v8, which is not the open vocabulary model.",
+  "labels": ["SCHOOL", "SISTER", "WE"],
+  "accuracy": {
+    "SCHOOL": {"correct": 8, "total": 11, "top1": 0.7273},
+    "SISTER": {"correct": 10, "total": 12, "top1": 0.8333},
+    "WE": {"correct": 10, "total": 12, "top1": 0.8333}
+  },
+  "ids": {"SCHOOL": "school", "SISTER": "sister", "WE": "we"}
+}

@@ -1,0 +1,29 @@
+# Local sessions and research responses
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and generated caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.training-tools/
+.training-data/
+
+# Downloaded training inputs (keep exported models tracked)
+asl-cache/
+*.parquet
+*.task
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store

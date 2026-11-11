@@ -1,0 +1,915 @@
+{
+  "version": 1,
+  "skip": [
+    "BABY",
+    "BOOK",
+    "DRINK",
+    "EAT",
+    "FOOD",
+    "GO",
+    "HELLO",
+    "HOME",
+    "HUNGRY",
+    "LIKE",
+    "LOVE",
+    "NAME",
+    "NIGHT",
+    "NO",
+    "PLEASE",
+    "SICK",
+    "THANK YOU",
+    "WANT",
+    "WATER",
+    "YES"
+  ],
+  "droppedNoCitizenMatch": [
+    "RICE"
+  ],
+  "unmapped": [],
+  "trainLabels": [
+    "GOODBYE",
+    "SORRY",
+    "OKAY",
+    "WELCOME",
+    "GOOD MORNING",
+    "GOOD AFTERNOON",
+    "GOOD NIGHT",
+    "HOW",
+    "WHAT",
+    "WHO",
+    "WHERE",
+    "WHEN",
+    "WHY",
+    "WHICH",
+    "I / ME",
+    "YOU",
+    "HE / SHE",
+    "WE",
+    "THEY",
+    "MY / MINE",
+    "YOUR / YOURS",
+    "THIS",
+    "THAT",
+    "EVERYONE",
+    "MOTHER",
+    "FATHER",
+    "BROTHER",
+    "SISTER",
+    "CHILD",
+    "FRIEND",
+    "TEACHER",
+    "STUDENT",
+    "FAMILY",
+    "SLEEP",
+    "WAKE UP",
+    "WALK",
+    "RUN",
+    "SIT",
+    "STAND",
+    "COME",
+    "HELP",
+    "STOP",
+    "WAIT",
+    "GIVE",
+    "TAKE",
+    "NEED",
+    "KNOW",
+    "HAPPY",
+    "SAD",
+    "ANGRY",
+    "SCARED",
+    "TIRED",
+    "THIRSTY",
+    "GOOD",
+    "BAD",
+    "SCHOOL",
+    "HOSPITAL",
+    "STORE",
+    "BATHROOM",
+    "WORK",
+    "HERE",
+    "THERE",
+    "INSIDE",
+    "OUTSIDE",
+    "TODAY",
+    "TOMORROW",
+    "YESTERDAY",
+    "NOW",
+    "LATER",
+    "MORNING",
+    "TIME",
+    "BEFORE",
+    "AFTER",
+    "MILK",
+    "BREAD",
+    "MONEY",
+    "PHONE",
+    "CLOTHES",
+    "BAG"
+  ],
+  "entries": [
+    {
+      "label": "GOODBYE",
+      "id": "goodbye",
+      "number": 2,
+      "citizenBase": "BYE",
+      "citizenGlosses": [
+        "BYE"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "SORRY",
+      "id": "sorry",
+      "number": 5,
+      "citizenBase": "SORRY",
+      "citizenGlosses": [
+        "SORRY"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "OKAY",
+      "id": "okay",
+      "number": 8,
+      "citizenBase": "OK",
+      "citizenGlosses": [
+        "OK"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WELCOME",
+      "id": "welcome",
+      "number": 9,
+      "citizenBase": "WELCOME",
+      "citizenGlosses": [
+        "WELCOME1",
+        "WELCOME2"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "GOOD MORNING",
+      "id": "good-morning",
+      "number": 10,
+      "citizenBase": "MORNING",
+      "citizenGlosses": [
+        "MORNING"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "GOOD AFTERNOON",
+      "id": "good-afternoon",
+      "number": 11,
+      "citizenBase": "AFTERNOON",
+      "citizenGlosses": [
+        "AFTERNOON"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "GOOD NIGHT",
+      "id": "good-night",
+      "number": 12,
+      "citizenBase": "NIGHT",
+      "citizenGlosses": [
+        "NIGHT1",
+        "NIGHT2"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "HOW",
+      "id": "how",
+      "number": 13,
+      "citizenBase": "HOW",
+      "citizenGlosses": [
+        "HOW1",
+        "HOW2"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHAT",
+      "id": "what",
+      "number": 14,
+      "citizenBase": "WHAT",
+      "citizenGlosses": [
+        "WHAT1",
+        "WHAT2"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHO",
+      "id": "who",
+      "number": 15,
+      "citizenBase": "WHO",
+      "citizenGlosses": [
+        "WHO"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHERE",
+      "id": "where",
+      "number": 16,
+      "citizenBase": "WHERE",
+      "citizenGlosses": [
+        "WHERE"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHEN",
+      "id": "when",
+      "number": 17,
+      "citizenBase": "WHEN",
+      "citizenGlosses": [
+        "WHEN"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHY",
+      "id": "why",
+      "number": 18,
+      "citizenBase": "WHY",
+      "citizenGlosses": [
+        "WHY"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WHICH",
+      "id": "which",
+      "number": 19,
+      "citizenBase": "WHICH",
+      "citizenGlosses": [
+        "WHICH"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "I / ME",
+      "id": "i-me",
+      "number": 21,
+      "citizenBase": "ME",
+      "citizenGlosses": [
+        "ME"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "YOU",
+      "id": "you",
+      "number": 22,
+      "citizenBase": "YOU",
+      "citizenGlosses": [
+        "YOU"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "HE / SHE",
+      "id": "he-she",
+      "number": 23,
+      "citizenBase": "HE",
+      "citizenGlosses": [
+        "HE"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "WE",
+      "id": "we",
+      "number": 24,
+      "citizenBase": "WE",
+      "citizenGlosses": [
+        "WE"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "THEY",
+      "id": "they",
+      "number": 25,
+      "citizenBase": "THEY",
+      "citizenGlosses": [
+        "THEY1",
+        "THEY2"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "MY / MINE",
+      "id": "my-mine",
+      "number": 26,
+      "citizenBase": "MY",
+      "citizenGlosses": [
+        "MY"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "YOUR / YOURS",
+      "id": "your-yours",
+      "number": 27,
+      "citizenBase": "YOUR",
+      "citizenGlosses": [
+        "YOUR"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "THIS",
+      "id": "this",
+      "number": 28,
+      "citizenBase": "THIS/IT",
+      "citizenGlosses": [
+        "THIS/IT"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "THAT",
+      "id": "that",
+      "number": 29,
+      "citizenBase": "THAT",
+      "citizenGlosses": [
+        "THAT"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "EVERYONE",
+      "id": "everyone",
+      "number": 30,
+      "citizenBase": "ALL",
+      "citizenGlosses": [
+        "ALL"
+      ],
+      "phase": 1
+    },
+    {
+      "label": "MOTHER",
+      "id": "mother",
+      "number": 31,
+      "citizenBase": "MOTHER",
+      "citizenGlosses": [
+        "MOTHER"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "FATHER",
+      "id": "father",
+      "number": 32,
+      "citizenBase": "FATHER",
+      "citizenGlosses": [
+        "FATHER"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "BROTHER",
+      "id": "brother",
+      "number": 33,
+      "citizenBase": "BROTHER",
+      "citizenGlosses": [
+        "BROTHER"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "SISTER",
+      "id": "sister",
+      "number": 34,
+      "citizenBase": "SISTER",
+      "citizenGlosses": [
+        "SISTER"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "CHILD",
+      "id": "child",
+      "number": 36,
+      "citizenBase": "CHILD",
+      "citizenGlosses": [
+        "CHILD"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "FRIEND",
+      "id": "friend",
+      "number": 37,
+      "citizenBase": "FRIEND",
+      "citizenGlosses": [
+        "FRIEND"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "TEACHER",
+      "id": "teacher",
+      "number": 38,
+      "citizenBase": "TEACHER",
+      "citizenGlosses": [
+        "TEACHER"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "STUDENT",
+      "id": "student",
+      "number": 39,
+      "citizenBase": "STUDENT",
+      "citizenGlosses": [
+        "STUDENT"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "FAMILY",
+      "id": "family",
+      "number": 40,
+      "citizenBase": "FAMILY",
+      "citizenGlosses": [
+        "FAMILY"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "SLEEP",
+      "id": "sleep",
+      "number": 43,
+      "citizenBase": "SLEEP",
+      "citizenGlosses": [
+        "SLEEP"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "WAKE UP",
+      "id": "wake-up",
+      "number": 44,
+      "citizenBase": "AWAKE",
+      "citizenGlosses": [
+        "AWAKE"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "WALK",
+      "id": "walk",
+      "number": 45,
+      "citizenBase": "WALK",
+      "citizenGlosses": [
+        "WALK1",
+        "WALK2"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "RUN",
+      "id": "run",
+      "number": 46,
+      "citizenBase": "RUN",
+      "citizenGlosses": [
+        "RUN1",
+        "RUN2"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "SIT",
+      "id": "sit",
+      "number": 47,
+      "citizenBase": "SIT",
+      "citizenGlosses": [
+        "SIT"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "STAND",
+      "id": "stand",
+      "number": 48,
+      "citizenBase": "STAND",
+      "citizenGlosses": [
+        "STAND1",
+        "STAND2"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "COME",
+      "id": "come",
+      "number": 50,
+      "citizenBase": "COME",
+      "citizenGlosses": [
+        "COME"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "HELP",
+      "id": "help",
+      "number": 51,
+      "citizenBase": "HELP",
+      "citizenGlosses": [
+        "HELP"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "STOP",
+      "id": "stop",
+      "number": 52,
+      "citizenBase": "STOP",
+      "citizenGlosses": [
+        "STOP"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "WAIT",
+      "id": "wait",
+      "number": 53,
+      "citizenBase": "WAIT",
+      "citizenGlosses": [
+        "WAIT"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "GIVE",
+      "id": "give",
+      "number": 54,
+      "citizenBase": "GIVE",
+      "citizenGlosses": [
+        "GIVE"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "TAKE",
+      "id": "take",
+      "number": 55,
+      "citizenBase": "TAKE",
+      "citizenGlosses": [
+        "TAKE"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "NEED",
+      "id": "need",
+      "number": 57,
+      "citizenBase": "NEED",
+      "citizenGlosses": [
+        "NEED"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "KNOW",
+      "id": "know",
+      "number": 60,
+      "citizenBase": "KNOW",
+      "citizenGlosses": [
+        "KNOW"
+      ],
+      "phase": 2
+    },
+    {
+      "label": "HAPPY",
+      "id": "happy",
+      "number": 61,
+      "citizenBase": "HAPPY",
+      "citizenGlosses": [
+        "HAPPY"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "SAD",
+      "id": "sad",
+      "number": 62,
+      "citizenBase": "SAD",
+      "citizenGlosses": [
+        "SAD"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "ANGRY",
+      "id": "angry",
+      "number": 63,
+      "citizenBase": "ANGRY",
+      "citizenGlosses": [
+        "ANGRY"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "SCARED",
+      "id": "scared",
+      "number": 64,
+      "citizenBase": "SCARED",
+      "citizenGlosses": [
+        "SCARED"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "TIRED",
+      "id": "tired",
+      "number": 65,
+      "citizenBase": "TIRED",
+      "citizenGlosses": [
+        "TIRED"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "THIRSTY",
+      "id": "thirsty",
+      "number": 68,
+      "citizenBase": "THIRSTY",
+      "citizenGlosses": [
+        "THIRSTY"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "GOOD",
+      "id": "good",
+      "number": 69,
+      "citizenBase": "GOOD",
+      "citizenGlosses": [
+        "GOOD"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "BAD",
+      "id": "bad",
+      "number": 70,
+      "citizenBase": "BAD",
+      "citizenGlosses": [
+        "BAD"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "SCHOOL",
+      "id": "school",
+      "number": 72,
+      "citizenBase": "SCHOOL",
+      "citizenGlosses": [
+        "SCHOOL"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "HOSPITAL",
+      "id": "hospital",
+      "number": 73,
+      "citizenBase": "HOSPITAL",
+      "citizenGlosses": [
+        "HOSPITAL1",
+        "HOSPITAL2"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "STORE",
+      "id": "store",
+      "number": 74,
+      "citizenBase": "SHOP",
+      "citizenGlosses": [
+        "SHOP1",
+        "SHOP2"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "BATHROOM",
+      "id": "bathroom",
+      "number": 75,
+      "citizenBase": "BATHROOM",
+      "citizenGlosses": [
+        "BATHROOM"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "WORK",
+      "id": "work",
+      "number": 76,
+      "citizenBase": "WORK",
+      "citizenGlosses": [
+        "WORK"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "HERE",
+      "id": "here",
+      "number": 77,
+      "citizenBase": "HERE",
+      "citizenGlosses": [
+        "HERE"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "THERE",
+      "id": "there",
+      "number": 78,
+      "citizenBase": "THERE",
+      "citizenGlosses": [
+        "THERE"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "INSIDE",
+      "id": "inside",
+      "number": 79,
+      "citizenBase": "IN",
+      "citizenGlosses": [
+        "IN"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "OUTSIDE",
+      "id": "outside",
+      "number": 80,
+      "citizenBase": "OUTSIDE",
+      "citizenGlosses": [
+        "OUTSIDE"
+      ],
+      "phase": 3
+    },
+    {
+      "label": "TODAY",
+      "id": "today",
+      "number": 81,
+      "citizenBase": "TODAY",
+      "citizenGlosses": [
+        "TODAY"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "TOMORROW",
+      "id": "tomorrow",
+      "number": 82,
+      "citizenBase": "TOMORROW",
+      "citizenGlosses": [
+        "TOMORROW"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "YESTERDAY",
+      "id": "yesterday",
+      "number": 83,
+      "citizenBase": "YESTERDAY",
+      "citizenGlosses": [
+        "YESTERDAY"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "NOW",
+      "id": "now",
+      "number": 84,
+      "citizenBase": "NOW",
+      "citizenGlosses": [
+        "NOW"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "LATER",
+      "id": "later",
+      "number": 85,
+      "citizenBase": "LATER",
+      "citizenGlosses": [
+        "LATER"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "MORNING",
+      "id": "morning",
+      "number": 86,
+      "citizenBase": "MORNING",
+      "citizenGlosses": [
+        "MORNING"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "TIME",
+      "id": "time",
+      "number": 88,
+      "citizenBase": "TIME",
+      "citizenGlosses": [
+        "TIME"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "BEFORE",
+      "id": "before",
+      "number": 89,
+      "citizenBase": "BEFORE",
+      "citizenGlosses": [
+        "BEFORE"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "AFTER",
+      "id": "after",
+      "number": 90,
+      "citizenBase": "AFTER",
+      "citizenGlosses": [
+        "AFTER"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "MILK",
+      "id": "milk",
+      "number": 94,
+      "citizenBase": "MILK",
+      "citizenGlosses": [
+        "MILK1",
+        "MILK2"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "BREAD",
+      "id": "bread",
+      "number": 95,
+      "citizenBase": "BREAD",
+      "citizenGlosses": [
+        "BREAD"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "MONEY",
+      "id": "money",
+      "number": 96,
+      "citizenBase": "MONEY",
+      "citizenGlosses": [
+        "MONEY1",
+        "MONEY2"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "PHONE",
+      "id": "phone",
+      "number": 97,
+      "citizenBase": "PHONE",
+      "citizenGlosses": [
+        "PHONE"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "CLOTHES",
+      "id": "clothes",
+      "number": 99,
+      "citizenBase": "CLOTHES",
+      "citizenGlosses": [
+        "CLOTHES"
+      ],
+      "phase": 4
+    },
+    {
+      "label": "BAG",
+      "id": "bag",
+      "number": 100,
+      "citizenBase": "BAG",
+      "citizenGlosses": [
+        "BAG1",
+        "BAG2"
+      ],
+      "phase": 4
+    }
+  ]
+}

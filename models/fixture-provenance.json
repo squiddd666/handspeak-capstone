@@ -1,0 +1,26 @@
+{
+  "scope": "Archived numeric fixtures, retained unchanged. Not an accuracy benchmark for current deployed artifacts.",
+  "letter": {
+    "file": "models/asl-test-fixture.json",
+    "sha256": "1c9ec53e2eb23cca230d4c0706884598b1dc949634ba6e3b328f2ff661e1fe5e",
+    "normalization": "wrist-palm-rotation-v1",
+    "classes": [
+      "A",
+      "B",
+      "I",
+      "L",
+      "V",
+      "W",
+      "Y"
+    ],
+    "current_accuracy_eligible": false,
+    "reason": "Current model is orientation-v2 with 24 classes; legacy seven-letter vectors cannot validate its recorded-image accuracy."
+  },
+  "motion": {
+    "file": "models/asl-words-test.json",
+    "sha256": "7817abd4abc319da9af409e2e9fa394285416abedef4f8f446bb6c5b1ab1cab4",
+    "samples": 57,
+    "current_accuracy_eligible": false,
+    "reason": "Archived 57-case expected-output fixture is not bound to the current 67-case report or its per-label cutoffs."
+  }
+}

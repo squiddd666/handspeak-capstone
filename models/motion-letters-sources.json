@@ -1,0 +1,40 @@
+{
+  "status": "experimental",
+  "source": {
+    "j": {
+      "page": "https://www.aisa.solutions/asl/signs/letter-j",
+      "video": "https://framerusercontent.com/assets/kdD6YIKtTwsgQjzC89OtLRO3Q.mp4"
+    },
+    "z": {
+      "page": "https://www.aisa.solutions/asl/signs/letter-z",
+      "video": "https://framerusercontent.com/assets/is7w4CKj3wZrASC9kxh6CFHJ7Zo.mp4"
+    },
+    "i": {
+      "page": "https://www.aisa.solutions/asl/signs/letter-i",
+      "video": "https://framerusercontent.com/assets/gWTvqhLTaBFu61aLSWdJnUS6H8.mp4"
+    },
+    "d": {
+      "page": "https://www.aisa.solutions/asl/signs/letter-d",
+      "video": "https://framerusercontent.com/assets/H2mKHQW47KzQuUjMjGT1JVg9C4g.mp4"
+    }
+  },
+  "trainingWindowsMs": {
+    "J": [
+      1084,
+      1751
+    ],
+    "Z": [
+      850,
+      1951
+    ]
+  },
+  "limitations": [
+    "One source signer; J/Z templates selected from the same videos used in regression testing.",
+    "Mirror and speed replays are not independent test samples.",
+    "No live-camera or signer-independent accuracy claim.",
+    "Raw reference videos are cached outside the served repository, not redistributed.",
+    "Virtual camera uses an upper-body crop to exclude the resting other hand; face tracking disabled.",
+    "A browser-domain Z trace from the same source informed the complete-three-stroke fallback; it is development data, not a held-out sample.",
+    "File-backed virtual camera uses 15fps, an upper-body crop, 2/3-speed signing, and disabled face tracking. Canvas virtual-camera full-speed runs failed on this CPU."
+  ]
+}

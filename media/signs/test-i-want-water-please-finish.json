@@ -1,0 +1,64 @@
+{
+  "sequence": [
+    "I / ME",
+    "WANT",
+    "WATER",
+    "PLEASE",
+    "FINISH"
+  ],
+  "typedPrefix": "I (not motion-recognized)",
+  "durationSeconds": 55.233333333333334,
+  "playbackSpeed": 0.65,
+  "timeline": [
+    {
+      "word": "ME",
+      "startSeconds": 8.0,
+      "endSeconds": 12.933333333333334
+    },
+    {
+      "word": "WANT",
+      "startSeconds": 15.933333333333334,
+      "endSeconds": 19.333333333333332
+    },
+    {
+      "word": "WATER",
+      "startSeconds": 22.333333333333332,
+      "endSeconds": 25.933333333333334
+    },
+    {
+      "word": "PLEASE",
+      "startSeconds": 28.933333333333334,
+      "endSeconds": 30.633333333333333
+    },
+    {
+      "word": "FINISH",
+      "startSeconds": 33.63333333333333,
+      "endSeconds": 36.233333333333334
+    }
+  ],
+  "sources": [
+    {
+      "word": "I / ME",
+      "author": "Start ASL",
+      "url": "https://www.youtube.com/watch?v=nDncXyPwfmM",
+      "edit": "First 3.2 seconds; frontal example"
+    },
+    {
+      "word": "WANT",
+      "author": "ASL University / Bill Vicars",
+      "url": "https://www.youtube.com/watch?v=IRUlCZ9jRjM"
+    },
+    {
+      "words": [
+        "WATER",
+        "PLEASE",
+        "FINISH"
+      ],
+      "author": "PopSign ASL v1.0, Georgia Tech and DPAN",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "credits": "https://handspeak.cvsu.dev/media/signs/README.md",
+  "modifications": "Concatenated existing credited lesson clips, slowed to 0.65 speed, added blank intervals and captions.",
+  "limitation": "Reuses existing lesson examples; diagnostic only, not an independent accuracy evaluation."
+}

@@ -1,0 +1,21 @@
+word,planned,distinct_attempts,verified_streams,full_source_windows,correct,wrong,rejected,tracking_failure,capture_failure,not_run,meets_8_of_10
+HELLO,10,10,9,3,0,0,0,3,7,0,False
+THANK YOU,10,10,10,6,0,0,4,2,4,0,False
+PLEASE,10,10,10,4,0,0,4,0,6,0,False
+SORRY,10,10,10,3,0,0,0,3,7,0,False
+YES,10,10,10,4,0,1,2,1,6,0,False
+NO,10,10,10,5,0,0,4,1,5,0,False
+HELP,10,10,10,6,0,0,4,2,4,0,False
+LOVE,10,10,10,6,0,1,2,3,4,0,False
+I / ME,10,10,10,5,0,0,4,1,5,0,False
+YOU,10,10,10,3,0,0,2,1,7,0,False
+WANT,10,10,10,4,0,1,3,0,6,0,False
+NEED,10,10,10,4,0,1,2,1,6,0,False
+LIKE,10,10,10,5,1,0,3,1,5,0,False
+GOOD,10,10,10,4,0,1,2,1,6,0,False
+BAD,10,10,10,5,0,0,5,0,5,0,False
+WHAT,10,10,10,5,0,2,3,0,5,0,False
+WHERE,10,10,10,5,0,1,4,0,5,0,False
+WHO,10,10,10,5,0,0,5,0,5,0,False
+EAT,10,10,10,6,0,1,5,0,4,0,False
+WATER,10,10,10,4,0,1,2,1,6,0,False

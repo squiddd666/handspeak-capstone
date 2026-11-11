@@ -1,0 +1,5 @@
+# Python 3.11; Windows requires the Microsoft Visual C++ x64 runtime.
+numpy==1.26.4
+mediapipe==0.10.21
+torch==2.15.0
+remotezip==0.12.6

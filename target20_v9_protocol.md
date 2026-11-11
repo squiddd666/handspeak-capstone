@@ -1,0 +1,3 @@
+# V9 criteria (frozen before V9 playback)
+
+Same development validation sources and unchanged V3 gate. Target: 20/20 initialized cameras, >=18/20 full source windows, >=16/20 verified captures, no invalid-window scoring, and exact V3 compatibility for every archived request. Repeat: >=2/3 matched usable pairs and >=80% left and right mask agreement on the normalized active grid for every matched pair. These development targets do not establish generalization. Independent targets remain >=85% macro F1, >=80% recall for each of 20 signs and <=5% unknown false acceptance on a qualified untouched benchmark. No promotion without approval.

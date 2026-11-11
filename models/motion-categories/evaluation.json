@@ -1,0 +1,394 @@
+{
+  "protocol": "Research-only category results. The models are not enabled on the live website: they did not establish adequate recognition accuracy and a four-example real-time video replay produced no matches. Later refinements failed the replacement gate. Previously evaluated recordings are not a new independent accuracy test.",
+  "groups": {
+    "greetings-communication": {
+      "test": {
+        "total": 8,
+        "correct": 0,
+        "wrong": 1,
+        "missed": 7,
+        "negativeTotal": 204,
+        "negativeFalse": 7
+      },
+      "perWord": {
+        "SPEAK": {
+          "total": 4,
+          "correct": 0
+        },
+        "LISTEN": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "modelSha256": "4417a57e772a6169d7acf92ad997abaa905a8535fcd070642e94683bbd901394"
+    },
+    "daily-needs": {
+      "test": {
+        "total": 18,
+        "correct": 6,
+        "wrong": 0,
+        "missed": 12,
+        "negativeTotal": 194,
+        "negativeFalse": 10
+      },
+      "perWord": {
+        "HUNGRY": {
+          "total": 4,
+          "correct": 0
+        },
+        "THIRSTY": {
+          "total": 4,
+          "correct": 3
+        },
+        "HOT": {
+          "total": 4,
+          "correct": 1
+        },
+        "SHOES": {
+          "total": 4,
+          "correct": 1
+        },
+        "SHOWER": {
+          "total": 2,
+          "correct": 1
+        }
+      },
+      "modelSha256": "53a2a3e82cca9db96086be9e1c41be3cbd597b10f204e22561f624643387b890"
+    },
+    "health-emergency": {
+      "test": {
+        "total": 8,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 4,
+        "negativeTotal": 204,
+        "negativeFalse": 23
+      },
+      "perWord": {
+        "PAIN": {
+          "total": 4,
+          "correct": 3
+        },
+        "SICK": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "fb0002945ec2b60766047e69be9c13d55da0b840a5b831e4a95ba4a6d26d5283"
+    },
+    "family-people": {
+      "test": {
+        "total": 28,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 24,
+        "negativeTotal": 184,
+        "negativeFalse": 9
+      },
+      "perWord": {
+        "BROTHER": {
+          "total": 4,
+          "correct": 2
+        },
+        "GRANDMOTHER": {
+          "total": 4,
+          "correct": 0
+        },
+        "GRANDFATHER": {
+          "total": 4,
+          "correct": 0
+        },
+        "CHILD": {
+          "total": 4,
+          "correct": 0
+        },
+        "BOY": {
+          "total": 4,
+          "correct": 1
+        },
+        "GIRL": {
+          "total": 4,
+          "correct": 1
+        },
+        "MAN": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "modelSha256": "cd8b6dcd9f01932b725caa359a84ab6c8347e9214b052356f1b8eae6655bae98"
+    },
+    "school": {
+      "test": {
+        "total": 16,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 13,
+        "negativeTotal": 196,
+        "negativeFalse": 4
+      },
+      "perWord": {
+        "BOOK": {
+          "total": 4,
+          "correct": 1
+        },
+        "PEN": {
+          "total": 4,
+          "correct": 0
+        },
+        "PENCIL": {
+          "total": 4,
+          "correct": 2
+        },
+        "READ": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "modelSha256": "e17fc789df75959da23956eedd032439d9ca82bc3bcd452b39384b88bd6c3b7a"
+    },
+    "actions": {
+      "test": {
+        "total": 24,
+        "correct": 6,
+        "wrong": 0,
+        "missed": 18,
+        "negativeTotal": 188,
+        "negativeFalse": 18
+      },
+      "perWord": {
+        "GIVE": {
+          "total": 4,
+          "correct": 1
+        },
+        "LOOK": {
+          "total": 4,
+          "correct": 0
+        },
+        "SEE": {
+          "total": 4,
+          "correct": 1
+        },
+        "HEAR": {
+          "total": 4,
+          "correct": 1
+        },
+        "CALL": {
+          "total": 4,
+          "correct": 2
+        },
+        "FIND": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "469bda5fb3e078947d4cb37ddebbc614a8728806013d2e864b136aa6a69d9b88"
+    },
+    "places": {
+      "test": {
+        "total": 12,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 8,
+        "negativeTotal": 200,
+        "negativeFalse": 12
+      },
+      "perWord": {
+        "HOME": {
+          "total": 4,
+          "correct": 2
+        },
+        "STORE": {
+          "total": 4,
+          "correct": 1
+        },
+        "ROOM": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "d10acb5e6a9ed46f47c011614e28f2c114c61349493b1abc36d333423f2b87db"
+    },
+    "transportation": {
+      "test": {
+        "total": 12,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 10,
+        "negativeTotal": 200,
+        "negativeFalse": 3
+      },
+      "perWord": {
+        "CAR": {
+          "total": 4,
+          "correct": 2
+        },
+        "AIRPLANE": {
+          "total": 4,
+          "correct": 0
+        },
+        "RIDE": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "modelSha256": "9a54f2f195266147b24f4e430de7fcc64df19aa777ce91aea15fd822a65f5400"
+    },
+    "time": {
+      "test": {
+        "total": 24,
+        "correct": 8,
+        "wrong": 0,
+        "missed": 16,
+        "negativeTotal": 188,
+        "negativeFalse": 14
+      },
+      "perWord": {
+        "TOMORROW": {
+          "total": 4,
+          "correct": 0
+        },
+        "YESTERDAY": {
+          "total": 4,
+          "correct": 2
+        },
+        "NOW": {
+          "total": 4,
+          "correct": 4
+        },
+        "LATER": {
+          "total": 4,
+          "correct": 1
+        },
+        "MORNING": {
+          "total": 4,
+          "correct": 0
+        },
+        "NIGHT": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "31e972109bcb7266ef3f964ea54f30cd43bac7bdc6b3caf6eb38cf835ff1880f"
+    },
+    "feelings": {
+      "test": {
+        "total": 8,
+        "correct": 0,
+        "wrong": 0,
+        "missed": 8,
+        "negativeTotal": 204,
+        "negativeFalse": 0
+      },
+      "perWord": {
+        "FINE": {
+          "total": 4,
+          "correct": 0
+        },
+        "LIKE": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "modelSha256": "05819e626b168c8b970ba04ad9012d3ad0c695fe1af830daeded373615c813dd"
+    },
+    "safety": {
+      "test": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 3,
+        "negativeTotal": 208,
+        "negativeFalse": 0
+      },
+      "perWord": {
+        "STAY": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "b9f50d6fe3c615d513c77e916e71c717ab217dd498afb4baebfa5f9c4efcc4ff"
+    },
+    "common-objects": {
+      "test": {
+        "total": 8,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 204,
+        "negativeFalse": 6
+      },
+      "perWord": {
+        "TABLE": {
+          "total": 4,
+          "correct": 0
+        },
+        "CHAIR": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "5e2a153092878c9d916debe571e88be54c5d00ded81fbac2d5c6579f590c42c8"
+    },
+    "food": {
+      "test": {
+        "total": 8,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 6,
+        "negativeTotal": 204,
+        "negativeFalse": 3
+      },
+      "perWord": {
+        "FISH": {
+          "total": 4,
+          "correct": 0
+        },
+        "MILK": {
+          "total": 4,
+          "correct": 2
+        }
+      },
+      "modelSha256": "d87d0268a2dd7d9199894332ad1c999c1d804da849dab017c9a32d9a7dade63d"
+    },
+    "question-response-words": {
+      "test": {
+        "total": 12,
+        "correct": 5,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 200,
+        "negativeFalse": 7
+      },
+      "perWord": {
+        "CAN": {
+          "total": 4,
+          "correct": 2
+        },
+        "HAVE": {
+          "total": 4,
+          "correct": 2
+        },
+        "BECAUSE": {
+          "total": 4,
+          "correct": 1
+        }
+      },
+      "modelSha256": "ee3a3d9335a56006562f6a78a4d8ee1b3c3c2fa83542dc3f7c5361335d94c353"
+    }
+  },
+  "deployment": "withheld",
+  "automaticCapture": {
+    "method": "Real-time training-video playback through staging camera path; CPU detector, face tracking off; not physical webcam accuracy.",
+    "examples": [
+      "BROTHER",
+      "BOOK",
+      "CAR",
+      "MILK"
+    ],
+    "correct": 0,
+    "total": 4,
+    "wrong": 0,
+    "repeated": 0
+  },
+  "samplingCaveat": "The initial offline preprocessing could repeat frames in short clips. These research models are withheld. Real-time playback used original video timing and matched 0/4 examples."
+}

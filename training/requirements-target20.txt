@@ -1,0 +1,4 @@
+-r requirements-essential.txt
+scikit-learn==1.9.1
+playwright==1.65.0
+imageio-ffmpeg==0.8.1

@@ -1,0 +1,32 @@
+{
+  "sequence": [
+    "WATER",
+    "PLEASE",
+    "FINISH"
+  ],
+  "typedPrefix": "I WANT",
+  "durationSeconds": 40.9,
+  "playbackSpeed": 0.65,
+  "timeline": [
+    {
+      "word": "WATER",
+      "startSeconds": 8.0,
+      "endSeconds": 11.6
+    },
+    {
+      "word": "PLEASE",
+      "startSeconds": 14.6,
+      "endSeconds": 16.3
+    },
+    {
+      "word": "FINISH",
+      "startSeconds": 19.3,
+      "endSeconds": 21.9
+    }
+  ],
+  "source": "PopSign ASL v1.0, Georgia Tech and DPAN",
+  "license": "CC BY 4.0",
+  "credits": "https://handspeak.cvsu.dev/media/signs/README.md",
+  "modifications": "Concatenated existing credited lesson clips, slowed to 0.65 speed, added blank intervals and captions.",
+  "limitation": "Reuses existing lesson examples; diagnostic only, not an independent accuracy evaluation."
+}
