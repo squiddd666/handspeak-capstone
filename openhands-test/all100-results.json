@@ -1,0 +1,3692 @@
+{
+  "scope": "100-word reference convenience set: one clip per label; 31 previous local clips plus 69 dictionary references. Not independent WLASL benchmark or live webcam accuracy. Training overlap and sign variants not independently audited.",
+  "planned_total": 100,
+  "complete": true,
+  "checkpoint_sha256": "9e213cf7e875e3c377ced89896f6768c35da01a43848faa14e6f8e77c8cfb9dc",
+  "checkpoint_reported_validation": 69.1588785046729,
+  "checked_utc": "2026-11-11T19:17:16.102867+00:00",
+  "total": 100,
+  "correct": 70,
+  "top5_correct": 83,
+  "failures": 0,
+  "rows": [
+    {
+      "expected": "accident",
+      "source_page": "https://www.signasl.org/sign/accident",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/ACCIDENT-2047.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\accident.mp4",
+      "sha256": "2b5f483b6b969af7de8ecc98d79bf59ad19da3e2cad4ac59bb5f580077625c0f",
+      "frames": 56,
+      "fps": 23.976023976023978,
+      "predicted": "accident",
+      "confidence": 0.18936020135879517,
+      "top5": [
+        {
+          "word": "accident",
+          "confidence": 0.18936020135879517
+        },
+        {
+          "word": "jacket",
+          "confidence": 0.042513877153396606
+        },
+        {
+          "word": "give",
+          "confidence": 0.04231660068035126
+        },
+        {
+          "word": "book",
+          "confidence": 0.036736324429512024
+        },
+        {
+          "word": "want",
+          "confidence": 0.03622454032301903
+        }
+      ],
+      "seconds": 7.72,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "africa",
+      "source_page": "https://www.signasl.org/sign/africa",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/africa.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\africa.mp4",
+      "sha256": "cd4cce780073fd9815a960837e1572668dd219c31c633ef867e6984932575bbb",
+      "frames": 66,
+      "fps": 29.97002997002997,
+      "predicted": "africa",
+      "confidence": 0.8405017256736755,
+      "top5": [
+        {
+          "word": "africa",
+          "confidence": 0.8405017256736755
+        },
+        {
+          "word": "mother",
+          "confidence": 0.022020507603883743
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.01125255599617958
+        },
+        {
+          "word": "bed",
+          "confidence": 0.011243590153753757
+        },
+        {
+          "word": "drink",
+          "confidence": 0.007612164597958326
+        }
+      ],
+      "seconds": 7.473,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "all",
+      "source_page": "https://www.signasl.org/sign/all",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsearch/mp4/whole.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\all.mp4",
+      "sha256": "54f7ee62143661df279cae7322b374b8991c69f103051de63662ab4d5998ecf4",
+      "frames": 72,
+      "fps": 29.97,
+      "predicted": "full",
+      "confidence": 0.9052501320838928,
+      "top5": [
+        {
+          "word": "full",
+          "confidence": 0.9052501320838928
+        },
+        {
+          "word": "language",
+          "confidence": 0.005994591396301985
+        },
+        {
+          "word": "paper",
+          "confidence": 0.005691563244909048
+        },
+        {
+          "word": "corn",
+          "confidence": 0.004180822055786848
+        },
+        {
+          "word": "same",
+          "confidence": 0.004057993646711111
+        }
+      ],
+      "seconds": 8.729,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "apple",
+      "source_page": "https://www.signasl.org/sign/apple",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/apple.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\apple.mp4",
+      "sha256": "85d885d10aa72c99d106705be155b962e28207ee961c216364b2a538b60979a2",
+      "frames": 66,
+      "fps": 29.97,
+      "predicted": "apple",
+      "confidence": 0.8404644131660461,
+      "top5": [
+        {
+          "word": "apple",
+          "confidence": 0.8404644131660461
+        },
+        {
+          "word": "corn",
+          "confidence": 0.040617361664772034
+        },
+        {
+          "word": "candy",
+          "confidence": 0.03314576297998428
+        },
+        {
+          "word": "cow",
+          "confidence": 0.009485509246587753
+        },
+        {
+          "word": "cool",
+          "confidence": 0.00697245541960001
+        }
+      ],
+      "seconds": 7.854,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "basketball",
+      "source_page": "https://www.signasl.org/sign/basketball",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/basketball.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\basketball.mp4",
+      "sha256": "8dfea366209a8699bdcc7efb5ce1633f9ca8fffc987f79bde0b88c7837abfa44",
+      "frames": 97,
+      "fps": 29.97,
+      "predicted": "basketball",
+      "confidence": 0.6261646151542664,
+      "top5": [
+        {
+          "word": "basketball",
+          "confidence": 0.6261646151542664
+        },
+        {
+          "word": "computer",
+          "confidence": 0.060709912329912186
+        },
+        {
+          "word": "decide",
+          "confidence": 0.04891277849674225
+        },
+        {
+          "word": "cow",
+          "confidence": 0.03766460716724396
+        },
+        {
+          "word": "finish",
+          "confidence": 0.020128510892391205
+        }
+      ],
+      "seconds": 11.695,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "bed",
+      "file": "media\\signs\\bed.mp4",
+      "sha256": "65b671eac2cb825b3ce4dfa6a8780b87d580dd638037d05c0ae52c32ace4ad1b",
+      "predicted": "candy",
+      "confidence": 0.19130747020244598,
+      "top5": [
+        {
+          "word": "candy",
+          "confidence": 0.19130747020244598
+        },
+        {
+          "word": "eat",
+          "confidence": 0.08530645072460175
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.0765853226184845
+        },
+        {
+          "word": "orange",
+          "confidence": 0.059029679745435715
+        },
+        {
+          "word": "drink",
+          "confidence": 0.05258239060640335
+        }
+      ],
+      "seconds": 7.15,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "before",
+      "file": "media\\signs\\before.mp4",
+      "sha256": "816e7c5abd74dd33cf314e21356db0eaa5abbc39c7105e05580ce5084e1349da",
+      "predicted": "before",
+      "confidence": 0.8514573574066162,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.8514573574066162
+        },
+        {
+          "word": "bed",
+          "confidence": 0.01124692801386118
+        },
+        {
+          "word": "eat",
+          "confidence": 0.008261580020189285
+        },
+        {
+          "word": "paper",
+          "confidence": 0.007183815818279982
+        },
+        {
+          "word": "year",
+          "confidence": 0.006837815046310425
+        }
+      ],
+      "seconds": 9.167,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "bird",
+      "source_page": "https://www.signasl.org/sign/bird",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/bird.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\bird.mp4",
+      "sha256": "897a8b9750152a31a64de3649a11ca8776c2c5a0b58d9ffb2d900797e022ff81",
+      "frames": 91,
+      "fps": 29.97,
+      "predicted": "bird",
+      "confidence": 0.8897960186004639,
+      "top5": [
+        {
+          "word": "bird",
+          "confidence": 0.8897960186004639
+        },
+        {
+          "word": "yes",
+          "confidence": 0.008989190682768822
+        },
+        {
+          "word": "same",
+          "confidence": 0.005534397903829813
+        },
+        {
+          "word": "africa",
+          "confidence": 0.0037878172006458044
+        },
+        {
+          "word": "short",
+          "confidence": 0.0034895911812782288
+        }
+      ],
+      "seconds": 10.306,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "birthday",
+      "source_page": "https://www.signasl.org/sign/birthday",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/birthday.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\birthday.mp4",
+      "sha256": "86dd27c028f89d1aa6c21766f598ac4ce1c9b728dde2f3469d1582984bb6d3ad",
+      "frames": 59,
+      "fps": 29.97002997002997,
+      "predicted": "birthday",
+      "confidence": 0.9103832244873047,
+      "top5": [
+        {
+          "word": "birthday",
+          "confidence": 0.9103832244873047
+        },
+        {
+          "word": "eat",
+          "confidence": 0.009827557019889355
+        },
+        {
+          "word": "color",
+          "confidence": 0.0066352770663797855
+        },
+        {
+          "word": "like",
+          "confidence": 0.005178380757570267
+        },
+        {
+          "word": "fish",
+          "confidence": 0.0027896182145923376
+        }
+      ],
+      "seconds": 7.59,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "black",
+      "source_page": "https://www.signasl.org/sign/black",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/black.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\black.mp4",
+      "sha256": "20b7f7618c80d577a3c2a850982ee8ae4201416ddad569d10f2f2d99a97af085",
+      "frames": 91,
+      "fps": 29.97,
+      "predicted": "black",
+      "confidence": 0.9325821399688721,
+      "top5": [
+        {
+          "word": "black",
+          "confidence": 0.9325821399688721
+        },
+        {
+          "word": "forget",
+          "confidence": 0.005737924482673407
+        },
+        {
+          "word": "apple",
+          "confidence": 0.00377619918435812
+        },
+        {
+          "word": "corn",
+          "confidence": 0.0029411516152322292
+        },
+        {
+          "word": "candy",
+          "confidence": 0.002926883054897189
+        }
+      ],
+      "seconds": 11.428,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "blue",
+      "source_page": "https://www.signasl.org/sign/blue",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/blue.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\blue.mp4",
+      "sha256": "ff0fc9b8d68d0cebcc05d17235eb5f2bc30197d698d82164346cfc49434333fb",
+      "frames": 69,
+      "fps": 29.97,
+      "predicted": "blue",
+      "confidence": 0.8718581795692444,
+      "top5": [
+        {
+          "word": "blue",
+          "confidence": 0.8718581795692444
+        },
+        {
+          "word": "go",
+          "confidence": 0.01302535180002451
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.011135321110486984
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.009737110696732998
+        },
+        {
+          "word": "short",
+          "confidence": 0.006630572956055403
+        }
+      ],
+      "seconds": 8.858,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "book",
+      "file": "media\\signs\\book.mp4",
+      "sha256": "5d19b4a470108997a36a860f8bbc5b6b9368dd1a514499c8f7b4e48260ba13ce",
+      "predicted": "fish",
+      "confidence": 0.9206128716468811,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.9206128716468811
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.012204297818243504
+        },
+        {
+          "word": "give",
+          "confidence": 0.010711748152971268
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.005095236003398895
+        },
+        {
+          "word": "before",
+          "confidence": 0.003566174069419503
+        }
+      ],
+      "seconds": 20.953,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "bowling",
+      "source_page": "https://www.signasl.org/sign/bowling",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/bowling.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\bowling.mp4",
+      "sha256": "7301aa378cc0e16ad9d746e449e3f0e0465c74cffe48ff8954b1e10a24eb170c",
+      "frames": 83,
+      "fps": 29.97002997002997,
+      "predicted": "bowling",
+      "confidence": 0.40321749448776245,
+      "top5": [
+        {
+          "word": "bowling",
+          "confidence": 0.40321749448776245
+        },
+        {
+          "word": "dog",
+          "confidence": 0.3197286128997803
+        },
+        {
+          "word": "give",
+          "confidence": 0.024477923288941383
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.01555331889539957
+        },
+        {
+          "word": "blue",
+          "confidence": 0.014613581821322441
+        }
+      ],
+      "seconds": 10.093,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "brown",
+      "source_page": "https://www.signasl.org/sign/brown",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/brown.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\brown.mp4",
+      "sha256": "eefc2536d5c0b9be697064eb614103595e84efe7b199081acf5209ef3630f0ba",
+      "frames": 82,
+      "fps": 29.97,
+      "predicted": "brown",
+      "confidence": 0.5384464859962463,
+      "top5": [
+        {
+          "word": "brown",
+          "confidence": 0.5384464859962463
+        },
+        {
+          "word": "bed",
+          "confidence": 0.25342652201652527
+        },
+        {
+          "word": "mother",
+          "confidence": 0.03745485469698906
+        },
+        {
+          "word": "africa",
+          "confidence": 0.007150828838348389
+        },
+        {
+          "word": "blue",
+          "confidence": 0.006817249581217766
+        }
+      ],
+      "seconds": 10.405,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "but",
+      "source_page": "https://www.signasl.org/sign/but",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/BUT-61.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\but.mp4",
+      "sha256": "ec28b176c7e32d917430a89863644f0db7c6e961a6d64e29dc8f073956c494fb",
+      "frames": 60,
+      "fps": 23.976023976023978,
+      "predicted": "can",
+      "confidence": 0.5955036282539368,
+      "top5": [
+        {
+          "word": "can",
+          "confidence": 0.5955036282539368
+        },
+        {
+          "word": "but",
+          "confidence": 0.041917379945516586
+        },
+        {
+          "word": "language",
+          "confidence": 0.028590794652700424
+        },
+        {
+          "word": "computer",
+          "confidence": 0.02000044845044613
+        },
+        {
+          "word": "no",
+          "confidence": 0.01387087069451809
+        }
+      ],
+      "seconds": 8.063,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "can",
+      "file": "media\\signs\\can.mp4",
+      "sha256": "ac6a9de9ec2c9f0c0c18b703f77c8cd618e212ae7d8ea7b5e8303e37b941d743",
+      "predicted": "yes",
+      "confidence": 0.34649088978767395,
+      "top5": [
+        {
+          "word": "yes",
+          "confidence": 0.34649088978767395
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.1604612171649933
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.08401411026716232
+        },
+        {
+          "word": "chair",
+          "confidence": 0.055749814957380295
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.03221369534730911
+        }
+      ],
+      "seconds": 32.994,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "candy",
+      "source_page": "https://www.signasl.org/sign/candy",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/candy.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\candy.mp4",
+      "sha256": "3fe3d4a741ff01c5561255c547f5127a96734a18efc4207648f0e3ca289b4834",
+      "frames": 88,
+      "fps": 29.97,
+      "predicted": "candy",
+      "confidence": 0.8305208683013916,
+      "top5": [
+        {
+          "word": "candy",
+          "confidence": 0.8305208683013916
+        },
+        {
+          "word": "apple",
+          "confidence": 0.11005468666553497
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.015902837738394737
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.006279638968408108
+        },
+        {
+          "word": "cow",
+          "confidence": 0.003885148325935006
+        }
+      ],
+      "seconds": 14.473,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "chair",
+      "file": "media\\signs\\chair.mp4",
+      "sha256": "b86f32357ebfb6ea14201891e5f6ee01c759b3b8f8746bafdedc576266a4df49",
+      "predicted": "thanksgiving",
+      "confidence": 0.6776922941207886,
+      "top5": [
+        {
+          "word": "thanksgiving",
+          "confidence": 0.6776922941207886
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.12031618505716324
+        },
+        {
+          "word": "yes",
+          "confidence": 0.029524236917495728
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.012330661527812481
+        },
+        {
+          "word": "hot",
+          "confidence": 0.01136095356196165
+        }
+      ],
+      "seconds": 7.04,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "change",
+      "source_page": "https://www.signasl.org/sign/change",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/change.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\change.mp4",
+      "sha256": "5014111b080c64df7a9988bbd4e67cdf2ca0d7658cda2e25302f8b9e9a3227b1",
+      "frames": 89,
+      "fps": 29.97002997002997,
+      "predicted": "change",
+      "confidence": 0.7311390042304993,
+      "top5": [
+        {
+          "word": "change",
+          "confidence": 0.7311390042304993
+        },
+        {
+          "word": "bed",
+          "confidence": 0.028045641258358955
+        },
+        {
+          "word": "paper",
+          "confidence": 0.026454249396920204
+        },
+        {
+          "word": "pink",
+          "confidence": 0.016806460916996002
+        },
+        {
+          "word": "work",
+          "confidence": 0.009222481399774551
+        }
+      ],
+      "seconds": 21.705,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "cheat",
+      "source_page": "https://www.signasl.org/sign/cheat",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CHEAT_1-1058.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\cheat.mp4",
+      "sha256": "f856d83097cbdcbf90a8960962f5601f6d074dae06b5545d5738de876e2764f6",
+      "frames": 76,
+      "fps": 23.976023976023978,
+      "predicted": "cheat",
+      "confidence": 0.5818755030632019,
+      "top5": [
+        {
+          "word": "cheat",
+          "confidence": 0.5818755030632019
+        },
+        {
+          "word": "study",
+          "confidence": 0.038389671593904495
+        },
+        {
+          "word": "short",
+          "confidence": 0.032248180359601974
+        },
+        {
+          "word": "purple",
+          "confidence": 0.03129992634057999
+        },
+        {
+          "word": "fish",
+          "confidence": 0.030854715034365654
+        }
+      ],
+      "seconds": 18.002,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "city",
+      "source_page": "https://www.signasl.org/sign/city",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CITY-551.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\city.mp4",
+      "sha256": "d65bc1ec3804eb320c2554b3c62c32b9cb8ee9d21403b029136c980137f44a9a",
+      "frames": 60,
+      "fps": 23.976023976023978,
+      "predicted": "city",
+      "confidence": 0.8715532422065735,
+      "top5": [
+        {
+          "word": "city",
+          "confidence": 0.8715532422065735
+        },
+        {
+          "word": "medicine",
+          "confidence": 0.01017813105136156
+        },
+        {
+          "word": "family",
+          "confidence": 0.008102734573185444
+        },
+        {
+          "word": "all",
+          "confidence": 0.006811285857111216
+        },
+        {
+          "word": "how",
+          "confidence": 0.0058839586563408375
+        }
+      ],
+      "seconds": 18.693,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "clothes",
+      "file": "media\\signs\\clothes.mp4",
+      "sha256": "aaa2f40c9c5cad98ac9f78010729341d0e25e62a0009324727abd99c3b364942",
+      "predicted": "give",
+      "confidence": 0.6421210765838623,
+      "top5": [
+        {
+          "word": "give",
+          "confidence": 0.6421210765838623
+        },
+        {
+          "word": "before",
+          "confidence": 0.1950346827507019
+        },
+        {
+          "word": "play",
+          "confidence": 0.025486251339316368
+        },
+        {
+          "word": "candy",
+          "confidence": 0.01524516474455595
+        },
+        {
+          "word": "study",
+          "confidence": 0.014194412156939507
+        }
+      ],
+      "seconds": 8.098,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "color",
+      "source_page": "https://www.signasl.org/sign/color",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/color.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\color.mp4",
+      "sha256": "31b47a351af08ac48300d7e041a727481c3e9f9825ca2dde710241cf24f5c268",
+      "frames": 74,
+      "fps": 29.97,
+      "predicted": "color",
+      "confidence": 0.4432860016822815,
+      "top5": [
+        {
+          "word": "color",
+          "confidence": 0.4432860016822815
+        },
+        {
+          "word": "wrong",
+          "confidence": 0.14211197197437286
+        },
+        {
+          "word": "accident",
+          "confidence": 0.06111934408545494
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.057500310242176056
+        },
+        {
+          "word": "white",
+          "confidence": 0.04151202365756035
+        }
+      ],
+      "seconds": 19.193,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "computer",
+      "source_page": "https://www.signasl.org/sign/computer",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/computer-2.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\computer.mp4",
+      "sha256": "2953b7790e70ae3904beec2ce17e061381c0b4c127e131e39e153692054e5c6e",
+      "frames": 102,
+      "fps": 29.97002997002997,
+      "predicted": "computer",
+      "confidence": 0.8494743704795837,
+      "top5": [
+        {
+          "word": "computer",
+          "confidence": 0.8494743704795837
+        },
+        {
+          "word": "bed",
+          "confidence": 0.016399597749114037
+        },
+        {
+          "word": "before",
+          "confidence": 0.008553193882107735
+        },
+        {
+          "word": "work",
+          "confidence": 0.00782328937202692
+        },
+        {
+          "word": "table",
+          "confidence": 0.007520705461502075
+        }
+      ],
+      "seconds": 28.863,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "cook",
+      "source_page": "https://www.signasl.org/sign/cook",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/cook.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\cook.mp4",
+      "sha256": "b60dfc5a1a725bc1fdd61bcbe09d0efea4a46444cfc9285f1f258b78cfe1d0b7",
+      "frames": 100,
+      "fps": 29.97,
+      "predicted": "all",
+      "confidence": 0.43237414956092834,
+      "top5": [
+        {
+          "word": "all",
+          "confidence": 0.43237414956092834
+        },
+        {
+          "word": "cook",
+          "confidence": 0.2513939142227173
+        },
+        {
+          "word": "dark",
+          "confidence": 0.020206356421113014
+        },
+        {
+          "word": "paper",
+          "confidence": 0.01973939687013626
+        },
+        {
+          "word": "city",
+          "confidence": 0.01606866717338562
+        }
+      ],
+      "seconds": 28.868,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "cool",
+      "source_page": "https://www.signasl.org/sign/cool",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsearch/mp4/cool.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\cool.mp4",
+      "sha256": "a2907bf198c21883366b85699a0a2dfb66b18d2a2c26c03e6b2f598f1d154cac",
+      "frames": 74,
+      "fps": 29.97,
+      "predicted": "school",
+      "confidence": 0.14023761451244354,
+      "top5": [
+        {
+          "word": "school",
+          "confidence": 0.14023761451244354
+        },
+        {
+          "word": "like",
+          "confidence": 0.11079871654510498
+        },
+        {
+          "word": "cool",
+          "confidence": 0.06608676165342331
+        },
+        {
+          "word": "fine",
+          "confidence": 0.06556437909603119
+        },
+        {
+          "word": "paper",
+          "confidence": 0.05680762976408005
+        }
+      ],
+      "seconds": 18.995,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "corn",
+      "source_page": "https://www.signasl.org/sign/corn",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CORN_2-2464.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\corn.mp4",
+      "sha256": "34c0828283d459b0b1fa1e48c2541dcdb75bc0e0a1a571c64b0440adaff713b8",
+      "frames": 54,
+      "fps": 23.97608311708814,
+      "predicted": "corn",
+      "confidence": 0.9386892318725586,
+      "top5": [
+        {
+          "word": "corn",
+          "confidence": 0.9386892318725586
+        },
+        {
+          "word": "hearing",
+          "confidence": 0.003763132728636265
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.003029534127563238
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.002985849743708968
+        },
+        {
+          "word": "jacket",
+          "confidence": 0.0026923350524157286
+        }
+      ],
+      "seconds": 31.375,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "cousin",
+      "source_page": "https://www.signasl.org/sign/cousin",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/COUSIN-1171.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\cousin.mp4",
+      "sha256": "ad90f041e0f4183227f3461b2a53fb9a8127590ec0845c74e438d67aa599d055",
+      "frames": 70,
+      "fps": 23.976069599104893,
+      "predicted": "cousin",
+      "confidence": 0.6643750667572021,
+      "top5": [
+        {
+          "word": "cousin",
+          "confidence": 0.6643750667572021
+        },
+        {
+          "word": "go",
+          "confidence": 0.044318731874227524
+        },
+        {
+          "word": "computer",
+          "confidence": 0.04081062227487564
+        },
+        {
+          "word": "blue",
+          "confidence": 0.032497942447662354
+        },
+        {
+          "word": "bed",
+          "confidence": 0.020712407305836678
+        }
+      ],
+      "seconds": 22.786,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "cow",
+      "source_page": "https://www.signasl.org/sign/cow",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/cow.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\cow.mp4",
+      "sha256": "38b83120911a33a551344829302148060e451fff15b76361c778e37011178794",
+      "frames": 85,
+      "fps": 29.97,
+      "predicted": "cow",
+      "confidence": 0.7102906703948975,
+      "top5": [
+        {
+          "word": "cow",
+          "confidence": 0.7102906703948975
+        },
+        {
+          "word": "bird",
+          "confidence": 0.029839197173714638
+        },
+        {
+          "word": "short",
+          "confidence": 0.026631543412804604
+        },
+        {
+          "word": "mother",
+          "confidence": 0.023223519325256348
+        },
+        {
+          "word": "africa",
+          "confidence": 0.02072766423225403
+        }
+      ],
+      "seconds": 23.901,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "dance",
+      "source_page": "https://www.signasl.org/sign/dance",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/dance.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\dance.mp4",
+      "sha256": "24e503494fbdcec6c77f7d2db05cfade91034adea8f89fe80b9f5205566edfeb",
+      "frames": 104,
+      "fps": 29.97002997002997,
+      "predicted": "dance",
+      "confidence": 0.3811231553554535,
+      "top5": [
+        {
+          "word": "dance",
+          "confidence": 0.3811231553554535
+        },
+        {
+          "word": "help",
+          "confidence": 0.04958520829677582
+        },
+        {
+          "word": "study",
+          "confidence": 0.02552187815308571
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.02503938227891922
+        },
+        {
+          "word": "yes",
+          "confidence": 0.024300159886479378
+        }
+      ],
+      "seconds": 33.715,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "dark",
+      "source_page": "https://www.signasl.org/sign/dark",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/DARK-100.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\dark.mp4",
+      "sha256": "479e11a5bed3b071ae6b16b518250de63bd5afa482d77884c685f06788150fc7",
+      "frames": 60,
+      "fps": 23.976023976023978,
+      "predicted": "dark",
+      "confidence": 0.882339358329773,
+      "top5": [
+        {
+          "word": "dark",
+          "confidence": 0.882339358329773
+        },
+        {
+          "word": "all",
+          "confidence": 0.008778289891779423
+        },
+        {
+          "word": "accident",
+          "confidence": 0.004210767336189747
+        },
+        {
+          "word": "son",
+          "confidence": 0.0034966927487403154
+        },
+        {
+          "word": "enjoy",
+          "confidence": 0.0031695642974227667
+        }
+      ],
+      "seconds": 18.559,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "deaf",
+      "source_page": "https://www.signasl.org/sign/deaf",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/deaf.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\deaf.mp4",
+      "sha256": "e15b4f5b1ff00aa0cadc44e510e4bc037ab595028d418798e1ff53458078edec",
+      "frames": 108,
+      "fps": 29.97,
+      "predicted": "deaf",
+      "confidence": 0.9234117865562439,
+      "top5": [
+        {
+          "word": "deaf",
+          "confidence": 0.9234117865562439
+        },
+        {
+          "word": "no",
+          "confidence": 0.014071471057832241
+        },
+        {
+          "word": "mother",
+          "confidence": 0.005891257897019386
+        },
+        {
+          "word": "candy",
+          "confidence": 0.004730535671114922
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.0034464735072106123
+        }
+      ],
+      "seconds": 29.721,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "decide",
+      "source_page": "https://www.signasl.org/sign/decide",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/decide.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\decide.mp4",
+      "sha256": "255ed94cdbbab3a90122306b80dfe81cf01fd34a314d8a04a62f0279b80ce551",
+      "frames": 53,
+      "fps": 29.97002997002997,
+      "predicted": "decide",
+      "confidence": 0.2093491554260254,
+      "top5": [
+        {
+          "word": "decide",
+          "confidence": 0.2093491554260254
+        },
+        {
+          "word": "basketball",
+          "confidence": 0.17872828245162964
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.052132561802864075
+        },
+        {
+          "word": "computer",
+          "confidence": 0.039745625108480453
+        },
+        {
+          "word": "secretary",
+          "confidence": 0.03360619768500328
+        }
+      ],
+      "seconds": 18.364,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "doctor",
+      "source_page": "https://www.signasl.org/sign/doctor",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/doctor.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\doctor.mp4",
+      "sha256": "e97e25b695206159eee6ce7eb1b1e8d04d08e47ee0e568468cecd35223662030",
+      "frames": 109,
+      "fps": 29.97,
+      "predicted": "doctor",
+      "confidence": 0.9270299077033997,
+      "top5": [
+        {
+          "word": "doctor",
+          "confidence": 0.9270299077033997
+        },
+        {
+          "word": "forget",
+          "confidence": 0.008412063121795654
+        },
+        {
+          "word": "medicine",
+          "confidence": 0.0069114770740270615
+        },
+        {
+          "word": "go",
+          "confidence": 0.003162262961268425
+        },
+        {
+          "word": "time",
+          "confidence": 0.0030920899007469416
+        }
+      ],
+      "seconds": 30.07,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "dog",
+      "source_page": "https://www.signasl.org/sign/dog",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/dog.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\dog.mp4",
+      "sha256": "22d9521ee3e12079a9dec94ac29b8a2784bf5471413233dd6787757afc2fd66b",
+      "frames": 68,
+      "fps": 29.97,
+      "predicted": "dog",
+      "confidence": 0.22823184728622437,
+      "top5": [
+        {
+          "word": "dog",
+          "confidence": 0.22823184728622437
+        },
+        {
+          "word": "last",
+          "confidence": 0.10234089940786362
+        },
+        {
+          "word": "before",
+          "confidence": 0.0828913152217865
+        },
+        {
+          "word": "candy",
+          "confidence": 0.036883752793073654
+        },
+        {
+          "word": "go",
+          "confidence": 0.0349389910697937
+        }
+      ],
+      "seconds": 18.627,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "drink",
+      "file": "media\\signs\\drink.mp4",
+      "sha256": "21fb77dd73f87ce9f8589817212126f97c5a1cf825c13c1de84e6d7ae884a99e",
+      "predicted": "drink",
+      "confidence": 0.9559805393218994,
+      "top5": [
+        {
+          "word": "drink",
+          "confidence": 0.9559805393218994
+        },
+        {
+          "word": "brown",
+          "confidence": 0.007802984677255154
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.0027317930944263935
+        },
+        {
+          "word": "computer",
+          "confidence": 0.0022626006975769997
+        },
+        {
+          "word": "bird",
+          "confidence": 0.0016127735143527389
+        }
+      ],
+      "seconds": 6.713,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "eat",
+      "source_page": "https://www.signasl.org/sign/eat",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/eat.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\eat.mp4",
+      "sha256": "8e32db20fce963d1ad0995919d9037977e65a2fc69417ae5ad71cd2b169c049e",
+      "frames": 67,
+      "fps": 29.97,
+      "predicted": "eat",
+      "confidence": 0.5634105205535889,
+      "top5": [
+        {
+          "word": "eat",
+          "confidence": 0.5634105205535889
+        },
+        {
+          "word": "wrong",
+          "confidence": 0.23438474535942078
+        },
+        {
+          "word": "color",
+          "confidence": 0.03427852690219879
+        },
+        {
+          "word": "accident",
+          "confidence": 0.01736598275601864
+        },
+        {
+          "word": "pink",
+          "confidence": 0.01376396045088768
+        }
+      ],
+      "seconds": 16.523,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "enjoy",
+      "source_page": "https://www.signasl.org/sign/enjoy",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/enjoy.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\enjoy.mp4",
+      "sha256": "a349cf155f38f0580ea3761600dd91f1113f93839cdf75ac447a3d2a40ada426",
+      "frames": 61,
+      "fps": 29.97002997002997,
+      "predicted": "enjoy",
+      "confidence": 0.932624101638794,
+      "top5": [
+        {
+          "word": "enjoy",
+          "confidence": 0.932624101638794
+        },
+        {
+          "word": "fish",
+          "confidence": 0.00897228717803955
+        },
+        {
+          "word": "before",
+          "confidence": 0.008578968234360218
+        },
+        {
+          "word": "year",
+          "confidence": 0.0030520902946591377
+        },
+        {
+          "word": "cook",
+          "confidence": 0.002570513403043151
+        }
+      ],
+      "seconds": 17.284,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "family",
+      "file": "media\\signs\\family.mp4",
+      "sha256": "6a866d6d67e7dda2eb10b1067aefb7e8f265d56fca8968ee276c0785b88386d4",
+      "predicted": "family",
+      "confidence": 0.9185783863067627,
+      "top5": [
+        {
+          "word": "family",
+          "confidence": 0.9185783863067627
+        },
+        {
+          "word": "book",
+          "confidence": 0.0037510963156819344
+        },
+        {
+          "word": "dark",
+          "confidence": 0.003498814068734646
+        },
+        {
+          "word": "color",
+          "confidence": 0.003484956454485655
+        },
+        {
+          "word": "computer",
+          "confidence": 0.0033960891887545586
+        }
+      ],
+      "seconds": 3.569,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "fine",
+      "file": "media\\signs\\fine.mp4",
+      "sha256": "db3d45057ebc38d1a458be20892559e791d04624a8e2caf1a18f2661adeece4e",
+      "predicted": "cousin",
+      "confidence": 0.1306159496307373,
+      "top5": [
+        {
+          "word": "cousin",
+          "confidence": 0.1306159496307373
+        },
+        {
+          "word": "brown",
+          "confidence": 0.08512875437736511
+        },
+        {
+          "word": "man",
+          "confidence": 0.05549649894237518
+        },
+        {
+          "word": "city",
+          "confidence": 0.05497899278998375
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.0305605661123991
+        }
+      ],
+      "seconds": 20.519,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "finish",
+      "file": "media\\signs\\finish.mp4",
+      "sha256": "ad933bd770623e326eef4047a5aaec3b12e5c40a0c4357fe62b32bf628a2d701",
+      "predicted": "drink",
+      "confidence": 0.28666484355926514,
+      "top5": [
+        {
+          "word": "drink",
+          "confidence": 0.28666484355926514
+        },
+        {
+          "word": "eat",
+          "confidence": 0.12169448286294937
+        },
+        {
+          "word": "hat",
+          "confidence": 0.037047140300273895
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03371472656726837
+        },
+        {
+          "word": "orange",
+          "confidence": 0.032155685126781464
+        }
+      ],
+      "seconds": 15.851,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "fish",
+      "file": "media\\signs\\fish.mp4",
+      "sha256": "39b9d6608ec05dc313c364376835433cc486519c511d6cbc73205e63815f3d25",
+      "predicted": "fish",
+      "confidence": 0.4537818729877472,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.4537818729877472
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.07156312465667725
+        },
+        {
+          "word": "before",
+          "confidence": 0.06408630311489105
+        },
+        {
+          "word": "study",
+          "confidence": 0.042597223073244095
+        },
+        {
+          "word": "candy",
+          "confidence": 0.025566428899765015
+        }
+      ],
+      "seconds": 5.107,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "forget",
+      "source_page": "https://www.signasl.org/sign/forget",
+      "video_url": "https://media.signbsl.com/videos/asl/aslstudy/mp4/392130769.sd.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\forget.mp4",
+      "sha256": "616bfcc332e1f8942e378d6148d3b63ee14f42ce58b015b78e49c98ce1cc6dc8",
+      "frames": 75,
+      "fps": 29.393,
+      "predicted": "forget",
+      "confidence": 0.5037664175033569,
+      "top5": [
+        {
+          "word": "forget",
+          "confidence": 0.5037664175033569
+        },
+        {
+          "word": "white",
+          "confidence": 0.029226073995232582
+        },
+        {
+          "word": "before",
+          "confidence": 0.021988987922668457
+        },
+        {
+          "word": "wrong",
+          "confidence": 0.01848899945616722
+        },
+        {
+          "word": "tall",
+          "confidence": 0.01543023344129324
+        }
+      ],
+      "seconds": 17.002,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "full",
+      "source_page": "https://www.signasl.org/sign/full",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/full.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\full.mp4",
+      "sha256": "5b4d90c538ab892e0356b785e9f263b0f1d18fbeec237114d5c68772a3bcfd67",
+      "frames": 95,
+      "fps": 29.97002997002997,
+      "predicted": "full",
+      "confidence": 0.9293956756591797,
+      "top5": [
+        {
+          "word": "full",
+          "confidence": 0.9293956756591797
+        },
+        {
+          "word": "right",
+          "confidence": 0.00897558405995369
+        },
+        {
+          "word": "cook",
+          "confidence": 0.0050985426642000675
+        },
+        {
+          "word": "language",
+          "confidence": 0.003791186958551407
+        },
+        {
+          "word": "dark",
+          "confidence": 0.0024450081400573254
+        }
+      ],
+      "seconds": 23.641,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "give",
+      "file": "media\\signs\\give.mp4",
+      "sha256": "8b7f9fa5a7e5f38cdee132790f6151ef92118caed7ada9a50ab0282973c37ad4",
+      "predicted": "give",
+      "confidence": 0.8828176856040955,
+      "top5": [
+        {
+          "word": "give",
+          "confidence": 0.8828176856040955
+        },
+        {
+          "word": "candy",
+          "confidence": 0.04204642027616501
+        },
+        {
+          "word": "before",
+          "confidence": 0.015752248466014862
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.005929289851337671
+        },
+        {
+          "word": "apple",
+          "confidence": 0.005609890446066856
+        }
+      ],
+      "seconds": 2.875,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "go",
+      "file": "media\\signs\\go.mp4",
+      "sha256": "944d4bfdeb83bec1b208358e41563d39e4179f27a2bc63d247f6de5ca212e0bd",
+      "predicted": "all",
+      "confidence": 0.4304269254207611,
+      "top5": [
+        {
+          "word": "all",
+          "confidence": 0.4304269254207611
+        },
+        {
+          "word": "school",
+          "confidence": 0.0941314697265625
+        },
+        {
+          "word": "before",
+          "confidence": 0.07849810272455215
+        },
+        {
+          "word": "study",
+          "confidence": 0.05365879088640213
+        },
+        {
+          "word": "cool",
+          "confidence": 0.023236162960529327
+        }
+      ],
+      "seconds": 4.688,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "graduate",
+      "source_page": "https://www.signasl.org/sign/graduate",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/graduate.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\graduate.mp4",
+      "sha256": "02a9e162e2aa9291ef68d369aeb399edac39fe7f9662930697589e263439e037",
+      "frames": 58,
+      "fps": 29.97002997002997,
+      "predicted": "graduate",
+      "confidence": 0.8618548512458801,
+      "top5": [
+        {
+          "word": "graduate",
+          "confidence": 0.8618548512458801
+        },
+        {
+          "word": "son",
+          "confidence": 0.012623277492821217
+        },
+        {
+          "word": "now",
+          "confidence": 0.00496205547824502
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.003935818560421467
+        },
+        {
+          "word": "black",
+          "confidence": 0.0039273034781217575
+        }
+      ],
+      "seconds": 17.828,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "hat",
+      "source_page": "https://www.signasl.org/sign/hat",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/hat.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\hat.mp4",
+      "sha256": "c9d06cdbbbe2020c81feb76258910714fc15c8fd4f024b3fe504f9cdc7102571",
+      "frames": 69,
+      "fps": 29.97002997002997,
+      "predicted": "hat",
+      "confidence": 0.757965087890625,
+      "top5": [
+        {
+          "word": "hat",
+          "confidence": 0.757965087890625
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.03044472075998783
+        },
+        {
+          "word": "thin",
+          "confidence": 0.0272241048514843
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.018962956964969635
+        },
+        {
+          "word": "forget",
+          "confidence": 0.01468715537339449
+        }
+      ],
+      "seconds": 18.235,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "hearing",
+      "source_page": "https://www.signasl.org/sign/hearing",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/hearing.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\hearing.mp4",
+      "sha256": "eac3f8f0d99d3fb40fc80365e6e4d05a60a0ef636ea8c0dbd48651adf740c59d",
+      "frames": 61,
+      "fps": 29.97,
+      "predicted": "hearing",
+      "confidence": 0.7236412763595581,
+      "top5": [
+        {
+          "word": "hearing",
+          "confidence": 0.7236412763595581
+        },
+        {
+          "word": "tell",
+          "confidence": 0.08945822715759277
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.02472636289894581
+        },
+        {
+          "word": "purple",
+          "confidence": 0.02018043026328087
+        },
+        {
+          "word": "who",
+          "confidence": 0.009780410677194595
+        }
+      ],
+      "seconds": 15.26,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "help",
+      "file": "media\\signs\\help.mp4",
+      "sha256": "945e311c433c81ff6a3aa8984469964db46c3fd143acb51e13d1b78584f83d67",
+      "predicted": "before",
+      "confidence": 0.26370394229888916,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.26370394229888916
+        },
+        {
+          "word": "candy",
+          "confidence": 0.16683287918567657
+        },
+        {
+          "word": "book",
+          "confidence": 0.14901089668273926
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.027951495721936226
+        },
+        {
+          "word": "how",
+          "confidence": 0.015488884411752224
+        }
+      ],
+      "seconds": 5.228,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "hot",
+      "file": "media\\signs\\hot.mp4",
+      "sha256": "e9b13497ba8ebdda823866b00e279d0efa3a0f050095146a7ec1d34ff91f618a",
+      "predicted": "fish",
+      "confidence": 0.4872913360595703,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.4872913360595703
+        },
+        {
+          "word": "before",
+          "confidence": 0.1277787834405899
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.07799024134874344
+        },
+        {
+          "word": "give",
+          "confidence": 0.050795603543519974
+        },
+        {
+          "word": "hot",
+          "confidence": 0.04918205365538597
+        }
+      ],
+      "seconds": 4.753,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "how",
+      "file": "media\\signs\\how.mp4",
+      "sha256": "e4c32f8a3bcce5be523966dc27e02c76d1a911bb795bb23f8a1dc8a8a1a872e5",
+      "predicted": "before",
+      "confidence": 0.14853397011756897,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.14853397011756897
+        },
+        {
+          "word": "book",
+          "confidence": 0.06326702237129211
+        },
+        {
+          "word": "how",
+          "confidence": 0.0499851368367672
+        },
+        {
+          "word": "want",
+          "confidence": 0.04065019637346268
+        },
+        {
+          "word": "cook",
+          "confidence": 0.035857126116752625
+        }
+      ],
+      "seconds": 6.09,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "jacket",
+      "source_page": "https://www.signasl.org/sign/jacket",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/jacket.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\jacket.mp4",
+      "sha256": "665ca3a249044823db1e59159d7acdc1d5090568d1e64f608a8fd9d56a71db6e",
+      "frames": 90,
+      "fps": 29.97002997002997,
+      "predicted": "jacket",
+      "confidence": 0.8833242654800415,
+      "top5": [
+        {
+          "word": "jacket",
+          "confidence": 0.8833242654800415
+        },
+        {
+          "word": "accident",
+          "confidence": 0.0202608872205019
+        },
+        {
+          "word": "meet",
+          "confidence": 0.0077656591311097145
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.004385334439575672
+        },
+        {
+          "word": "how",
+          "confidence": 0.00426860386505723
+        }
+      ],
+      "seconds": 25.304,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "kiss",
+      "source_page": "https://www.signasl.org/sign/kiss",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/kiss.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\kiss.mp4",
+      "sha256": "a8248d3b80905f3e93a6962bece7a4e9578eb6ab50ffd48af35131304e64ac19",
+      "frames": 58,
+      "fps": 29.97002997002997,
+      "predicted": "kiss",
+      "confidence": 0.8446376323699951,
+      "top5": [
+        {
+          "word": "kiss",
+          "confidence": 0.8446376323699951
+        },
+        {
+          "word": "can",
+          "confidence": 0.012654514983296394
+        },
+        {
+          "word": "meet",
+          "confidence": 0.011502173729240894
+        },
+        {
+          "word": "basketball",
+          "confidence": 0.006090809125453234
+        },
+        {
+          "word": "color",
+          "confidence": 0.005991967860609293
+        }
+      ],
+      "seconds": 19.675,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "language",
+      "source_page": "https://www.signasl.org/sign/language",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/LANGUAGE-2463.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\language.mp4",
+      "sha256": "836dbb8ad160ba93b82643ff4af879f09afd3efc110c6e27d3064c2cd9330cb1",
+      "frames": 60,
+      "fps": 23.976023976023978,
+      "predicted": "language",
+      "confidence": 0.34203243255615234,
+      "top5": [
+        {
+          "word": "language",
+          "confidence": 0.34203243255615234
+        },
+        {
+          "word": "can",
+          "confidence": 0.13915997743606567
+        },
+        {
+          "word": "short",
+          "confidence": 0.054382532835006714
+        },
+        {
+          "word": "clothes",
+          "confidence": 0.04131501913070679
+        },
+        {
+          "word": "walk",
+          "confidence": 0.021281929686665535
+        }
+      ],
+      "seconds": 15.281,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "last",
+      "source_page": "https://www.signasl.org/sign/last",
+      "video_url": "https://media.signbsl.com/videos/asl/tsdvideo/mp4/57.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\last.mp4",
+      "sha256": "69fb9501b09dabda20ee98cc7e38fbc7d0dd8746824849460c0f8d1e72a3e25f",
+      "frames": 111,
+      "fps": 29.97002997002997,
+      "predicted": "last",
+      "confidence": 0.6874398589134216,
+      "top5": [
+        {
+          "word": "last",
+          "confidence": 0.6874398589134216
+        },
+        {
+          "word": "what",
+          "confidence": 0.03221575915813446
+        },
+        {
+          "word": "thin",
+          "confidence": 0.022231698036193848
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.015053926035761833
+        },
+        {
+          "word": "decide",
+          "confidence": 0.013020336627960205
+        }
+      ],
+      "seconds": 34.299,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "later",
+      "file": "media\\signs\\later.mp4",
+      "sha256": "fb06123d5aa26a9cc69f06850dc0038f522f5e71234a1fcde27e10ab02bfaa05",
+      "predicted": "dog",
+      "confidence": 0.15900123119354248,
+      "top5": [
+        {
+          "word": "dog",
+          "confidence": 0.15900123119354248
+        },
+        {
+          "word": "fish",
+          "confidence": 0.14547376334667206
+        },
+        {
+          "word": "enjoy",
+          "confidence": 0.14116351306438446
+        },
+        {
+          "word": "give",
+          "confidence": 0.10305250436067581
+        },
+        {
+          "word": "before",
+          "confidence": 0.057523470371961594
+        }
+      ],
+      "seconds": 6.574,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "letter",
+      "source_page": "https://www.signasl.org/sign/letter",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/MAIL-356.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\letter.mp4",
+      "sha256": "883756b0b47ed056412b67a45e0bb149c7c570a63bbff10726b9f4fb5d55d09f",
+      "frames": 66,
+      "fps": 23.97607236414568,
+      "predicted": "letter",
+      "confidence": 0.6199662089347839,
+      "top5": [
+        {
+          "word": "letter",
+          "confidence": 0.6199662089347839
+        },
+        {
+          "word": "study",
+          "confidence": 0.04938643053174019
+        },
+        {
+          "word": "right",
+          "confidence": 0.016293508931994438
+        },
+        {
+          "word": "dance",
+          "confidence": 0.014076456427574158
+        },
+        {
+          "word": "fine",
+          "confidence": 0.01356376614421606
+        }
+      ],
+      "seconds": 19.244,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "like",
+      "file": "media\\signs\\like.mp4",
+      "sha256": "80d5b75e9f550a3888d050842c6e8e021c992b18ecfc00eb77e1d9907c686a73",
+      "predicted": "fine",
+      "confidence": 0.4099021553993225,
+      "top5": [
+        {
+          "word": "fine",
+          "confidence": 0.4099021553993225
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.06439464539289474
+        },
+        {
+          "word": "hat",
+          "confidence": 0.042531613260507584
+        },
+        {
+          "word": "give",
+          "confidence": 0.04104892909526825
+        },
+        {
+          "word": "cool",
+          "confidence": 0.03329555317759514
+        }
+      ],
+      "seconds": 24.427,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "man",
+      "file": "media\\signs\\man.mp4",
+      "sha256": "36676b60d6ff8202df7ea046879abae9854335cf4705db9a64d2741d24c823ba",
+      "predicted": "birthday",
+      "confidence": 0.11870908737182617,
+      "top5": [
+        {
+          "word": "birthday",
+          "confidence": 0.11870908737182617
+        },
+        {
+          "word": "drink",
+          "confidence": 0.11313916742801666
+        },
+        {
+          "word": "hat",
+          "confidence": 0.08513122797012329
+        },
+        {
+          "word": "black",
+          "confidence": 0.07650050520896912
+        },
+        {
+          "word": "thin",
+          "confidence": 0.046613290905952454
+        }
+      ],
+      "seconds": 17.303,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "many",
+      "source_page": "https://www.signasl.org/sign/many",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/many.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\many.mp4",
+      "sha256": "65d6b04b168fd109750beafd359a967bc424c73476d965214e45d2db3ad4b15f",
+      "frames": 68,
+      "fps": 29.97002997002997,
+      "predicted": "many",
+      "confidence": 0.23163652420043945,
+      "top5": [
+        {
+          "word": "many",
+          "confidence": 0.23163652420043945
+        },
+        {
+          "word": "want",
+          "confidence": 0.2190120816230774
+        },
+        {
+          "word": "accident",
+          "confidence": 0.04800533130764961
+        },
+        {
+          "word": "family",
+          "confidence": 0.03930223733186722
+        },
+        {
+          "word": "now",
+          "confidence": 0.039075661450624466
+        }
+      ],
+      "seconds": 23.482,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "medicine",
+      "source_page": "https://www.signasl.org/sign/medicine",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/medicine.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\medicine.mp4",
+      "sha256": "c603f6056d274348bff6ed3fd107bbfa99863fa2b0a8322510d75398876ee002",
+      "frames": 89,
+      "fps": 29.97002997002997,
+      "predicted": "medicine",
+      "confidence": 0.843360185623169,
+      "top5": [
+        {
+          "word": "medicine",
+          "confidence": 0.843360185623169
+        },
+        {
+          "word": "change",
+          "confidence": 0.023412859067320824
+        },
+        {
+          "word": "paper",
+          "confidence": 0.009143556468188763
+        },
+        {
+          "word": "study",
+          "confidence": 0.008360456675291061
+        },
+        {
+          "word": "meet",
+          "confidence": 0.008071966469287872
+        }
+      ],
+      "seconds": 24.945,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "meet",
+      "source_page": "https://www.signasl.org/sign/meet",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsearch/mp4/meet.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\meet.mp4",
+      "sha256": "3f40ea232f3a89d3dea4df8b0c7878b9b0528ac91011ccab5d142ca5bbf34777",
+      "frames": 77,
+      "fps": 29.97,
+      "predicted": "meet",
+      "confidence": 0.869062066078186,
+      "top5": [
+        {
+          "word": "meet",
+          "confidence": 0.869062066078186
+        },
+        {
+          "word": "kiss",
+          "confidence": 0.012483758851885796
+        },
+        {
+          "word": "year",
+          "confidence": 0.005551829934120178
+        },
+        {
+          "word": "dog",
+          "confidence": 0.004427122883498669
+        },
+        {
+          "word": "orange",
+          "confidence": 0.004322574473917484
+        }
+      ],
+      "seconds": 21.202,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "mother",
+      "file": "media\\signs\\mother.mp4",
+      "sha256": "eae299a3088393a2addc7128e795aaad711115d9c32622171f2c96f3eda5eea3",
+      "predicted": "brown",
+      "confidence": 0.39420610666275024,
+      "top5": [
+        {
+          "word": "brown",
+          "confidence": 0.39420610666275024
+        },
+        {
+          "word": "africa",
+          "confidence": 0.15612204372882843
+        },
+        {
+          "word": "fine",
+          "confidence": 0.07313528656959534
+        },
+        {
+          "word": "mother",
+          "confidence": 0.05955637991428375
+        },
+        {
+          "word": "but",
+          "confidence": 0.04464460909366608
+        }
+      ],
+      "seconds": 6.284,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "need",
+      "file": "media\\signs\\need.mp4",
+      "sha256": "c19e75c2e0d519e07887afbc8f20cb784b41b176a545ad0a85880cf07bb09103",
+      "predicted": "bowling",
+      "confidence": 0.15287455916404724,
+      "top5": [
+        {
+          "word": "bowling",
+          "confidence": 0.15287455916404724
+        },
+        {
+          "word": "dog",
+          "confidence": 0.11993423849344254
+        },
+        {
+          "word": "cool",
+          "confidence": 0.1119527667760849
+        },
+        {
+          "word": "give",
+          "confidence": 0.06548431515693665
+        },
+        {
+          "word": "bird",
+          "confidence": 0.05453047156333923
+        }
+      ],
+      "seconds": 3.352,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "no",
+      "file": "media\\signs\\no.mp4",
+      "sha256": "2d7b1512215ceef2d93deeaf7c40560bb40a9c1eaad8a5c6abc4bd30ee0f455d",
+      "predicted": "birthday",
+      "confidence": 0.12393246591091156,
+      "top5": [
+        {
+          "word": "birthday",
+          "confidence": 0.12393246591091156
+        },
+        {
+          "word": "yes",
+          "confidence": 0.07163211703300476
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.06792021542787552
+        },
+        {
+          "word": "go",
+          "confidence": 0.06382343173027039
+        },
+        {
+          "word": "need",
+          "confidence": 0.04123421013355255
+        }
+      ],
+      "seconds": 6.545,
+      "correct": false,
+      "top5_correct": false,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "now",
+      "file": "media\\signs\\now.mp4",
+      "sha256": "73adb394d7814b9bd082145e0c6a6a3fc7ff68baa0153b2aafe646344c57012d",
+      "predicted": "now",
+      "confidence": 0.42832615971565247,
+      "top5": [
+        {
+          "word": "now",
+          "confidence": 0.42832615971565247
+        },
+        {
+          "word": "want",
+          "confidence": 0.10061991214752197
+        },
+        {
+          "word": "before",
+          "confidence": 0.09230007976293564
+        },
+        {
+          "word": "candy",
+          "confidence": 0.06241806223988533
+        },
+        {
+          "word": "play",
+          "confidence": 0.01640245132148266
+        }
+      ],
+      "seconds": 7.33,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "orange",
+      "source_page": "https://www.signasl.org/sign/orange",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsearch/mp4/orange.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\orange.mp4",
+      "sha256": "f99eb6c1e30ff9f009b338defd4ecc8620ae57fc8891f9639c9144d1af62e868",
+      "frames": 91,
+      "fps": 29.97,
+      "predicted": "orange",
+      "confidence": 0.7528329491615295,
+      "top5": [
+        {
+          "word": "orange",
+          "confidence": 0.7528329491615295
+        },
+        {
+          "word": "thin",
+          "confidence": 0.04573661461472511
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.04161202162504196
+        },
+        {
+          "word": "drink",
+          "confidence": 0.018462540581822395
+        },
+        {
+          "word": "corn",
+          "confidence": 0.01073512900620699
+        }
+      ],
+      "seconds": 22.17,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "paint",
+      "source_page": "https://www.signasl.org/sign/paint",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/PAINTBRUSH-3018.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\paint.mp4",
+      "sha256": "d2ad705776558abf267387277fd3bf91acba9d9d64c21c8ed26b7a435b1f9ad7",
+      "frames": 67,
+      "fps": 29.97002997002997,
+      "predicted": "paint",
+      "confidence": 0.30523207783699036,
+      "top5": [
+        {
+          "word": "paint",
+          "confidence": 0.30523207783699036
+        },
+        {
+          "word": "kiss",
+          "confidence": 0.09877097606658936
+        },
+        {
+          "word": "meet",
+          "confidence": 0.0779324471950531
+        },
+        {
+          "word": "study",
+          "confidence": 0.04402339085936546
+        },
+        {
+          "word": "before",
+          "confidence": 0.03552844002842903
+        }
+      ],
+      "seconds": 19.806,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "paper",
+      "source_page": "https://www.signasl.org/sign/paper",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/paper.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\paper.mp4",
+      "sha256": "d2e40fc55fb6af8f415f66b54905d8e7b037022255287999389bd260538a1ad0",
+      "frames": 78,
+      "fps": 29.97,
+      "predicted": "school",
+      "confidence": 0.486294150352478,
+      "top5": [
+        {
+          "word": "school",
+          "confidence": 0.486294150352478
+        },
+        {
+          "word": "paper",
+          "confidence": 0.1881735771894455
+        },
+        {
+          "word": "full",
+          "confidence": 0.019396411255002022
+        },
+        {
+          "word": "change",
+          "confidence": 0.017430756241083145
+        },
+        {
+          "word": "son",
+          "confidence": 0.013341264799237251
+        }
+      ],
+      "seconds": 19.991,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "pink",
+      "source_page": "https://www.signasl.org/sign/pink",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/pink.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\pink.mp4",
+      "sha256": "64255311eb296f65077c2706a0ea33f9c04224b5e37479f960ff2172aec81d46",
+      "frames": 71,
+      "fps": 29.97002997002997,
+      "predicted": "pink",
+      "confidence": 0.3717535734176636,
+      "top5": [
+        {
+          "word": "pink",
+          "confidence": 0.3717535734176636
+        },
+        {
+          "word": "who",
+          "confidence": 0.09863360971212387
+        },
+        {
+          "word": "accident",
+          "confidence": 0.08578614145517349
+        },
+        {
+          "word": "wrong",
+          "confidence": 0.04651715233922005
+        },
+        {
+          "word": "cool",
+          "confidence": 0.03193046525120735
+        }
+      ],
+      "seconds": 20.475,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "pizza",
+      "source_page": "https://www.signasl.org/sign/pizza",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/pizza-2.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\pizza.mp4",
+      "sha256": "32d6b0faf31174196989565017b0cd4cd48f0855c977555d0f5b5086054041b7",
+      "frames": 74,
+      "fps": 29.97002997002997,
+      "predicted": "bed",
+      "confidence": 0.1687641590833664,
+      "top5": [
+        {
+          "word": "bed",
+          "confidence": 0.1687641590833664
+        },
+        {
+          "word": "thin",
+          "confidence": 0.13617895543575287
+        },
+        {
+          "word": "africa",
+          "confidence": 0.05502919480204582
+        },
+        {
+          "word": "mother",
+          "confidence": 0.04178108274936676
+        },
+        {
+          "word": "pink",
+          "confidence": 0.03917716443538666
+        }
+      ],
+      "seconds": 25.265,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "play",
+      "source_page": "https://www.signasl.org/sign/play",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/play.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\play.mp4",
+      "sha256": "f2c0d8966775f231981be9c34a6f0065504724e35b71b8a0ff58cd58d42ef03f",
+      "frames": 72,
+      "fps": 29.97,
+      "predicted": "play",
+      "confidence": 0.6621641516685486,
+      "top5": [
+        {
+          "word": "play",
+          "confidence": 0.6621641516685486
+        },
+        {
+          "word": "accident",
+          "confidence": 0.0645546168088913
+        },
+        {
+          "word": "clothes",
+          "confidence": 0.034345075488090515
+        },
+        {
+          "word": "basketball",
+          "confidence": 0.02131616324186325
+        },
+        {
+          "word": "now",
+          "confidence": 0.016624392941594124
+        }
+      ],
+      "seconds": 22.237,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "pull",
+      "source_page": "https://www.signasl.org/sign/pull",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsearch/mp4/pull.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\pull.mp4",
+      "sha256": "d5b73893128a16a26b4772bdf49fa17b15b7328d2fc575442ec11477d0db112b",
+      "frames": 87,
+      "fps": 29.97,
+      "predicted": "pull",
+      "confidence": 0.9311373233795166,
+      "top5": [
+        {
+          "word": "pull",
+          "confidence": 0.9311373233795166
+        },
+        {
+          "word": "letter",
+          "confidence": 0.010024508461356163
+        },
+        {
+          "word": "book",
+          "confidence": 0.003598143346607685
+        },
+        {
+          "word": "give",
+          "confidence": 0.002898142207413912
+        },
+        {
+          "word": "how",
+          "confidence": 0.002704641781747341
+        }
+      ],
+      "seconds": 10.655,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "purple",
+      "source_page": "https://www.signasl.org/sign/purple",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/purple.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\purple.mp4",
+      "sha256": "6ae4ad54803710334eb262db4790a43f4e35343eb8584f75b00d20c8a9eab8e4",
+      "frames": 77,
+      "fps": 29.97,
+      "predicted": "purple",
+      "confidence": 0.7741256952285767,
+      "top5": [
+        {
+          "word": "purple",
+          "confidence": 0.7741256952285767
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.030273301526904106
+        },
+        {
+          "word": "need",
+          "confidence": 0.015468878671526909
+        },
+        {
+          "word": "accident",
+          "confidence": 0.012824068777263165
+        },
+        {
+          "word": "like",
+          "confidence": 0.012036871165037155
+        }
+      ],
+      "seconds": 8.485,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "right",
+      "source_page": "https://www.signasl.org/sign/right",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/right.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\right.mp4",
+      "sha256": "5b7fa4ab5e4f7962e7645c6e1048a5f5ffa97df215fa2d42582668fc75301264",
+      "frames": 83,
+      "fps": 29.97,
+      "predicted": "right",
+      "confidence": 0.9468255639076233,
+      "top5": [
+        {
+          "word": "right",
+          "confidence": 0.9468255639076233
+        },
+        {
+          "word": "blue",
+          "confidence": 0.0027600473258644342
+        },
+        {
+          "word": "year",
+          "confidence": 0.0025806431658566
+        },
+        {
+          "word": "secretary",
+          "confidence": 0.0025595452170819044
+        },
+        {
+          "word": "go",
+          "confidence": 0.0024442009162157774
+        }
+      ],
+      "seconds": 8.561,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "same",
+      "source_page": "https://www.signasl.org/sign/same",
+      "video_url": "https://media.signbsl.com/videos/asl/tsdvideo/mp4/190.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\same.mp4",
+      "sha256": "872d63cabcc15e45011719fafc167520d1550515f2d4c3017970e1c111c85eb2",
+      "frames": 200,
+      "fps": 29.97002997002997,
+      "predicted": "same",
+      "confidence": 0.5071284770965576,
+      "top5": [
+        {
+          "word": "same",
+          "confidence": 0.5071284770965576
+        },
+        {
+          "word": "go",
+          "confidence": 0.07527071237564087
+        },
+        {
+          "word": "computer",
+          "confidence": 0.02525622397661209
+        },
+        {
+          "word": "dark",
+          "confidence": 0.019961852580308914
+        },
+        {
+          "word": "pull",
+          "confidence": 0.019191216677427292
+        }
+      ],
+      "seconds": 25.756,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "school",
+      "file": "media\\signs\\school.mp4",
+      "sha256": "e109d9e9fd06c0b50b0e1400b06b6f67ce57033b5ff026f9e4a5f362acd2b7aa",
+      "predicted": "school",
+      "confidence": 0.15230250358581543,
+      "top5": [
+        {
+          "word": "school",
+          "confidence": 0.15230250358581543
+        },
+        {
+          "word": "pull",
+          "confidence": 0.12422939389944077
+        },
+        {
+          "word": "paper",
+          "confidence": 0.0665290504693985
+        },
+        {
+          "word": "change",
+          "confidence": 0.03584297373890877
+        },
+        {
+          "word": "bed",
+          "confidence": 0.026121823117136955
+        }
+      ],
+      "seconds": 5.469,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "secretary",
+      "source_page": "https://www.signasl.org/sign/secretary",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/SECRETARY-1010.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\secretary.mp4",
+      "sha256": "2e4a817aca65c894cf6686f84ff57b377464d7c90d41a45c2da26b069a9dfe7f",
+      "frames": 46,
+      "fps": 23.976093402520384,
+      "predicted": "secretary",
+      "confidence": 0.847607433795929,
+      "top5": [
+        {
+          "word": "secretary",
+          "confidence": 0.847607433795929
+        },
+        {
+          "word": "play",
+          "confidence": 0.011903509497642517
+        },
+        {
+          "word": "all",
+          "confidence": 0.009401766583323479
+        },
+        {
+          "word": "short",
+          "confidence": 0.006121993996202946
+        },
+        {
+          "word": "fine",
+          "confidence": 0.005202671978622675
+        }
+      ],
+      "seconds": 5.474,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "shirt",
+      "source_page": "https://www.signasl.org/sign/shirt",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/shirt.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\shirt.mp4",
+      "sha256": "44b9892e1103407aa0e037e1f9c5150b5103cf6366d659262f0ab4095d9706c5",
+      "frames": 100,
+      "fps": 29.97,
+      "predicted": "shirt",
+      "confidence": 0.9390053153038025,
+      "top5": [
+        {
+          "word": "shirt",
+          "confidence": 0.9390053153038025
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.004458065144717693
+        },
+        {
+          "word": "blue",
+          "confidence": 0.0043045757338404655
+        },
+        {
+          "word": "give",
+          "confidence": 0.0027363288681954145
+        },
+        {
+          "word": "before",
+          "confidence": 0.0026604006998240948
+        }
+      ],
+      "seconds": 9.413,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "short",
+      "source_page": "https://www.signasl.org/sign/short",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/short.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\short.mp4",
+      "sha256": "071b27e448c31cc03a4a7d9ebaf7bed97b16bfc12ff2a90c20663d67592186de",
+      "frames": 100,
+      "fps": 29.97,
+      "predicted": "short",
+      "confidence": 0.8349854946136475,
+      "top5": [
+        {
+          "word": "short",
+          "confidence": 0.8349854946136475
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.018659481778740883
+        },
+        {
+          "word": "right",
+          "confidence": 0.011500896885991096
+        },
+        {
+          "word": "blue",
+          "confidence": 0.009926814585924149
+        },
+        {
+          "word": "go",
+          "confidence": 0.009752761572599411
+        }
+      ],
+      "seconds": 9.538,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "son",
+      "source_page": "https://www.signasl.org/sign/son",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/son.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\son.mp4",
+      "sha256": "76839e3dccb474818df5cb3cccdff04b6b4b36adab9c6e56766f60101e557fa2",
+      "frames": 76,
+      "fps": 29.97002997002997,
+      "predicted": "son",
+      "confidence": 0.9018070697784424,
+      "top5": [
+        {
+          "word": "son",
+          "confidence": 0.9018070697784424
+        },
+        {
+          "word": "table",
+          "confidence": 0.0057928599417209625
+        },
+        {
+          "word": "full",
+          "confidence": 0.004596037790179253
+        },
+        {
+          "word": "now",
+          "confidence": 0.0027916687540709972
+        },
+        {
+          "word": "computer",
+          "confidence": 0.0027385177090764046
+        }
+      ],
+      "seconds": 8.38,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "study",
+      "source_page": "https://www.signasl.org/sign/study",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/examine.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\study.mp4",
+      "sha256": "c08369c6ad8f0c2e70e465ed5047a35eb1cb43cda7e8ae8efe3d2e92efab7f1a",
+      "frames": 63,
+      "fps": 29.97002997002997,
+      "predicted": "computer",
+      "confidence": 0.3361172080039978,
+      "top5": [
+        {
+          "word": "computer",
+          "confidence": 0.3361172080039978
+        },
+        {
+          "word": "but",
+          "confidence": 0.16446132957935333
+        },
+        {
+          "word": "go",
+          "confidence": 0.049626946449279785
+        },
+        {
+          "word": "later",
+          "confidence": 0.03964240476489067
+        },
+        {
+          "word": "family",
+          "confidence": 0.023549513891339302
+        }
+      ],
+      "seconds": 7.618,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "table",
+      "file": "media\\signs\\table.mp4",
+      "sha256": "94acbb25c8c91b2d974859042e8ee972713356e55b437817e06274b6f3539f78",
+      "predicted": "all",
+      "confidence": 0.28568848967552185,
+      "top5": [
+        {
+          "word": "all",
+          "confidence": 0.28568848967552185
+        },
+        {
+          "word": "school",
+          "confidence": 0.06784887611865997
+        },
+        {
+          "word": "before",
+          "confidence": 0.04895368590950966
+        },
+        {
+          "word": "table",
+          "confidence": 0.03666137903928757
+        },
+        {
+          "word": "enjoy",
+          "confidence": 0.034417763352394104
+        }
+      ],
+      "seconds": 6.661,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "tall",
+      "source_page": "https://www.signasl.org/sign/tall",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/tall.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\tall.mp4",
+      "sha256": "83b3cb0ccb765b50226c2358705da5e1020a34f92ec3c55ecfb2f9e5ebc629f7",
+      "frames": 96,
+      "fps": 29.97,
+      "predicted": "cousin",
+      "confidence": 0.14269429445266724,
+      "top5": [
+        {
+          "word": "cousin",
+          "confidence": 0.14269429445266724
+        },
+        {
+          "word": "tall",
+          "confidence": 0.12194201350212097
+        },
+        {
+          "word": "hat",
+          "confidence": 0.1039036363363266
+        },
+        {
+          "word": "before",
+          "confidence": 0.07917185872793198
+        },
+        {
+          "word": "computer",
+          "confidence": 0.07046423852443695
+        }
+      ],
+      "seconds": 9.8,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "tell",
+      "source_page": "https://www.signasl.org/sign/tell",
+      "video_url": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/SAY-536.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\tell.mp4",
+      "sha256": "d2b4c3c4f4bfba789b15a7dd1c0eeca7c2b12cbe83822f4c9badaa4a326d9afb",
+      "frames": 47,
+      "fps": 23.976057950642197,
+      "predicted": "tell",
+      "confidence": 0.386589914560318,
+      "top5": [
+        {
+          "word": "tell",
+          "confidence": 0.386589914560318
+        },
+        {
+          "word": "who",
+          "confidence": 0.2923046350479126
+        },
+        {
+          "word": "thin",
+          "confidence": 0.09757810831069946
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.013851329684257507
+        },
+        {
+          "word": "woman",
+          "confidence": 0.012056992389261723
+        }
+      ],
+      "seconds": 4.762,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "thanksgiving",
+      "source_page": "https://www.signasl.org/sign/thanksgiving",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/thanksgiving.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\thanksgiving.mp4",
+      "sha256": "30b161c3c9c2b236ffd7113546d45e1a01a93e1cb2206dfb1fd28de2d497ca83",
+      "frames": 69,
+      "fps": 29.97002997002997,
+      "predicted": "thanksgiving",
+      "confidence": 0.6750046610832214,
+      "top5": [
+        {
+          "word": "thanksgiving",
+          "confidence": 0.6750046610832214
+        },
+        {
+          "word": "dark",
+          "confidence": 0.04777199402451515
+        },
+        {
+          "word": "accident",
+          "confidence": 0.019895367324352264
+        },
+        {
+          "word": "last",
+          "confidence": 0.016419848427176476
+        },
+        {
+          "word": "book",
+          "confidence": 0.016373949125409126
+        }
+      ],
+      "seconds": 8.888,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "thin",
+      "source_page": "https://www.signasl.org/sign/thin",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/thin-2.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\thin.mp4",
+      "sha256": "86daf9a76d943e11a0c510b159fa8455f01ec9ca753a87f0133bcfff62e73d03",
+      "frames": 91,
+      "fps": 29.97002997002997,
+      "predicted": "thin",
+      "confidence": 0.6691813468933105,
+      "top5": [
+        {
+          "word": "thin",
+          "confidence": 0.6691813468933105
+        },
+        {
+          "word": "africa",
+          "confidence": 0.02779083512723446
+        },
+        {
+          "word": "wrong",
+          "confidence": 0.024326715618371964
+        },
+        {
+          "word": "accident",
+          "confidence": 0.023707425221800804
+        },
+        {
+          "word": "eat",
+          "confidence": 0.0161235760897398
+        }
+      ],
+      "seconds": 7.736,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "thursday",
+      "source_page": "https://www.signasl.org/sign/thursday",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/thursday.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\thursday.mp4",
+      "sha256": "fc5751f7ac0d485026895bdcd27e2e088577d7636343a715e5379883c4717f87",
+      "frames": 87,
+      "fps": 29.97002997002997,
+      "predicted": "thursday",
+      "confidence": 0.8809443116188049,
+      "top5": [
+        {
+          "word": "thursday",
+          "confidence": 0.8809443116188049
+        },
+        {
+          "word": "candy",
+          "confidence": 0.04124210402369499
+        },
+        {
+          "word": "tell",
+          "confidence": 0.009639769792556763
+        },
+        {
+          "word": "apple",
+          "confidence": 0.007366809528321028
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.00594240752980113
+        }
+      ],
+      "seconds": 7.529,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "time",
+      "file": "media\\signs\\time.mp4",
+      "sha256": "4b62b6266d3ae0095751a6f395b32754650732aeb62625d623e1ce7d26ead218",
+      "predicted": "time",
+      "confidence": 0.9115688800811768,
+      "top5": [
+        {
+          "word": "time",
+          "confidence": 0.9115688800811768
+        },
+        {
+          "word": "study",
+          "confidence": 0.009169005788862705
+        },
+        {
+          "word": "chair",
+          "confidence": 0.00585760036483407
+        },
+        {
+          "word": "walk",
+          "confidence": 0.004163973033428192
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.0036712379660457373
+        }
+      ],
+      "seconds": 5.715,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "walk",
+      "file": "media\\signs\\walk.mp4",
+      "sha256": "f2351704209253ccf0dea5fc682ac9b95d4fbc4d22c758170f868c9af64b4866",
+      "predicted": "walk",
+      "confidence": 0.7307099103927612,
+      "top5": [
+        {
+          "word": "walk",
+          "confidence": 0.7307099103927612
+        },
+        {
+          "word": "clothes",
+          "confidence": 0.027746375650167465
+        },
+        {
+          "word": "study",
+          "confidence": 0.01574237272143364
+        },
+        {
+          "word": "give",
+          "confidence": 0.0127442991361022
+        },
+        {
+          "word": "play",
+          "confidence": 0.0116177499294281
+        }
+      ],
+      "seconds": 5.871,
+      "correct": true,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "want",
+      "source_page": "https://www.signasl.org/sign/want",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/want.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\want.mp4",
+      "sha256": "f17718402bd986f754857f6f2fc9bb75ac1d8c2b0823528e2e96e1a14277e63a",
+      "frames": 75,
+      "fps": 29.97,
+      "predicted": "want",
+      "confidence": 0.6976990699768066,
+      "top5": [
+        {
+          "word": "want",
+          "confidence": 0.6976990699768066
+        },
+        {
+          "word": "now",
+          "confidence": 0.06688903272151947
+        },
+        {
+          "word": "many",
+          "confidence": 0.03447304293513298
+        },
+        {
+          "word": "give",
+          "confidence": 0.01414128951728344
+        },
+        {
+          "word": "book",
+          "confidence": 0.011776655912399292
+        }
+      ],
+      "seconds": 11.665,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "what",
+      "file": "media\\signs\\what.mp4",
+      "sha256": "709c343e4f1ff6d0485663d4996bc8f9e2adbbe68c4c0032970b49680a5986bb",
+      "predicted": "last",
+      "confidence": 0.1368231475353241,
+      "top5": [
+        {
+          "word": "last",
+          "confidence": 0.1368231475353241
+        },
+        {
+          "word": "fine",
+          "confidence": 0.09725752472877502
+        },
+        {
+          "word": "before",
+          "confidence": 0.05875278264284134
+        },
+        {
+          "word": "decide",
+          "confidence": 0.03811647742986679
+        },
+        {
+          "word": "what",
+          "confidence": 0.033752426505088806
+        }
+      ],
+      "seconds": 3.471,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "white",
+      "source_page": "https://www.signasl.org/sign/white",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/white.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\white.mp4",
+      "sha256": "54a800e71eebcbc24e0d444f15d8117bb2c5585b53853671b6e81633bc6572f1",
+      "frames": 84,
+      "fps": 29.97,
+      "predicted": "white",
+      "confidence": 0.7818762063980103,
+      "top5": [
+        {
+          "word": "white",
+          "confidence": 0.7818762063980103
+        },
+        {
+          "word": "like",
+          "confidence": 0.022919410839676857
+        },
+        {
+          "word": "dog",
+          "confidence": 0.01136232353746891
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.010282771661877632
+        },
+        {
+          "word": "help",
+          "confidence": 0.00912056490778923
+        }
+      ],
+      "seconds": 49.056,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "who",
+      "file": "media\\signs\\who.mp4",
+      "sha256": "e00039e0ea7b3038677d389df8059be38e53c7d7ffb3705d00bed74ebb909d2f",
+      "predicted": "fish",
+      "confidence": 0.3088022470474243,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.3088022470474243
+        },
+        {
+          "word": "study",
+          "confidence": 0.14182840287685394
+        },
+        {
+          "word": "who",
+          "confidence": 0.07639789581298828
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.042213402688503265
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03310570493340492
+        }
+      ],
+      "seconds": 5.704,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "woman",
+      "source_page": "https://www.signasl.org/sign/woman",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/woman.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\woman.mp4",
+      "sha256": "f305bbf23465b568540bf640b8b1dee79c90166532d256c063111305ba9f15d5",
+      "frames": 70,
+      "fps": 29.97,
+      "predicted": "woman",
+      "confidence": 0.7226552963256836,
+      "top5": [
+        {
+          "word": "woman",
+          "confidence": 0.7226552963256836
+        },
+        {
+          "word": "fine",
+          "confidence": 0.10109712183475494
+        },
+        {
+          "word": "man",
+          "confidence": 0.011727679520845413
+        },
+        {
+          "word": "bed",
+          "confidence": 0.011195659637451172
+        },
+        {
+          "word": "mother",
+          "confidence": 0.0104725556448102
+        }
+      ],
+      "seconds": 19.007,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "work",
+      "file": "media\\signs\\work.mp4",
+      "sha256": "1ed12ce684aa7be8ee6e6bb34327b3da9032dc7dc5d9e688d39ebabc04cb978b",
+      "predicted": "time",
+      "confidence": 0.5658026337623596,
+      "top5": [
+        {
+          "word": "time",
+          "confidence": 0.5658026337623596
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.05141172558069229
+        },
+        {
+          "word": "work",
+          "confidence": 0.03233352676033974
+        },
+        {
+          "word": "paint",
+          "confidence": 0.022753410041332245
+        },
+        {
+          "word": "year",
+          "confidence": 0.020538778975605965
+        }
+      ],
+      "seconds": 5.353,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    },
+    {
+      "expected": "wrong",
+      "source_page": "https://www.signasl.org/sign/wrong",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/wrong.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\wrong.mp4",
+      "sha256": "de8f5184e9ff2f3ba97510cdfe5706ed63b1b697c855c83a44592fdb3cece70f",
+      "frames": 61,
+      "fps": 29.97002997002997,
+      "predicted": "wrong",
+      "confidence": 0.8014137744903564,
+      "top5": [
+        {
+          "word": "wrong",
+          "confidence": 0.8014137744903564
+        },
+        {
+          "word": "accident",
+          "confidence": 0.10573336482048035
+        },
+        {
+          "word": "white",
+          "confidence": 0.007370034698396921
+        },
+        {
+          "word": "color",
+          "confidence": 0.004898529499769211
+        },
+        {
+          "word": "forget",
+          "confidence": 0.004449245985597372
+        }
+      ],
+      "seconds": 13.581,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "year",
+      "source_page": "https://www.signasl.org/sign/year",
+      "video_url": "https://media.signbsl.com/videos/asl/startasl/mp4/year.mp4",
+      "source_type": "online-dictionary-reference",
+      "reused_previous_prediction": false,
+      "file": "openhands-test\\reference-videos\\year.mp4",
+      "sha256": "d4730d76aa42ad36912187749ce446322f118edb3ab92bbc0b71d2bec6d8129b",
+      "frames": 79,
+      "fps": 29.97,
+      "predicted": "year",
+      "confidence": 0.9258079528808594,
+      "top5": [
+        {
+          "word": "year",
+          "confidence": 0.9258079528808594
+        },
+        {
+          "word": "right",
+          "confidence": 0.00944224838167429
+        },
+        {
+          "word": "fish",
+          "confidence": 0.003429379779845476
+        },
+        {
+          "word": "change",
+          "confidence": 0.0031515047885477543
+        },
+        {
+          "word": "pull",
+          "confidence": 0.002377790864557028
+        }
+      ],
+      "seconds": 18.974,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "yes",
+      "file": "media\\signs\\yes.mp4",
+      "sha256": "9dd7261b9736ca35c39c41e05813febc24f286c96d7b89a6a021ee4b15ddb18c",
+      "predicted": "deaf",
+      "confidence": 0.21757441759109497,
+      "top5": [
+        {
+          "word": "deaf",
+          "confidence": 0.21757441759109497
+        },
+        {
+          "word": "yes",
+          "confidence": 0.1576339602470398
+        },
+        {
+          "word": "corn",
+          "confidence": 0.14539465308189392
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03509489446878433
+        },
+        {
+          "word": "hearing",
+          "confidence": 0.032555632293224335
+        }
+      ],
+      "seconds": 5.53,
+      "correct": false,
+      "top5_correct": true,
+      "source_type": "previous-local-reference",
+      "reused_previous_prediction": true
+    }
+  ],
+  "top1_accuracy": 0.7,
+  "top5_accuracy": 0.83
+}

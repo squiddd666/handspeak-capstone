@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 199 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 199 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 199 15% 20%;
+
+    --primary: 199 96% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 199 40% 95%;
+    --secondary-foreground: 199 96% 58%;
+
+    --muted: 199 20% 90%;
+    --muted-foreground: 199 10% 45%;
+
+    --accent: 199 96% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 199 20% 85%;
+    --input: 199 20% 85%;
+    --ring: 199 96% 58%;
+
+    --radius: 0.75rem;
+    
+    --neon-glow: 199 96% 58%;
+    --guide-box: 199 96% 58%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 22% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 140 20% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 140 20% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 160 100% 50%;
+    --primary-foreground: 140 22% 5%;
+
+    --secondary: 140 20% 12%;
+    --secondary-foreground: 160 100% 50%;
+
+    --muted: 140 20% 12%;
+    --muted-foreground: 160 20% 60%;
+
+    --accent: 160 100% 50%;
+    --accent-foreground: 140 22% 5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 15%;
+    --input: 140 20% 15%;
+    --ring: 160 100% 50%;
+    
+    --neon-glow: 160 100% 50%;
+    --guide-box: 160 100% 50%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .neon-glow {
+    box-shadow: 0 0 10px hsl(var(--neon-glow) / 0.5),
+                0 0 20px hsl(var(--neon-glow) / 0.3),
+                0 0 30px hsl(var(--neon-glow) / 0.1);
+  }
+  
+  .neon-text {
+    text-shadow: 0 0 10px hsl(var(--neon-glow) / 0.8),
+                 0 0 20px hsl(var(--neon-glow) / 0.5);
+  }
+  
+  .guide-box {
+    border: 3px dashed hsl(var(--guide-box));
+    box-shadow: 0 0 15px hsl(var(--guide-box) / 0.4);
+  }
+
+  .section-heading {
+    @apply text-lg sm:text-xl font-semibold text-foreground/80 mb-4;
+  }
+
+  .stat-card {
+    @apply bg-card border border-border rounded-xl p-4 sm:p-5 shadow-sm transition-colors duration-200 hover:border-primary/30;
+  }
+
+  .stat-label {
+    @apply text-xs font-semibold text-muted-foreground tracking-wider uppercase block mb-2;
+  }
+
+  .reference-frame {
+    @apply rounded-2xl border border-border shadow-md overflow-hidden;
+  }
+
+  .panel-card {
+    @apply bg-card border border-border rounded-2xl shadow-sm transition-colors duration-200;
+  }
+
+  .info-panel {
+    @apply panel-card p-6 sm:p-8 space-y-4;
+  }
+}

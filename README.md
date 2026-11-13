@@ -329,3 +329,101 @@ reference are **not** independent signer accuracy. See
 `reports/alphabet-repair-20261111/` for original failures, diagnostic sweeps,
 iteration results, final UI traces, screenshots, and remaining blockers. Do not
 interpret a synthetic/template unit-test pass as a real-media or live-user pass.
+
+
+## OpenHands 70-word mode (local research integration)
+
+Words mode now offers Jared Lorenz's pretrained OpenHands 100-class BiLSTM,
+with an output allowlist of the 70 labels that passed our one-reference-per-word
+comparison. The full model still competes across all 100 labels; an excluded
+winner is rejected without promoting a runner-up or renormalizing scores.
+These 70 are NOT verified webcam-accuracy classes. The existing 19 virtual-camera
+passed legacy words remain separately available with their previous restrictions.
+
+Use Words in motion, keep "Use OpenHands for Record a word" selected, enable
+recorded-video processing, record one complete sign for 3 seconds, then choose
+Add reviewed word. Record a word uses this selected mode. Watch & Learn has a
+separate OpenHands selector with all 70 local reference videos.
+
+This mode sends the recorded VIDEO (not only coordinates) to the local Python
+server. The server writes a temporary file for MediaPipe decoding and removes it
+after inference. Uploads require explicit consent, same-origin requests, and a
+20 MB limit. A CPU subprocess isolates upstream model imports from legacy models.
+Only one OpenHands job runs at a time; canceling the browser request discards its
+UI result, while the bounded backend job may finish before deleting its file.
+
+Endpoints: GET /api/openhands/status and POST /api/openhands/recognize.
+Metadata/checkpoint pin: models/openhands-passed.json. Source checkout:
+third_party/OpenHands-source, commit 6219c4d5d017457da220ff3037ea209c739fd663.
+The upstream root has no general code/model LICENSE in this checkout. Local
+integration does not establish redistribution or commercial-use rights. Dataset
+and reference-video rights remain with their original owners.
+
+Evidence: website-word-test/openhands70-live-api-smoke.json and
+website-word-test/openhands70-browser-smoke.json (one end-to-end word only).
+
+
+### Completed OpenHands70 website fake-camera test
+
+The full 70-word Playwright/Chromium file-camera run is complete: 45 verified
+correct UI/word-log matches, 9 wrong predictions, 5 rejections, and 11 incomplete
+captures under the existing three-second recorder. This does not establish
+physical-webcam accuracy. The 70 reference-passed words remain enabled; this test
+did not automatically disable any. See website-word-test/OPENHANDS70-VIRTUAL-RESULTS.md
+or http://localhost:8000/openhands70-virtual-results.html for per-word evidence.
+
+
+### Combined browser + OpenHands workflow
+
+The default combined word mode uses one camera stream and one three-second capture.
+Browser hand-landmark frames from the capture are evaluated by the existing default/extra-word matcher, while the same capture's video is evaluated by the OpenHands endpoint. Model files and disabled-word policies are unchanged. Other legacy/category recognizers remain separate modes.
+
+Matching labels are grouped into one review choice with both model sources. Different labels are presented as unranked choices; the app does not compare or renormalize confidence across models. A surviving browser result is still offered if OpenHands rejects or fails. No combined prediction is automatically inserted into the draft. Choose a candidate when necessary, then use Add reviewed word or the sidebar + Add. Cancel discards both results; mode changes stop the shared capture.
+
+Actual manual virtual-camera checks: FOOD was predicted by Browser while OpenHands incorrectly predicted GIVE; both were offered for review and choosing FOOD logged exactly once. BEFORE was predicted by OpenHands, while Browser abstained; accepting it logged exactly once. See `website-word-test/combined-virtual/*.json`. These are two existing reference clips, not independent model accuracy or physical-webcam validation. Existing automatic-capture timing limitations are not fixed by combining model outputs.
+
+Unit checks: `node training/test_combined_word_results.mjs`.
+
+
+### Automatic combined words (pre-roll + pause segmentation)
+
+In Words in motion, Automatic words is enabled by default. Start the camera, perform one sign, then pause. Record a word remains an optional manual fallback; it is not needed to trigger automatic recognition.
+
+Automatic capture maintains at most three overlapping, short camera encoders in memory, providing roughly 1-2.6 seconds of real video pre-roll before hand movement is detected. Idle buffer bytes are discarded, never uploaded or saved. Once movement is selected, a pause ends the sign (with a minimum sign window to avoid clipping short words), or a seven-second recording bound ends the capture. The browser landmark matcher receives a bounded history covering the same video window; OpenHands receives the actual selected video. No source pixels or inference outputs are injected or replayed.
+
+Blank/static appearance alone does not submit a clip. Only one sign is processed at a time. Pending results block new capture until reviewed or discarded; holding a pose must not repeatedly add a word. After review, a quiet interval rearms capture without requiring the hands to disappear. + Add is still required to accept a word, and conflicts require choosing a candidate. Model accuracy limitations and disabled-word policies are unchanged.
+
+Stopping the camera, changing recognition mode, turning off Automatic words, cancelling capture, or hiding the page cancels active pre-roll/capture. Processing errors remain visible. Local processing and temporary server-video cleanup remain unchanged.
+
+Unit checks: `node training/test_automatic_word_capture.mjs`.
+Actual virtual-camera cases: `training/check_automatic_preroll_virtual.py WORD --automatic`; use `--repeat` to check review gating and another sign cycle. These are existing reference-clip workflow tests, not independent model accuracy or a full automatic-vocabulary guarantee.
+
+
+### Boundary consensus and conservative endpoint checks
+
+Word onset now needs three motion observations over a time window, or two sustained observations corroborated by scene movement; hand appearance alone is not a start. The detector normalizes displacement for hand size and frame cadence, uses different start/stop thresholds, and estimates a limited idle-noise floor. Primary endpoint evidence is a multi-frame stable final pose. A local 64x48 motion thumbnail can corroborate a still scene after tracking drops; it cannot override observed ongoing hand movement. Only the previous thumbnail is retained, and reset clears the off-screen image memory. No thumbnail is saved or sent to a service.
+
+Brief missing-hand intervals do not immediately split a sign. Tracking gaps, moving scenes after tracking loss, and a recording deadline without a confirmed endpoint reject the clip instead of forcing a model prediction. A short pause inside a sign is not an endpoint. The bounded real-video pre-roll and shared two-model review flow are unchanged.
+
+These are heuristic quality checks, not a learned continuous-ASL boundary model or proof of A-Z-level reliability. Users should sign once, briefly hold the final pose still, and review the prediction. Classification accuracy is a separate problem; model weights and confidence scores were not changed.
+
+Boundary tests: `node training/test_word_boundaries.mjs` (19 scenarios/cadences), `node training/test_scene_motion.mjs`, and `node training/test_automatic_word_capture.mjs`. Actual camera checks: `training/check_boundary_consensus_virtual.py` and `training/check_boundary_safety.py`.
+
+
+Combined-mode hand tracking runs in a worker with a latest-frame-only queue so old observations cannot accumulate behind UI rendering. Face-overlay inference is paused in this mode to prioritize hand tracking; this does not alter the recorded camera stream or OpenHands server inputs. The camera waits for browser word-model loading, and the UI asks the user to hold their hands in view until tracking is ready before signing. First-sign cold-start performance and physical-webcam recall are not guaranteed by the reference-video checks.
+
+
+### Tracking visibility and worker health
+
+The word overlay displays finite raw tracked landmarks separately from the stricter recognition-quality filter. Display freshness uses result-arrival time; word-boundary timing still uses the original captured-frame timestamp. A compact status distinguishes a tracked hand, a partly cropped hand, missing hands, and delayed tracking. A raised/cropped palm is not treated as a completed motion word. Persistently cropped signing hands abort the clip with a retry instruction.
+
+The latest-frame worker has an eight-second in-flight watchdog: an unresponsive worker stops the camera with a visible retry notification instead of leaving a misleading live feed indefinitely. This is a health check, not a change to model confidence or vocabulary. `training/check_tracking_visibility.py` verifies actual landmark pixels and BEFORE recognition/logging through a virtual camera. `training/check_tracker_watchdog.py` is explicitly a worker-stall fault-injection test, not model-accuracy evidence.
+
+
+### False maximum-duration / held-pose timeout repair
+
+The previous endpoint rule reset its pause timer on ordinary landmark jitter, including frames in the threshold dead band. A rolling pose-consensus window now tolerates bounded jitter and isolated noisy observations while checking the most displaced hand joints and recent frames. Genuine ongoing drift and recent substantial pose changes still block an endpoint. Visible stable hands do not need a motionless background.
+
+Recording-buffer rotation and the hard capture deadline now use actual recording wall-clock time. Boundary geometry still uses captured-frame timestamps; variable worker delay cannot consume the video recording budget. The recording limit has not simply been extended, and incomplete clips are not automatically submitted at timeout.
+
+Regression checks: `node training/test_pause_tolerance.mjs` (bounded hand jitter with moving background succeeds; slow continuing movement does not), `node training/test_capture_clock.mjs` (worker-lag-independent budget), and the existing 19 boundary, scene-motion, and sampler/lifecycle checks. Actual controlled held-hand/moving-background video test and normal BEFORE reference-camera results are under `website-word-test/pause-repair`. No model weights or confidence calibration changed.

@@ -8,6 +8,12 @@
 .env
 .env.*
 !.env.example
+admin-setup-token
+
+# Large local test artifacts / logs
+*.y4m
+*.log
+website-word-test/
 
 # Python environments and generated caches
 __pycache__/

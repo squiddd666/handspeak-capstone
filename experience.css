@@ -115,25 +115,5 @@ body.large-text{font-size:18px}.large-text .camera-tip,.large-text .speech-optio
 .admin-panel label{display:block;margin:14px 0}.admin-panel textarea,.admin-panel select,.admin-panel input:not([type=checkbox]){max-width:100%;padding:10px}.admin-panel textarea{width:100%;min-height:100px}.admin-feedback-actions{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:700px){.feature-dialog{padding:20px}.account-actions{gap:4px}.account-actions #openTutorial{font-size:12px}.recorded-checks{padding:16px}.large-text .site-header nav{gap:10px}}
 
-/* Default low-clutter view for keyboard, switch, cognitive, and mobile access. */
-body.simple-mode .site-header nav a:not([href="#workspace"]):not([href="#capstoneWords"]):not([href="#learn"]),
-body.simple-mode .practice-disclosure,
-body.simple-mode #wordCaptureButton,
-body.simple-mode #demoButton,
-body.simple-mode .example-camera-link,
-body.simple-mode .camera-settings,
-body.simple-mode .word-settings,
-body.simple-mode .workflow-strip,
-body.simple-mode .message-controls,
-body.simple-mode #copyButton,
-body.simple-mode #saveButton,
-body.simple-mode .sentence-tools,
-body.simple-mode .recognition-info,
-body.simple-mode #matchFeedback,
-body.simple-mode .interpretation-panel{display:none!important}
-body.simple-mode .workspace{grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);max-width:1080px}
-body.simple-mode .camera-actions #cameraButton{font-size:16px;min-height:52px}
-body.simple-mode .output-actions .speak-button{font-size:16px;min-height:52px}
-body.simple-mode button,body.simple-mode select,body.simple-mode a{touch-action:manipulation}
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #d8f0b9;outline-offset:3px}
-@media(max-width:800px){body.simple-mode .workspace{grid-template-columns:1fr}#simpleViewButton{font-size:12px}.site-header{gap:8px}.account-actions{display:flex;align-items:center}.account-actions #openTutorial{display:none}}
+@media(max-width:800px){.site-header{gap:8px}.account-actions{display:flex;align-items:center}.account-actions #openTutorial{display:none}}

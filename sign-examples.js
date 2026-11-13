@@ -1,4 +1,4 @@
-import {loadVocabularySettings,wordSettings,applyVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
+import {loadVocabularySettings,wordSettings,applyVocabularySettings,isWordEnabled} from './vocabulary-settings.js?v=20261112-count-19-fix';
 import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261021-baby-1';
 import {createSignAvatar} from './sign-avatar.js?v=20261109-kai-match-1';
 import {hasSignAnimation} from './sign-animations.js?v=20261105-reference-3';
@@ -33,49 +33,6 @@ const coreLessons={belt:'https://www.signingsavvy.com/search/belt',eat:'https://
   lock:'https://www.signingsavvy.com/search/lock',duck:'https://www.signingsavvy.com/search/duck',baseballcap:'https://www.signingsavvy.com/search/baseballcap',other:'https://www.signingsavvy.com/search/other',whatfor:'https://www.signingsavvy.com/search/whatfor',drag:'https://www.signingsavvy.com/search/drag',microscope:'https://www.signingsavvy.com/search/microscope',party:'https://www.signingsavvy.com/search/party',demand:'https://www.signingsavvy.com/search/demand',edit:'https://www.signingsavvy.com/search/edit',mechanic:'https://www.signingsavvy.com/search/mechanic',deaf:'https://www.signingsavvy.com/search/deaf'};
 const coreAccuracy={BELT:[13,14],EAT:[10,11],EMPTY:[7,8],PEG:[7,8],SOCCER:[8,8],SQUEEZE:[7,8],VLOG:[9,9],
   LOCK:[9,10],DUCK:[8,9],BASEBALLCAP:[8,9],OTHER:[7,8],WHATFOR:[12,14],DRAG:[11,13],MICROSCOPE:[11,13],PARTY:[9,11],DEMAND:[9,11],EDIT:[9,11],MECHANIC:[12,15],DEAF:[8,10]};
-const CORE_SENTINEL='capstone-core';
-
-const BEGINNER_SENTINEL='beginner-ready';
-const BEGINNER_VIDEO_VERSION='20261105-beginner-ready-5';
-const beginnerWords=new Map();
-const beginnerAccuracy={};
-let beginnerId=null;
-function beginnerLessonQuery(name){
-  return encodeURIComponent(String(name).toLowerCase().replaceAll(' / ',' ').replaceAll('/',' '));
-}
-function chooseBeginnerPractice(id,button=null){
-  const name=beginnerWords.get(id);
-  if(!name)return;
-  beginnerId=id;
-  chooseSign(id,button,name);
-  libraryId=BEGINNER_SENTINEL;
-  document.querySelector('#signExampleMode').textContent=`${name} · Beginner ready camera model (≥70% held-out). Watch the 3D demo / reference, then record one complete sign for four seconds and review the top five before adding the word.`;
-}
-async function loadBeginnerReadyExamples(){
-  try{
-    const response=await fetch(`models/beginner-ready-labels.json?v=${BEGINNER_VIDEO_VERSION}`,{cache:'no-store'});
-    if(!response.ok)return;
-    const data=await response.json();
-    const ids=data.ids&&typeof data.ids==='object'?data.ids:{};
-    const accuracy=data.accuracy&&typeof data.accuracy==='object'?data.accuracy:{};
-    const container=document.querySelector('.example-words');
-    const practice=document.querySelector('#practiceWord');
-    for(const name of data.labels||[]){
-      const id=ids[name]||String(name).toLowerCase().replaceAll(' / ','-').replaceAll('/','-').replaceAll(' ','-');
-      beginnerWords.set(id,name);
-      const metrics=accuracy[name];
-      if(metrics&&Number(metrics.total)>0)beginnerAccuracy[name]=[Number(metrics.correct)||0,Number(metrics.total)||0];
-      if(buttons.some(button=>button.dataset.signExample===id))continue;
-      const button=document.createElement('button');button.type='button';button.className='secondary-button';
-      button.dataset.signExample=id;button.dataset.signLabel=name;button.setAttribute('aria-pressed','false');button.textContent=name;
-      button.addEventListener('click',()=>chooseBeginnerPractice(id,button));
-      buttons.push(button);container.append(button);
-      if(practice&&![...practice.options].some(option=>option.value===id))practice.add(new Option(name,id));
-    }
-    updateAccuracy();
-  }catch{ /* Beginner ready examples remain optional when the metadata file is missing. */ }
-}
-
 let coreId=null;
 const publishedExamples=new Map();
 let accuracyProfiles={},publishedPacks=[];
@@ -90,14 +47,11 @@ function exampleAccuracy(name){
   return pack?publishedAccuracy(pack,name):referenceAccuracy(accuracyProfiles,name);
 }
 function updateAccuracy(){
-  const beginner=beginnerAccuracy[label];
   const core=coreAccuracy[label];
-  const tier=coreWords.has(coreId)||[...coreWords.values()].includes(label)?'Core 7-word':(core?'Extended 19-word':null);
+  const tier=coreWords.has(coreId)||[...coreWords.values()].includes(label)?'Core research clip':(core?'Extended research clip':null);
   const metrics=core?null:exampleAccuracy(label),target=document.querySelector('#signExampleAccuracy');
-  target.textContent=beginner
-    ?`Beginner ready ST-GCN · ${beginner[0]}/${beginner[1]} correct on the held-out test split (${(100*beginner[0]/beginner[1]).toFixed(1).replace(/\.0$/,'')}%). Live-camera accuracy is unverified.`
-    :core
-    ?`${tier} ST-GCN · ${core[0]}/${core[1]} correct on the held-out test split (${(100*core[0]/core[1]).toFixed(1).replace(/\.0$/,'')}%). Live-camera accuracy is unverified.`
+  target.textContent=core
+    ?`${tier} · ${core[0]}/${core[1]} correct on a held-out research split (${(100*core[0]/core[1]).toFixed(1).replace(/\.0$/,'')}%). Watch-only example; live-camera accuracy is unverified.`
     :`${accuracyText(metrics)}${metrics?` · ${metrics.model}. ${metrics.scope}`:'. No measured test result is available for this word.'}`;
   for(const button of buttons){
     const name=button.dataset.signLabel||button.textContent;
@@ -107,7 +61,7 @@ function updateAccuracy(){
     if(!badge){badge=document.createElement('small');badge.dataset.wordAccuracy='';badge.style.display='block';button.append(badge);}
     if(core){
       badge.textContent=`${(100*core[0]/core[1]).toFixed(1).replace(/\.0$/,'')}% test · ${core[0]}/${core[1]}`;
-      button.title=`${isCore?'Core 7-word':'Extended 19-word'} ST-GCN, held-out test split: ${core[0]}/${core[1]} correct. Live-camera accuracy is unverified.`;
+      button.title=`${isCore?'Core':'Extended'} research clip, held-out split: ${core[0]}/${core[1]} correct. Watch-only example; live-camera accuracy is unverified.`;
       continue;
     }
     const m=exampleAccuracy(name);
@@ -259,17 +213,18 @@ function playSign(id){
   return player.play(id,{reference});
 }
 function chooseSign(id,button=null,displayName=null){
+  if(wordSettings(id).hidden||!isWordEnabled(displayName||button?.dataset.signLabel||id.replaceAll('-',' ').toUpperCase()))return;
   const name=displayName||button?.dataset.signLabel||id.replace(/-/g,' ').toUpperCase();
   selection+=1;
   pauseAll();
   label=name;
-  libraryId=cameraWords.has(id)?CORE_SENTINEL:id;
+  libraryId=id;
   coreId=cameraWords.has(id)?id:null;
   for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
   showLesson(id,name);
   if(cameraWords.has(id)){
-    const tier=coreWords.has(id)?'Core 7-word':'Extended 19-word';
-    document.querySelector('#signExampleMode').textContent=`${name} · ${tier} camera model ready. Watch the 3D demo, then record one complete sign for four seconds and review the top five before adding the word.`;
+    const tier=coreWords.has(id)?'Core research clip':'Extended research clip';
+    document.querySelector('#signExampleMode').textContent=`${name} · ${tier}. Watch the example, then practice at the camera with Record a word or Automatic words. Review every match.`;
   }else{
     instructions(id);
     preparePractice(id);
@@ -320,8 +275,6 @@ document.querySelector('#signExampleReplay').addEventListener('click',()=>{
 });
 document.querySelector('#signExamplePractice').addEventListener('click',()=>{
   pauseAll();
-  if(libraryId===CORE_SENTINEL&&coreId){document.dispatchEvent(new CustomEvent('handspeak:capstone-practice',{detail:{id:coreId,label:cameraWords.get(coreId)}}));return;}
-  if(libraryId===BEGINNER_SENTINEL&&beginnerId){document.dispatchEvent(new CustomEvent('handspeak:beginner-practice',{detail:{id:beginnerId,label:beginnerWords.get(beginnerId)}}));return;}
   if(libraryId){document.dispatchEvent(new CustomEvent('handspeak:practice',{detail:{id:libraryId}}));return;}
   document.dispatchEvent(new CustomEvent('handspeak:default-practice',{detail:{label}}));
 });
@@ -357,7 +310,6 @@ async function loadPublishedExamples(){
     updateAccuracy();
   }catch{ /* Existing practice examples remain available when the library cannot load. */ }
 }
-void loadBeginnerReadyExamples();
 void loadPublishedExamples();
 void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;updateAccuracy();});
 

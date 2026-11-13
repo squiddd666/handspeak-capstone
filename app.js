@@ -1,20 +1,23 @@
-import {createLetterCamera} from './letter-camera.js?v=20261111-architecture-2';
+import {createOpenHandsRecognition} from './openhands-recognition.js?v=20261112-openhands-video-play';
+import {installFakeCameraTest} from './fake-camera-test.js?v=20261112-panel-1';
+import {commitCurrentWord} from './interpreter-words.js';
+import './interpreter-layout.js?v=20261112-capture-preroll-v2';
+import {createLetterCamera} from './letter-camera.js?v=20261112-signspeak-only-1';
 import {classifyLetter,letterFeatures,isUsableLetterHand,sameObservedHand,createLetterConsensus} from './letter-recognition.js?v=20261111-letter-repair-1';
 import {createMultiHandMotionLetters} from './motion-letters.js?v=20261111-motion-geometry-1';
 import {createExperienceUI} from './experience-ui.js?v=20261020-simple-view-1';
-import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
-import {createTemporalCamera} from './temporal-camera.js?v=20261020-tracking-1';
+import {loadVocabularySettings,isWordEnabled} from './vocabulary-settings.js?v=20261112-count-19-fix';
+import {createTemporalCamera} from './temporal-camera.js?v=20261112-tracker-watchdog';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
 import {createResearchWords} from './research-words.js?v=20261109-vm-sync-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261111-motion20-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261112-remove-browse-library';
 import {createInterpreter} from './interpretation.js?v=20261011-features-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261111-architecture-2';
-import { createMotionStudio } from './motion-studio.js?v=20261111-motion20-1';
-import {createCapstoneRecognition} from './capstone-recognition.js?v=20261109-vm-sync-1';
-import {createBeginnerRecognition} from './beginner-recognition.js?v=20261111-target20-holistic-v4';
+import { createMotionStudio } from './motion-studio.js?v=auto-preroll-v1-combined-1-20261111-motion20-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261109-static-alphabet-v2';
 
+const signSpeakSelected=true;
 const $ = (selector) => document.querySelector(selector);
 const video = $('#webcam');
 const canvas = $('#overlay');
@@ -25,8 +28,18 @@ const placeholder = $('#cameraPlaceholder');
 const liveResult = $('#liveResult');
 const liveLetter = $('#liveLetter');
 const liveConfidence = $('#liveConfidence');
+const validTrackedHand=p=>Array.isArray(p)&&p.length===21&&p.every(q=>q&&Number.isFinite(q.x)&&Number.isFinite(q.y));
+const fullHandInFrame=p=>validTrackedHand(p)&&p.every(q=>q.x>=0&&q.x<=1&&q.y>=0&&q.y<=1);
+function reportWordHands(data,lag){
+ const raw=(data.landmarks||[]).filter(validTrackedHand),full=raw.filter(fullHandInFrame);
+ const hint=$('#wordHandStatus');if(!hint)return;
+ const text=!raw.length?'No hand detected - bring your full hand into view.':!full.length?'Hand detected, but partly outside the camera. Move back until all fingers fit.':lag>500?'Hand tracked, but tracking is delayed. Keep the sign slow and clear.':`${full.length} hand${full.length===1?'':'s'} tracked - keep fingers inside the camera.`;
+ if(hint.textContent!==text)hint.textContent=text;
+}
 let vocabularyLibrary;
+let openHandsRecognition;
 function setWordCameraResult(word,detail,daily=false,model=null){
+  if(model!=='OpenHands'&&!isWordEnabled(word)){liveResult.hidden=true;return;}
   liveResult.hidden=word==='—';liveLetter.textContent=word;
   liveConfidence.textContent=detail||'Possible match — verify before adding';
   vocabularyLibrary?.showCameraAccuracy(model?null:word,{daily,personal:!daily&&motionStudio.hasPersonalWord(word)});
@@ -205,12 +218,13 @@ const MOTION_REFERENCE_VIDEOS={
   Z:'https://framerusercontent.com/assets/is7w4CKj3wZrASC9kxh6CFHJ7Zo.mp4'
 };
 function renderSignLibrary(){
-  const pretrained=new Set(baseSamples.map(sample=>sample.label));
-  $('#signGrid').innerHTML = SIGNS.map(sign => {
-    const media=sign.motion
-      ? `<video src="${MOTION_REFERENCE_VIDEOS[sign.letter]}" poster="./media/letters/${sign.letter.toLowerCase()}.jpg?v=20261111-motion-reference-1" aria-label="${sign.name} motion reference: ${sign.hint}" width="212" height="199" muted loop playsinline controls preload="metadata"></video>`
-      : `<img src="./media/letters/${sign.letter.toLowerCase()}.jpg?v=20261111-motion-reference-1" alt="${sign.name} hand sign: ${sign.hint}" width="212" height="199" loading="lazy" decoding="async">`;
-    return `<article class="sign-card"><div class="sign-visual sign-photo">${media}</div><h3>${sign.name}</h3><small>${sign.motion?(motionLetterReady?'Motion reference · experimental recognition':'Motion required · model unavailable'):pretrained.has(sign.letter)?'Experimental · image-tested':'Personal · teach first'}</small><p>${sign.hint}</p></article>`;
+  $('#signGrid').innerHTML = SIGNS.filter(sign=>sign.letter!=='5').map(sign => {
+    const video=MOTION_REFERENCE_VIDEOS[sign.letter];
+    const media=video
+      ?`<video class="sign-motion-video" src="${video}" controls playsinline muted loop preload="metadata" aria-label="${sign.name} motion reference video. ${sign.hint}"></video>`
+      :`<img src="./media/signspeak-alphabet/${sign.letter}.jpg?v=20261112-signspeak-samples-1" alt="${sign.name} ASL handshape reference. ${sign.hint}" width="200" height="200" loading="lazy" decoding="async">`;
+    const badge=video?'Motion reference video':'Handshape reference';
+    return `<article class="sign-card"><div class="sign-visual sign-photo${video?' sign-motion':''}">${media}</div><h3>${sign.name}</h3><small>${badge}</small><p>${sign.hint}</p></article>`;
   }).join('');
 }
 $('#trainingLabel').innerHTML = STATIC_SIGNS.map(sign=>`<option value="${sign.letter}">${sign.name} — ${sign.hint}</option>`).join('');
@@ -229,7 +243,7 @@ $('#faceRetry').addEventListener('click',()=>{void prepareFaceTracker();});
 let recognitionMode = 'letters';
 const cameraDiagnostic={lastCapture:null,times:[],lastRender:0,rawHands:0,usableHands:0};
 let letterImageLandmarker=null,letterCamera=null,letterHands=[],letterFrameAt=-Infinity,motionCommittedId=null;
-const useLetterWorker=()=>typeof Worker!=='undefined'&&new URLSearchParams(location.search).get('letterEngine')==='hybrid';
+const useLetterWorker=()=>typeof Worker!=='undefined'&&typeof OffscreenCanvas!=='undefined'&&typeof createImageBitmap==='function';
 function renderCameraDiagnostic(){
  const times=cameraDiagnostic.times,span=times.length>1?times[times.length-1]-times[0]:0;
  $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261111-architecture-2',recoveryWarning:cameraDiagnostic.recoveryWarning||null,letterWorker:letterCamera?.diagnostics()||null,staticCandidate:cameraDiagnostic.staticCandidate||null,letterMoving:cameraDiagnostic.letterMoving||false,trackerState:cameraDiagnostic.trackerState||'idle',trackerError:cameraDiagnostic.trackerError||null,delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
@@ -237,6 +251,7 @@ function renderCameraDiagnostic(){
 $('#copyCameraDiagnostics').addEventListener('click',async()=>{renderCameraDiagnostic();try{await navigator.clipboard.writeText($('#cameraDiagnostics').textContent);notify('Diagnostics copied. Paste them into this chat.');}catch{notify('Select and copy the text in Camera diagnostics.');}});
 let handVision,handFiles,handRecovery=null;
 let handLandmarker,handMaxHands=1,handDelegate='',temporalCamera=null,temporalHands=[],temporalFrameAt=-Infinity,temporalLagMs=0;
+let combinedTracking=false;
 let stream;
 let running = false;
 let cameraStarting = false;
@@ -260,11 +275,11 @@ let trainingLabel = '';
 let pendingSamples = [];
 let lastVideoTime = -1;
 let modelParameters = DEFAULT_PARAMETERS;
-let aiSamples = loadAISamples();
+let aiSamples = [];
 let baseSamples = [];
 let baseModelState = 'Loading pretrained letters…';
 const HOLD_MS = 850;
-const letterConsensus=createLetterConsensus({holdMs:HOLD_MS,letterHoldMs:{I:2000,D:2000}});
+const letterConsensus=createLetterConsensus({holdMs:signSpeakSelected?2000:HOLD_MS,letterHoldMs:{I:2000,D:2000}});
 const motionLetters=createMultiHandMotionLetters();
 let motionLetterReady=false;
 let motionLetterHoldUntil=0;
@@ -287,7 +302,7 @@ const interpreter=createInterpreter({speak:speakText,getMessage:()=>message,setM
 
 const researchWords=createResearchWords({onWord:addWord,
  onStatus:(word,detail)=>{setWordCameraResult(word,detail,true);setRecognitionFeedback(detail||word);},
- onChange:enabled=>{motionStudio.cancel();liveResult.hidden=true;if(enabled)setRecognitionMode('words',true);}
+ onChange:enabled=>{motionStudio.cancel();liveResult.hidden=true;if(enabled){openHandsRecognition?.setEnabled(false);setRecognitionMode('words',true);}}
 });
 const motionStudio=createMotionStudio({
   isRunning:()=>running && recognitionMode==='words',
@@ -296,26 +311,24 @@ const motionStudio=createMotionStudio({
   speak:speakText,
   onDiagnostic:data=>{
     const {sequence,...summary}=data;
+    document.dispatchEvent(new CustomEvent('handspeak:word-capture-diagnostics',{detail:summary}));
     if(new URLSearchParams(location.search).has('motionAudit'))globalThis.__lastMotionSequence=sequence||null;
     cameraDiagnostic.lastCapture=summary;renderCameraDiagnostic();
   },
   onFinish:()=>interpreter.finish()
 });
-vocabularyLibrary=createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
-const capstoneRecognition=createCapstoneRecognition({
-  isRunning:()=>running&&recognitionMode==='words',startCamera,onWord:addWord,
-  onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(`${word} — ${detail}`);},
-  prepare:()=>{researchWords.disable();if(motionStudio.usesTemporalModel()){motionStudio.setVocabulary(null);if(running||cameraStarting)stopCamera();}setRecognitionMode('words');motionStudio.cancel();}
-});
-const beginnerRecognition=createBeginnerRecognition({
-  isRunning:()=>running&&recognitionMode==='words',startCamera,onWord:addWord,
-  onStatus:(word,detail,model)=>{setWordCameraResult(word,detail,false,model);setRecognitionFeedback(`${word} — ${detail}`);},
-  prepare:()=>{researchWords.disable();if(motionStudio.usesTemporalModel()){motionStudio.setVocabulary(null);if(running||cameraStarting)stopCamera();}setRecognitionMode('words');motionStudio.cancel();}
-});
+vocabularyLibrary=createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{if(model)openHandsRecognition?.setEnabled(false);researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
 $('#motionTeach').addEventListener('click',()=>researchWords.disable(),true);
 
+openHandsRecognition=createOpenHandsRecognition({startCamera,isRunning:()=>running&&recognitionMode==='words',
+ browserModel:motionStudio,
+ onWord:(word,source)=>addWord(word,source==='OpenHands'?'openhands':null),
+ onStatus:(word,detail)=>{if(word==='No reliable match'){liveResult.hidden=true;setRecognitionFeedback(detail||word);}else{setWordCameraResult(word,detail,false,'OpenHands');setRecognitionFeedback(word+' - review before adding.');}},
+ onSelect:enabled=>{if(enabled){if(temporalCamera&&!combinedTracking)stopCamera();researchWords.disable();motionStudio.cancel();setRecognitionMode('words');}else if(running){stopCamera();}}
+});
+document.addEventListener('handspeak:openhands-progress',event=>{if(recognitionMode==='words'&&openHandsRecognition?.active())setRecognitionFeedback(event.detail.text);});
 function setRecognitionMode(mode,keepResearch=false){
-  if(mode!==recognitionMode){beginnerRecognition.cancel();capstoneRecognition.cancel();}
+  openHandsRecognition?.cancel();
   researchWords.cancel();if(!keepResearch)researchWords.disable();
   if(temporalCamera&&mode!=='words')stopCamera();
   if(letterCamera&&mode!=='letters')stopCamera();
@@ -324,6 +337,8 @@ function setRecognitionMode(mode,keepResearch=false){
     stopCamera();handLandmarker?.close?.();handLandmarker=null;
   }
   $('#wordRecognitionControls').hidden=mode!=='words';
+  $('#openhandsWords').hidden=true;
+  $('#compactWordControls').hidden=mode!=='words';
   $('#recognitionMode').value=mode;
   $('#captureMode').textContent=recognitionMode==='words'?'WORDS IN MOTION':'LETTERS A–Z';
   $('#pipelineMatch').classList.toggle('active',recognitionMode==='words');
@@ -343,7 +358,7 @@ $('#wordCaptureButton').addEventListener('click',async()=>{
     if(!running)await startCamera();
     if(!running)return;
     if(recognitionMode!=='words')setRecognitionMode('words');
-    if(researchWords.active())researchWords.recognize();else motionStudio.recognize();
+    if(openHandsRecognition.active())await openHandsRecognition.record();else if(researchWords.active())researchWords.recognize();else motionStudio.recognize();
   }finally{$('#wordCaptureButton').disabled=motionStudio.isRecording();}
 });
 
@@ -354,27 +369,13 @@ function loadAISamples(){
   }catch{return []}
 }
 
-function classifyAI(points,imageAspect=1){
-  return classifyLetter(points,baseSamples.concat(aiSamples),modelParameters,imageAspect);
-}
+function classifyAI(){return null;}
 
 async function loadPretrainedModel(){
-  try{
-    const response=await fetch('./models/asl-knn.json?v=20261111-letter-calibrated-1');
-    if(!response.ok)throw new Error('Pretrained model download failed');
-    const model=await response.json();
-    const labels=STATIC_SIGNS.map(sign=>sign.letter);
-    if(model.version!==2 || !validParameters(model.parameters) || model.normalization!=='wrist-palm-orientation-v2'
-      || !Array.isArray(model.samples) || !model.samples.length
-      || !model.samples.every(sample=>validSample(sample,labels)))throw new Error('Invalid pretrained model');
-    baseSamples=model.samples;
-    modelParameters=model.parameters;
-    baseModelState=`${new Set(baseSamples.map(sample=>sample.label)).size} pretrained letters · ${baseSamples.length} reference samples`;
-  }catch(error){
-    console.warn(error);
-    baseModelState='Pretrained letters unavailable · reload or teach at least two signs';
-  }
-  renderAIStatus();
+ baseSamples=[];baseModelState='SignSpeak ONNX LSTM - A-Z (loads when camera starts)';
+ renderAIStatus();
+ $('#captureSamplesButton').disabled=true;
+ $('#trainingHelp').textContent='SignSpeak is pretrained. Personal alphabet training is disabled.';
 }
 
 function endTraining(){
@@ -409,7 +410,7 @@ function renderAIStatus(){
   renderSignLibrary();
   const counts=Object.fromEntries(SIGNS.map(sign=>[sign.letter,baseSamples.concat(aiSamples).filter(sample=>sample.label===sign.letter).length]));
   $('#aiModelStatus').textContent=`${baseModelState} · ${aiSamples.length} personal samples${motionLetterReady?' · J/Z motion loaded':''}`;
-  $('#sampleCounts').innerHTML=SIGNS.map(sign=>`<span><b>${sign.letter}</b> ${counts[sign.letter]}</span>`).join('');
+  $('#sampleCounts').textContent='A-Z recognition uses the pretrained SignSpeak neural network, not personal reference samples.';
 }
 
 function notify(text){
@@ -431,7 +432,7 @@ function updateSentence(next){
   if(next===null){notify('Message limit reached (1000 characters)');return false;}
   message=next;renderMessage();return true;
 }
-function addWord(word){return updateSentence(appendWord(message,word));}
+function addWord(word,model=null){if(!isWordEnabled(word)&&!(model==='openhands'&&openHandsRecognition?.isAllowed(word))){notify('This word is disabled after testing');return false;}const next=appendWord(message,word);return updateSentence(next===null?null:(next.length<1000?next+' ':next));}
 document.querySelectorAll('[data-typed-word]').forEach(button=>button.addEventListener('click',()=>{addWord(button.dataset.typedWord);}));
 document.querySelectorAll('[data-punctuation]').forEach(button=>button.addEventListener('click',()=>{updateSentence(finishSentence(message,button.dataset.punctuation));}));
 $('#removeWordButton').addEventListener('click',()=>{updateSentence(removeLastWord(message));});
@@ -446,11 +447,13 @@ function setRecognitionFeedback(text){
   const node=$('#recognitionFeedback');
   if(node && node.textContent!==text)node.textContent=text;
 }
-function setLive(letter){
+function setLive(letter,confidence=null){
   vocabularyLibrary?.showCameraAccuracy(null);
   liveResult.hidden = false;
   liveLetter.textContent = letter || 'No reliable match';
-  liveConfidence.textContent = letter?'Possible match — hold steady, then verify the text':'Adjust your hand and try a supported sign';
+  const hasConfidence=Boolean(letter)&&Number.isFinite(confidence)&&confidence>=0&&confidence<=1;
+  liveConfidence.textContent=hasConfidence?`${(confidence*100).toFixed(1)}% model confidence`:letter?'Confidence unavailable':'No reliable match';
+  liveConfidence.title='Model confidence is not independently measured recognition accuracy.';
   setRecognitionFeedback(letter&&committed===letter?`${letter} — recognized. Verify the draft before speaking.`:letter?`Hand detected · ${letter} — possible match. Hold steady.`:'Hand detected · No reliable match. Try a supported sign.');
 }
 
@@ -517,21 +520,35 @@ async function startCamera(){
   cameraStarting=true;cameraButton.disabled=true;const attempt=++cameraAttempt;
   clearInterval(demoTimer);
   try{
-    await loadVocabularySettings();if(attempt!==cameraAttempt)return;
+    if(recognitionMode==='words')await loadVocabularySettings();if(attempt!==cameraAttempt)return;
     if(!navigator.mediaDevices?.getUserMedia) throw new Error('Camera access is not supported by this browser.');
-    if(recognitionMode==='letters'&&useLetterWorker()){
+    if(recognitionMode==='letters'&&signSpeakSelected&&!useLetterWorker())throw Error('SignSpeak requires camera worker support in this browser.');
+    if(recognitionMode==='words'&&openHandsRecognition.active()){
+      setRecognitionFeedback('Preparing word models and hand tracking...');
+      if($('#wordHandStatus'))$('#wordHandStatus').textContent='Preparing hand tracking...';
+      await motionStudio.ready;
+      handLandmarker?.close?.();handLandmarker=null;
+      combinedTracking=true;let readyFrames=0,settling=true;
+      temporalCamera=createTemporalCamera({latestOnly:true,
+        onDetection:(data,lag)=>{if(!running)return;handDelegate=temporalCamera?.getDelegate?.()||handDelegate;temporalLagMs=lag;temporalHands=(data.landmarks||[]).filter(validTrackedHand);temporalFrameAt=performance.now();reportWordHands(data,lag);readyFrames=lag<500&&(data.landmarks||[]).some(fullHandInFrame)?readyFrames+1:0;if(settling&&readyFrames>=3){settling=false;if(!openHandsRecognition.isBusy())setRecognitionFeedback('Automatic words ready. Sign once, then hold the final pose still briefly.');}consumeDetection(data,data.timestamp,data.imageAspect);},
+        onGap:()=>{readyFrames=0;settling=true;openHandsRecognition.cancel();temporalHands=[];setRecognitionFeedback('Hold your hands in view briefly while tracking gets ready. Then sign once and hold the final pose.');},
+        onError:message=>{cameraDiagnostic.trackerState='failed';cameraDiagnostic.trackerError=message;if(running){stopCamera();notify(message);}}
+      });
+      handDelegate=await temporalCamera.ready;cameraDiagnostic.trackerState='ready';
+    }else if(recognitionMode==='letters'&&useLetterWorker()){
       letterCamera=createLetterCamera({personalSamples:aiSamples,
         onDetection:(data,lag)=>{if(!running)return;temporalLagMs=lag;letterHands=(data.landmarks||[]).filter(p=>isUsableLetterHand(p,data.imageAspect));letterFrameAt=performance.now();consumeDetection(data,data.timestamp,data.imageAspect);},
         onWarning:message=>{cameraDiagnostic.recoveryWarning=message;},
         onError:async message=>{
           if(!running||!letterCamera)return;const attempt=cameraAttempt;letterCamera.close();letterCamera=null;letterHands=[];
           cameraDiagnostic.recoveryWarning=message;
+          if(signSpeakSelected){stopCamera();notify('SignSpeak failed: '+message);return;}
           try{await loadRecognizer();if(attempt===cameraAttempt&&running)setRecognitionFeedback('Compatibility detector restored — bring your hand into view.');}
           catch(error){if(attempt===cameraAttempt&&running){stopCamera();notify(error.message);}}
         }
       });
       try{const status=await letterCamera.ready;handDelegate=status.delegate;cameraDiagnostic.trackerState='ready';void prepareFaceTracker();}
-      catch(error){letterCamera?.close();letterCamera=null;cameraDiagnostic.recoveryWarning=error.message;await loadRecognizer();}
+      catch(error){letterCamera?.close();letterCamera=null;cameraDiagnostic.recoveryWarning=error.message;if(signSpeakSelected)throw error;await loadRecognizer();}
     }else if(recognitionMode==='words'&&motionStudio.usesTemporalModel()){ 
       temporalCamera=createTemporalCamera({
         onDetection:(data,lag)=>{if(!running)return;handDelegate=temporalCamera?.getDelegate?.()||handDelegate;temporalLagMs=lag;temporalHands=(data.landmarks||[]).filter(isUsableHand);temporalFrameAt=data.timestamp;consumeDetection(data,data.timestamp,data.imageAspect);},
@@ -565,7 +582,7 @@ async function startCamera(){
     cameraStatus.innerHTML = '<i></i> Live';
     cameraButton.innerHTML = '<span aria-hidden="true">■</span> Stop camera';
     $('#cameraHelp').textContent = recognitionMode==='words'?'With Automatic words enabled, sign once and pause briefly. Manual recording is also available.':'Hold a supported sign steady until it is added.';
-    setRecognitionFeedback('Camera ready — bring your hand into view.');
+    setRecognitionFeedback(recognitionMode==='words'&&openHandsRecognition.active()?'Hold your hands still in view until tracking is ready. Then sign once and hold the final pose briefly. Review the prediction before adding it.':'Camera ready - bring your hand into view.');
     detect();
   }catch(error){
     if(attempt!==cameraAttempt)return;
@@ -579,19 +596,20 @@ async function startCamera(){
 }
 
 function stopCamera(){
+  openHandsRecognition?.cancel();
   letterCamera?.close();letterCamera=null;letterHands=[];missingSince=null;motionCommittedId=null;
   letterConsensus.reset();
-  beginnerRecognition.cancel();capstoneRecognition.cancel();
   motionLetters.reset();motionLetterHoldUntil=0;
-  temporalCamera?.close();temporalCamera=null;temporalHands=[];temporalLagMs=0;
+  temporalCamera?.close();temporalCamera=null;combinedTracking=false;temporalHands=[];temporalLagMs=0;
   researchWords.cancel();
   setRecognitionFeedback('Camera off — select Start Signing to begin.');
   cameraAttempt++;
   cameraStarting=false;
   cameraButton.disabled=false;
   running = false;
+  interpreterHandAbsentSince=null;
   faceTracker.reset();
-  $('#trackingState').textContent='STANDBY';$('#trackingHands').textContent='0 / 2';$('#captureFeed').textContent='OFFLINE';
+  $('#trackingState').textContent='STANDBY';$('#trackingHands').textContent='0 / 2';if($('#wordHandStatus'))$('#wordHandStatus').textContent='Camera off.';$('#captureFeed').textContent='OFFLINE';
   $('#pipelineTrack').classList.remove('active');
   motionStudio.cancel();
   candidate='';candidateSince=0;committed='';lastVideoTime=-1;
@@ -634,8 +652,7 @@ function detect(){
     let detection={landmarks:[]};
     const auditStages=!letterCamera&&recognitionMode==='letters'&&typeof URLSearchParams!=='undefined'
       &&new URLSearchParams(location.search).has('letterAudit')?{}:null;
-    const beginnerCapturing=beginnerRecognition.isCapturing();
-    if(handLandmarker&&!temporalCamera&&!letterCamera&&(!beginnerCapturing||beginnerRecognition.needsHandDetection())){
+    if(handLandmarker&&!temporalCamera&&!letterCamera){
       try{
         detection=handLandmarker.detectForVideo(video,now);
         if(auditStages)auditStages.videoMs=performance.now()-now;
@@ -652,12 +669,11 @@ function detect(){
       }
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    if(!beginnerCapturing)faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing(),letterCamera?250:100);
+    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||Boolean(recognitionMode==='words'&&openHandsRecognition?.active()),letterCamera?250:100);
     if(letterCamera){letterCamera.push(video);if(now-letterFrameAt<400)letterHands.forEach(drawHand);}
-    else if(beginnerCapturing)beginnerRecognition.frame(detection,now,video);
     else if(temporalCamera){
-      temporalCamera.push(video,now,motionStudio.isCapturing());
-      if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
+      temporalCamera.push(video,now,motionStudio.isCapturing()||Boolean(combinedTracking&&openHandsRecognition?.isBusy()));
+      if(now-temporalFrameAt<(combinedTracking?600:200))temporalHands.forEach(drawHand);
     }else if(handLandmarker){
       if(auditStages){detection.auditStages=auditStages;detection.timings=auditStages;}
       consumeDetection(detection,now,video.videoHeight/video.videoWidth);
@@ -670,14 +686,20 @@ function detect(){
 
 function consumeDetection(detection,now,imageAspect){
     const hands=(detection.landmarks||[]).filter(p=>recognitionMode==='letters'?isUsableLetterHand(p,imageAspect):isUsableHand(p));
+    if(recognitionMode==='letters'){if(hands.length)interpreterHandAbsentSince=null;else if(interpreterHandAbsentSince===null)interpreterHandAbsentSince=performance.now();}
     const processedAt=performance.now();cameraDiagnostic.times.push(processedAt);cameraDiagnostic.times=cameraDiagnostic.times.filter(t=>processedAt-t<=2000);cameraDiagnostic.rawHands=(detection.landmarks||[]).length;cameraDiagnostic.usableHands=hands.length;
     if(processedAt-cameraDiagnostic.lastRender>=1000){cameraDiagnostic.lastRender=processedAt;renderCameraDiagnostic();}
     if(!temporalCamera&&!letterCamera)hands.forEach(drawHand);
     $('#trackingHands').textContent=`${hands.length} / 2`;
+    // OpenHands uses server video inference; browser landmarks feed the shared combined capture.
+    // Do not feed them into an unrelated legacy word recognizer.
+    if(recognitionMode==='words'&&openHandsRecognition.active()){const indices=(detection.landmarks||[]).map((p,i)=>isUsableHand(p)?i:-1).filter(i=>i>=0);
+      motionStudio.frameCombined({landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect},now);
+      openHandsRecognition.frame(detection.landmarks||[],now);return;}
     const motionHands=(detection.motionHands||detection.trackedLandmarks||detection.landmarks||[]).filter(p=>isUsableLetterHand(p,imageAspect));
     const auditStages=detection.auditStages;
     const motionStarted=auditStages?performance.now():0;
-    const temporal=recognitionMode==='letters'&&!trainingActive?motionLetters.frame(motionHands,now,1/(imageAspect||1),Boolean(letterCamera&&detection.stableMotionGate)):{moving:false,result:null,presentIds:[]};
+    const temporal=recognitionMode==='letters'&&!trainingActive&&!signSpeakSelected?motionLetters.frame(motionHands,now,1/(imageAspect||1),Boolean(letterCamera&&detection.stableMotionGate)):{moving:false,result:null,presentIds:[]};
     if(auditStages)auditStages.motionMs=performance.now()-motionStarted;
     cameraDiagnostic.staticCandidate=detection.staticResult?.letter||null;cameraDiagnostic.letterMoving=Boolean(temporal.moving);
     if(recognitionMode==='letters'&&typeof URLSearchParams!=='undefined'&&new URLSearchParams(location.search).has('letterAudit'))document.dispatchEvent(new CustomEvent('handspeak:letter-frame',{detail:{detection,temporal,timestamp:now}}));
@@ -697,9 +719,7 @@ function consumeDetection(detection,now,imageAspect){
       // Keep original handedness indices when rejecting clipped/small hands.
       const indices=(detection.landmarks||[]).map((p,i)=>isUsableHand(p)?i:-1).filter(i=>i>=0);
       const filtered={landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:imageAspect};
-      capstoneRecognition.frame(filtered,now,video);
-      beginnerRecognition.frame(filtered,now,video);
-      if(!capstoneRecognition.isCapturing()&&!beginnerRecognition.isCapturing())(researchWords.active()?researchWords:motionStudio).frame(filtered,now);
+      (researchWords.active()?researchWords:motionStudio).frame(filtered,now);
     }else if(hands.length===1){
       missingFrames=0;missingSince=null;
       const points=hands[0];
@@ -732,7 +752,25 @@ $('#pipelineVoice').addEventListener('click',()=>{if(message)speakText(message);
 $('#startSigning').addEventListener('click',()=>{$('#workspace').scrollIntoView({behavior:'smooth'});void startCamera();});
 cameraButton.addEventListener('click',()=>running?stopCamera():startCamera());
 $('#clearButton').addEventListener('click',()=>{clearInterval(demoTimer);message='';detectionLog=[];sessionStarted=Date.now();renderMessage();notify('Message cleared')});
-$('#spaceButton').addEventListener('click',()=>appendCharacter(' '));
+function commitInterpreterWord(){
+ const next=commitCurrentWord(message);
+ if(next===message)return;
+ if(updateSentence(next)){letterConsensus.reset();candidate='';candidateSince=0;notify('Word added to log');}
+}
+$('#spaceButton').addEventListener('click',commitInterpreterWord);
+let interpreterHandAbsentSince=null;
+setInterval(()=>{
+ if(!running||recognitionMode!=='letters'||trainingActive||interpreterHandAbsentSince===null)return;
+ if(performance.now()-interpreterHandAbsentSince>=2500)commitInterpreterWord();
+},250);
+
+$('#interpreterAdd').addEventListener('click',()=>{
+ if(recognitionMode==='words'&&openHandsRecognition.active()&&!$('#openhandsAccept').disabled){$('#openhandsAccept').click();return;}
+ const letter=liveLetter.textContent.trim();
+ if(!running||recognitionMode!=='letters'||liveResult.hidden||!/^[A-Z]$/.test(letter))return;
+ appendCharacter(letter);committed=letter;letterConsensus.reset();candidate='';candidateSince=0;
+ notify(letter+' added manually ? review your draft');
+});
 $('#backspaceButton').addEventListener('click',()=>{message=message.slice(0,-1);renderMessage()});
 $('#copyButton').addEventListener('click',async()=>{if(!message)return notify('There is no message to copy');try{await navigator.clipboard.writeText(message);notify('Message copied')}catch{notify('Copy is unavailable in this browser')}});
 $('#speakButton').addEventListener('click',()=>{if(!message)return notify('Add a message first');speakText(message)});
@@ -831,6 +869,8 @@ renderAIStatus();
 loadPretrainedModel();
 
 $('#captureSamplesButton').addEventListener('click',()=>{
+  return notify('Personal alphabet training is disabled for SignSpeak');
+
   if(!running)return notify('Start the camera before training');
   if(recognitionMode!=='letters')return notify('Switch to Static letters to capture letter samples');
   trainingActive=true;trainingCaptured=0;lastTrainingCapture=0;
@@ -844,7 +884,7 @@ $('#captureSamplesButton').addEventListener('click',()=>{
 
 $('#resetModelButton').addEventListener('click',()=>{
   aiSamples=[];letterCamera?.setPersonalSamples(aiSamples);endTraining();localStorage.removeItem('handspeak-ai-samples-pixel-v3');
-  $('#trainingProgress').style.width='0';$('#captureSamplesButton').disabled=false;$('#captureSamplesButton').textContent='Capture 30 samples';
+  $('#trainingProgress').style.width='0';$('#captureSamplesButton').disabled=true;$('#captureSamplesButton').textContent='Personal training disabled';
   $('#trainingHelp').textContent='Personal examples cleared. Pretrained letters remain available.';
   renderAIStatus();notify('Personalized AI model reset');
 });
@@ -853,13 +893,6 @@ $('#mirrorPreview').addEventListener('change',()=>{const transform=$('#mirrorPre
 
 createExperienceUI({getMessage:()=>message,setMessage:text=>{message=text;renderMessage();},stopSpeech});
 
-async function loadMotionLetterModel(){
-  try{
-    const response=await fetch('./models/motion-letters.json?v=20261109-jz-2');
-    if(!response.ok)throw Error('Motion letter model unavailable');
-    motionLetterReady=motionLetters.setModel(await response.json());
-  }catch(error){console.warn(error);motionLetterReady=false;}
-  renderAIStatus();
-}
-void loadMotionLetterModel();
 document.documentElement.dataset.handspeakReady='true';
+
+installFakeCameraTest({startCamera,isRunning:()=>running,setRecognitionMode});

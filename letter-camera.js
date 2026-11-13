@@ -1,6 +1,6 @@
 // Bounded transport: one in-flight frame, no stale queue and no duplicates.
 export function createLetterCamera({onDetection,onError,onWarning=()=>{},personalSamples=[]}){
- const worker=new Worker('./letter-detection-worker.js?v=20261111-architecture-2');
+ const worker=new Worker('./letter-detection-worker.js?v=20261112-signspeak-only-1');
  let closed=false,busy=false,lastSource=-Infinity,id=0,version=1,resolveReady,rejectReady;
  let callbackId=null,boundVideo=null;
  const stats={submitted:0,completed:0,dropped:0,duplicates:0,inFlight:0,latencies:[],inference:[],completedAt:[],modelAt:[],quality:null};
@@ -21,7 +21,7 @@ export function createLetterCamera({onDetection,onError,onWarning=()=>{},persona
   }
  };
  const recovery=new URLSearchParams(globalThis.location?.search||'').get('letterRecovery');
- worker.postMessage({type:'init',personalSamples,recovery});
+ worker.postMessage({type:'init',personalSamples,recovery,letterModel:'signspeak'});
  async function submit(video,source){
    if(closed)return;
    if(source<=lastSource){stats.duplicates++;return;}lastSource=source;

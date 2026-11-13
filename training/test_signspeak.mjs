@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const source=fs.readFileSync(new URL('../signspeak-model.js',import.meta.url));
+const m=await import('data:text/javascript;base64,'+source.toString('base64'));
+const p=Array.from({length:21},(_,i)=>({x:i/30,y:i/40,z:i/100}));
+const n=m.normalizeSignSpeak(p);
+assert.equal(n.length,63);
+assert(n[0]===0);
+assert(n[27]<0);
+assert(Math.abs(Math.hypot(...n.slice(27,30))-1)<1e-6);
+assert.equal(m.decodeSignSpeak(new Float32Array(26)),null);
+const logits=new Float32Array(26);logits[25]=20;
+assert.equal(m.decodeSignSpeak(logits).letter,'Z');
+assert.equal(m.normalizeSignSpeak(p.map(()=>({x:0,y:0,z:0}))),null);
+assert.equal(m.normalizeSignSpeak([]),null);
+assert.throws(()=>m.decodeSignSpeak([NaN]));
+console.log('SignSpeak normalization and decoding tests passed');

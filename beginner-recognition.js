@@ -24,7 +24,7 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
   const status=$('#beginnerStatus'),record=$('#beginnerRecord'),accept=$('#beginnerAccept');
   if(!status||!record||!accept)return {frame(){},cancel(){},isCapturing:()=>false};
   function message(value){status.textContent=value;}
-  function modelName(){const mode=$('#beginnerVocabMode')?.value;return mode==='target20'?'20-word research preview':mode==='essential'?'Five-word research preview':'Beginner model';}
+  function modelName(){const mode=$('#beginnerVocabMode')?.value;return mode==='target20-passed'?'Passed offline checks preview':mode==='target20'?'20-word research preview':mode==='essential'?'Five-word research preview':'Beginner model';}
   function controls(){record.disabled=!available||Boolean(starting||countdown||capture||request);accept.disabled=!pending;}
   async function refresh(){
     try{
@@ -40,7 +40,7 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
     controls();
   }
   async function loadPose(){
-    const wanted=$('#beginnerVocabMode')?.value==='target20'?'target20':'holistic';
+    const wanted=['target20','target20-passed'].includes($('#beginnerVocabMode')?.value)?'target20':'holistic';
     if(pose&&poseMode===wanted)return;
     if(pose){pose.close?.();pose=null;holisticBusy=false;processingGeneration=null;}
     poseMode=wanted;
@@ -91,8 +91,8 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
         capture={start:performance.now(),startMediaTime:$('#webcam').currentTime,frames:[],results:0,handFrames:0,generation:current};lastPoseAt=-Infinity;lastCapturedVideoTime=-1;
         startVideoClock($('#webcam'),current);
         deadline=setTimeout(()=>cancel('Recording timed out before a complete capture. Nothing was submitted.'),8000);
-        message('Recording for four seconds… perform one complete sign.');onStatus('—','Recording with the selected word model…');
-      },1500);
+        message('Recording lead-in. Start signing after 1.5 seconds; you have four seconds to complete the sign.');onStatus('','Recording with the selected word model.');
+      },poseMode==='target20'?1500:0);
     }catch(error){if(current===generation)cancel(`Could not load tracking: ${error.message||'reload and try again.'}`);}
   }
   async function finish(){
@@ -119,7 +119,7 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
       const closed=($('#beginnerWords')?.dataset.closedLabels||'').split('|').filter(Boolean);
       const body={consent:true,frames};
       if($('#beginnerVocabMode')?.value==='essential')body.vocabulary='essential';
-      if($('#beginnerVocabMode')?.value==='target20'){body.vocabulary='target20';body.capture={complete:true,interrupted:false,durationMs};}
+      if(['target20','target20-passed'].includes($('#beginnerVocabMode')?.value)){body.vocabulary=$('#beginnerVocabMode').value;body.capture={complete:true,interrupted:false,durationMs};}
       if(closed.length)body.closedLabels=closed;
       const response=await fetch('/api/beginner-asl',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:request.signal});
       const data=await response.json();if(!response.ok)throw Error(data.error||'Recognition failed');
@@ -156,7 +156,7 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
     pose.send({image:video}).then(()=>{
       if(capture!==submittedCapture)return;
       const elapsed=performance.now()-capture.start;
-      if(elapsed>=4000&&capture.frames.length>=(poseMode==='target20'?12:3)&&(poseMode!=='target20'||capture.handFrames>=3))void finish();
+      if(elapsed>=(poseMode==='target20'?4000:5500)&&capture.frames.length>=(poseMode==='target20'?12:3)&&(poseMode!=='target20'||capture.handFrames>=3))void finish();
     }).catch(error=>{holisticBusy=false;if(capture===submittedCapture)cancel(`Tracking stopped: ${error.message}`);});
   }
   record.addEventListener('click',()=>void begin());

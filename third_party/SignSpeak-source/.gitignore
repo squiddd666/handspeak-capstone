@@ -1,0 +1,54 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Trainer artifacts (huge — regenerate locally).
+# Exclude contents but keep the README (whitelisting requires that the parent
+# directory itself isn't ignored — git won't descend into a fully-ignored dir).
+trainer/data/
+trainer/inputs/*
+!trainer/inputs/README.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.cursor/
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node / React
+node_modules/
+web/node_modules/
+dist/
+build/
+web/dist/
+.vite/
+
+# Built frontend — generated output of `npm run build` in web/ (~41 MB with
+# bundled wasm/models). start.bat rebuilds it automatically when missing.
+frontend/
+
+# Gradle / Android build caches
+.gradle/
+web/android/app/release/
+
+# Environment files
+.env
+.env.*
+
+# Intentionally tracked (do not add ignore rules for these):
+# backend/, web/src/, web/public/ (incl. models + wasm), web/android/ sources,
+# trainer/, README.md, start.bat, backend/models/asl.pt, SignSpeak-debug.apk
+# Local APK copies (canonical one is SignSpeak-debug.apk)
+SignSpeak-hopefullyfinal.apk
+
+.claude/

@@ -1,0 +1,168 @@
+{
+  "candidate": "experiments/candidate34_pre_refit.json",
+  "positive_label_count": 34,
+  "negative_sources": [
+    "other gloss segments in cached CLERC clips",
+    "unannotated gaps in those clips"
+  ],
+  "validation_signer": "ECHO",
+  "test_signers": [
+    "ALPHA",
+    "DELTA",
+    "HOTEL"
+  ],
+  "calibration_rule": "Validation FAR <= 5%, then maximize correct accepted positive fraction; thresholds searched over max probability, margin, hand visibility. Not a sufficient diverse negative set.",
+  "selected_threshold": {
+    "max_probability": 0.8999999999999999,
+    "margin": 0.8,
+    "visible_hand_fraction": 0
+  },
+  "validation": {
+    "positives": 485,
+    "negatives": 406,
+    "positive_coverage": 0.47216494845360824,
+    "accepted_positive_accuracy": 0.9956331877729258,
+    "false_rejection": 0.5278350515463918,
+    "false_acceptance": 0.04187192118226601,
+    "correct_accepted": 228,
+    "accepted_positive": 229,
+    "accepted_negative": 17
+  },
+  "test": {
+    "positives": 1224,
+    "negatives": 2143,
+    "positive_coverage": 0.2908496732026144,
+    "accepted_positive_accuracy": 0.9803370786516854,
+    "false_rejection": 0.7091503267973857,
+    "false_acceptance": 0.033131124591693886,
+    "correct_accepted": 349,
+    "accepted_positive": 356,
+    "accepted_negative": 71
+  },
+  "descriptive_curves": [
+    {
+      "threshold": 0.3,
+      "validation": {
+        "positives": 485,
+        "negatives": 406,
+        "positive_coverage": 0.9958762886597938,
+        "accepted_positive_accuracy": 0.917184265010352,
+        "false_rejection": 0.004123711340206186,
+        "false_acceptance": 0.7487684729064039,
+        "correct_accepted": 443,
+        "accepted_positive": 483,
+        "accepted_negative": 304
+      },
+      "test": {
+        "positives": 1224,
+        "negatives": 2143,
+        "positive_coverage": 0.923202614379085,
+        "accepted_positive_accuracy": 0.8017699115044248,
+        "false_rejection": 0.07679738562091504,
+        "false_acceptance": 0.6845543630424639,
+        "correct_accepted": 906,
+        "accepted_positive": 1130,
+        "accepted_negative": 1467
+      }
+    },
+    {
+      "threshold": 0.5,
+      "validation": {
+        "positives": 485,
+        "negatives": 406,
+        "positive_coverage": 0.9216494845360824,
+        "accepted_positive_accuracy": 0.9440715883668904,
+        "false_rejection": 0.07835051546391752,
+        "false_acceptance": 0.41625615763546797,
+        "correct_accepted": 422,
+        "accepted_positive": 447,
+        "accepted_negative": 169
+      },
+      "test": {
+        "positives": 1224,
+        "negatives": 2143,
+        "positive_coverage": 0.7410130718954249,
+        "accepted_positive_accuracy": 0.8787210584343991,
+        "false_rejection": 0.2589869281045752,
+        "false_acceptance": 0.353243117125525,
+        "correct_accepted": 797,
+        "accepted_positive": 907,
+        "accepted_negative": 757
+      }
+    },
+    {
+      "threshold": 0.7,
+      "validation": {
+        "positives": 485,
+        "negatives": 406,
+        "positive_coverage": 0.822680412371134,
+        "accepted_positive_accuracy": 0.9724310776942355,
+        "false_rejection": 0.177319587628866,
+        "false_acceptance": 0.17733990147783252,
+        "correct_accepted": 388,
+        "accepted_positive": 399,
+        "accepted_negative": 72
+      },
+      "test": {
+        "positives": 1224,
+        "negatives": 2143,
+        "positive_coverage": 0.5580065359477124,
+        "accepted_positive_accuracy": 0.9399707174231332,
+        "false_rejection": 0.44199346405228757,
+        "false_acceptance": 0.12692487167522165,
+        "correct_accepted": 642,
+        "accepted_positive": 683,
+        "accepted_negative": 272
+      }
+    },
+    {
+      "threshold": 0.9,
+      "validation": {
+        "positives": 485,
+        "negatives": 406,
+        "positive_coverage": 0.47216494845360824,
+        "accepted_positive_accuracy": 0.9956331877729258,
+        "false_rejection": 0.5278350515463918,
+        "false_acceptance": 0.04187192118226601,
+        "correct_accepted": 228,
+        "accepted_positive": 229,
+        "accepted_negative": 17
+      },
+      "test": {
+        "positives": 1224,
+        "negatives": 2143,
+        "positive_coverage": 0.2908496732026144,
+        "accepted_positive_accuracy": 0.9803370786516854,
+        "false_rejection": 0.7091503267973857,
+        "false_acceptance": 0.033131124591693886,
+        "correct_accepted": 349,
+        "accepted_positive": 356,
+        "accepted_negative": 71
+      }
+    }
+  ],
+  "limits": [
+    "ECHO was untouched by pre-refit model training, but ECHO has no GOOD or GO positives.",
+    "Threshold calibration pertains only to the pre-refit four-signer model, not the final five-signer controlled candidate.",
+    "Cached negatives were selected from clips containing target signs, not a representative unsupported-sign benchmark.",
+    "No browser-camera or physical-webcam negative calibration; false acceptance target is NOT VERIFIED.",
+    "High test false rejection (71%) makes this tradeoff unsuitable for deployment."
+  ],
+  "calibration_model": "../../clerc-34-training-private/experiments/candidate34_pre_refit.json",
+  "calibration_valid_for_deployed_model": false,
+  "validation_missing_positive_classes": [
+    "GOOD",
+    "GO"
+  ],
+  "negative_composition": {
+    "validation": {
+      "unsupported_gloss_segments": 288,
+      "unannotated_no_sign_gaps": 118
+    },
+    "test": {
+      "unsupported_gloss_segments": 1420,
+      "unannotated_no_sign_gaps": 723
+    }
+  },
+  "decision": "NOT VERIFIED for deployment: limited negative distribution, 71% false rejection, and threshold not applicable to refit final model."
+}

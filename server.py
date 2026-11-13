@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import csv
+import openhands_live
+import subprocess
 from interpretation import interpreter, InterpretationError
 from research_words import research_words, ResearchError
 from capstone_asl_v3 import labels as capstone_labels, recognize as capstone_recognize, CapstoneASLError, core_labels as capstone_core_labels, extended_labels as capstone_extended_labels
@@ -264,7 +266,7 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
         allowed = {".html", ".css", ".js", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".ico", ".json", ".md", ".mp4", ".glb", ".vtt", ".woff", ".woff2"}
         target = Path(self.translate_path(self.path)).resolve()
         # Only the audited hand-model asset directory may serve ONNX weights.
-        if target.suffix.lower() == '.onnx' and target.is_relative_to((ROOT / 'models' / 'hand-landmarks').resolve()):
+        if target.suffix.lower() == '.onnx' and (target.is_relative_to((ROOT / 'models' / 'hand-landmarks').resolve()) or target == (ROOT / 'models' / 'signspeak' / 'asl.onnx').resolve()):
             allowed.add('.onnx')
         if (any(part.startswith('.') for part in parts if part not in {'/'})
             or any(part in {'training', 'reports', '__pycache__'} for part in parts)
@@ -298,6 +300,8 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
             if parsed.path.startswith("/api/"): self.owner()
             if parsed.path == "/api/research-words/status":
                 return self.json_response(research_words.status())
+            if parsed.path == '/api/openhands/status':
+                return self.json_response(openhands_live.status())
             if parsed.path == "/api/capstone-asl/status":
                 return self.json_response({"available": True, "labels": capstone_labels(),
                     "coreLabels": capstone_core_labels(),
@@ -369,6 +373,25 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
             parsed = urlparse(self.path)
             if parsed.path.startswith("/api/"): self.owner()
             self.check_origin()
+            if parsed.path == '/api/openhands/recognize':
+                if self.headers.get('X-OpenHands-Consent') != 'true':
+                    raise APIError(422, 'Enable local recorded-video processing first.')
+                try:
+                    length = int(self.headers.get('Content-Length', '0'))
+                except ValueError:
+                    raise APIError(422, 'Invalid video size.')
+                if not 0 < length <= 20*1024*1024:
+                    raise APIError(422, 'Recording must be smaller than 20 MB.')
+                self.connection.settimeout(100)
+                body = self.rfile.read(length)
+                if len(body) != length:
+                    raise APIError(422, 'Video upload was interrupted.')
+                try:
+                    return self.json_response(openhands_live.recognize(body))
+                except BlockingIOError as error:
+                    raise APIError(429, str(error)) from error
+                except (ValueError, subprocess.TimeoutExpired) as error:
+                    raise APIError(422, str(error)) from error
             if parsed.path == '/api/admin/practice-video':
                 self.require_user(admin=True)
                 try:length=int(self.headers.get('Content-Length','0'))
@@ -630,6 +653,32 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
         self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
 
     def json_response(self, data: dict, status: int = 200) -> None:
+        route = urlparse(self.path).path
+        recognition_routes = {'/api/capstone-asl', '/api/beginner-asl', '/api/research-words'}
+        if route in recognition_routes or route in {p+'/status' for p in recognition_routes}:
+            overrides = ExperienceStore(connect, ROOT, APIError, utc_now).settings()['items']
+            word_key = lambda word: re.sub(r'[^A-Z0-9]', '', re.sub(r'[12]$', '', str(word).upper()))
+            disabled = {word_key(v['label']) for v in overrides.values() if v.get('hidden') and v.get('label')}
+            data = dict(data)
+            if route.endswith('/status'):
+                for key in ('labels', 'coreLabels', 'extendedLabels'):
+                    if isinstance(data.get(key), list):
+                        data[key] = [word for word in data[key] if word_key(word) not in disabled]
+                if 'vocabularySize' in data:
+                    data['vocabularySize'] = len(data.get('labels', []))
+                for key in ('essential', 'target20', 'passedTarget20'):
+                    if isinstance(data.get(key), dict):
+                        data[key] = dict(data[key])
+                        data[key]['labels'] = [word for word in data[key].get('labels', []) if word_key(word) not in disabled]
+            else:
+                predictions = data.get('predictions', [])
+                # Do not promote a runner-up when the original winner is disabled.
+                if predictions and word_key(predictions[0].get('label')) in disabled:
+                    data.update(predictions=[], state='disabled', message='This word is disabled after reference testing.')
+                elif predictions:
+                    data['predictions'] = [p for p in predictions if word_key(p.get('label')) not in disabled]
+                if data.get('label') and word_key(data.get('label')) in disabled:
+                    data.update(label=None, match='disabled')
         body = json.dumps(data, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")

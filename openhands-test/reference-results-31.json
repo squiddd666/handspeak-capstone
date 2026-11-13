@@ -1,0 +1,1004 @@
+{
+  "scope": "Local existing reference clips; convenience set, generally one clip per word. Not official WLASL test, not signer-independent, not webcam accuracy. Training overlap not established.",
+  "checkpoint_reported_validation": 69.1588785046729,
+  "total": 31,
+  "correct": 9,
+  "top5_correct": 17,
+  "failures": 0,
+  "rows": [
+    {
+      "expected": "bed",
+      "file": "media\\signs\\bed.mp4",
+      "sha256": "65b671eac2cb825b3ce4dfa6a8780b87d580dd638037d05c0ae52c32ace4ad1b",
+      "predicted": "candy",
+      "confidence": 0.19130747020244598,
+      "top5": [
+        {
+          "word": "candy",
+          "confidence": 0.19130747020244598
+        },
+        {
+          "word": "eat",
+          "confidence": 0.08530645072460175
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.0765853226184845
+        },
+        {
+          "word": "orange",
+          "confidence": 0.059029679745435715
+        },
+        {
+          "word": "drink",
+          "confidence": 0.05258239060640335
+        }
+      ],
+      "seconds": 7.15,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "before",
+      "file": "media\\signs\\before.mp4",
+      "sha256": "816e7c5abd74dd33cf314e21356db0eaa5abbc39c7105e05580ce5084e1349da",
+      "predicted": "before",
+      "confidence": 0.8514573574066162,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.8514573574066162
+        },
+        {
+          "word": "bed",
+          "confidence": 0.01124692801386118
+        },
+        {
+          "word": "eat",
+          "confidence": 0.008261580020189285
+        },
+        {
+          "word": "paper",
+          "confidence": 0.007183815818279982
+        },
+        {
+          "word": "year",
+          "confidence": 0.006837815046310425
+        }
+      ],
+      "seconds": 9.167,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "book",
+      "file": "media\\signs\\book.mp4",
+      "sha256": "5d19b4a470108997a36a860f8bbc5b6b9368dd1a514499c8f7b4e48260ba13ce",
+      "predicted": "fish",
+      "confidence": 0.9206128716468811,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.9206128716468811
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.012204297818243504
+        },
+        {
+          "word": "give",
+          "confidence": 0.010711748152971268
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.005095236003398895
+        },
+        {
+          "word": "before",
+          "confidence": 0.003566174069419503
+        }
+      ],
+      "seconds": 20.953,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "can",
+      "file": "media\\signs\\can.mp4",
+      "sha256": "ac6a9de9ec2c9f0c0c18b703f77c8cd618e212ae7d8ea7b5e8303e37b941d743",
+      "predicted": "yes",
+      "confidence": 0.34649088978767395,
+      "top5": [
+        {
+          "word": "yes",
+          "confidence": 0.34649088978767395
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.1604612171649933
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.08401411026716232
+        },
+        {
+          "word": "chair",
+          "confidence": 0.055749814957380295
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.03221369534730911
+        }
+      ],
+      "seconds": 32.994,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "chair",
+      "file": "media\\signs\\chair.mp4",
+      "sha256": "b86f32357ebfb6ea14201891e5f6ee01c759b3b8f8746bafdedc576266a4df49",
+      "predicted": "thanksgiving",
+      "confidence": 0.6776922941207886,
+      "top5": [
+        {
+          "word": "thanksgiving",
+          "confidence": 0.6776922941207886
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.12031618505716324
+        },
+        {
+          "word": "yes",
+          "confidence": 0.029524236917495728
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.012330661527812481
+        },
+        {
+          "word": "hot",
+          "confidence": 0.01136095356196165
+        }
+      ],
+      "seconds": 7.04,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "clothes",
+      "file": "media\\signs\\clothes.mp4",
+      "sha256": "aaa2f40c9c5cad98ac9f78010729341d0e25e62a0009324727abd99c3b364942",
+      "predicted": "give",
+      "confidence": 0.6421210765838623,
+      "top5": [
+        {
+          "word": "give",
+          "confidence": 0.6421210765838623
+        },
+        {
+          "word": "before",
+          "confidence": 0.1950346827507019
+        },
+        {
+          "word": "play",
+          "confidence": 0.025486251339316368
+        },
+        {
+          "word": "candy",
+          "confidence": 0.01524516474455595
+        },
+        {
+          "word": "study",
+          "confidence": 0.014194412156939507
+        }
+      ],
+      "seconds": 8.098,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "drink",
+      "file": "media\\signs\\drink.mp4",
+      "sha256": "21fb77dd73f87ce9f8589817212126f97c5a1cf825c13c1de84e6d7ae884a99e",
+      "predicted": "drink",
+      "confidence": 0.9559805393218994,
+      "top5": [
+        {
+          "word": "drink",
+          "confidence": 0.9559805393218994
+        },
+        {
+          "word": "brown",
+          "confidence": 0.007802984677255154
+        },
+        {
+          "word": "cousin",
+          "confidence": 0.0027317930944263935
+        },
+        {
+          "word": "computer",
+          "confidence": 0.0022626006975769997
+        },
+        {
+          "word": "bird",
+          "confidence": 0.0016127735143527389
+        }
+      ],
+      "seconds": 6.713,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "family",
+      "file": "media\\signs\\family.mp4",
+      "sha256": "6a866d6d67e7dda2eb10b1067aefb7e8f265d56fca8968ee276c0785b88386d4",
+      "predicted": "family",
+      "confidence": 0.9185783863067627,
+      "top5": [
+        {
+          "word": "family",
+          "confidence": 0.9185783863067627
+        },
+        {
+          "word": "book",
+          "confidence": 0.0037510963156819344
+        },
+        {
+          "word": "dark",
+          "confidence": 0.003498814068734646
+        },
+        {
+          "word": "color",
+          "confidence": 0.003484956454485655
+        },
+        {
+          "word": "computer",
+          "confidence": 0.0033960891887545586
+        }
+      ],
+      "seconds": 3.569,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "fine",
+      "file": "media\\signs\\fine.mp4",
+      "sha256": "db3d45057ebc38d1a458be20892559e791d04624a8e2caf1a18f2661adeece4e",
+      "predicted": "cousin",
+      "confidence": 0.1306159496307373,
+      "top5": [
+        {
+          "word": "cousin",
+          "confidence": 0.1306159496307373
+        },
+        {
+          "word": "brown",
+          "confidence": 0.08512875437736511
+        },
+        {
+          "word": "man",
+          "confidence": 0.05549649894237518
+        },
+        {
+          "word": "city",
+          "confidence": 0.05497899278998375
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.0305605661123991
+        }
+      ],
+      "seconds": 20.519,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "finish",
+      "file": "media\\signs\\finish.mp4",
+      "sha256": "ad933bd770623e326eef4047a5aaec3b12e5c40a0c4357fe62b32bf628a2d701",
+      "predicted": "drink",
+      "confidence": 0.28666484355926514,
+      "top5": [
+        {
+          "word": "drink",
+          "confidence": 0.28666484355926514
+        },
+        {
+          "word": "eat",
+          "confidence": 0.12169448286294937
+        },
+        {
+          "word": "hat",
+          "confidence": 0.037047140300273895
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03371472656726837
+        },
+        {
+          "word": "orange",
+          "confidence": 0.032155685126781464
+        }
+      ],
+      "seconds": 15.851,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "fish",
+      "file": "media\\signs\\fish.mp4",
+      "sha256": "39b9d6608ec05dc313c364376835433cc486519c511d6cbc73205e63815f3d25",
+      "predicted": "fish",
+      "confidence": 0.4537818729877472,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.4537818729877472
+        },
+        {
+          "word": "thursday",
+          "confidence": 0.07156312465667725
+        },
+        {
+          "word": "before",
+          "confidence": 0.06408630311489105
+        },
+        {
+          "word": "study",
+          "confidence": 0.042597223073244095
+        },
+        {
+          "word": "candy",
+          "confidence": 0.025566428899765015
+        }
+      ],
+      "seconds": 5.107,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "give",
+      "file": "media\\signs\\give.mp4",
+      "sha256": "8b7f9fa5a7e5f38cdee132790f6151ef92118caed7ada9a50ab0282973c37ad4",
+      "predicted": "give",
+      "confidence": 0.8828176856040955,
+      "top5": [
+        {
+          "word": "give",
+          "confidence": 0.8828176856040955
+        },
+        {
+          "word": "candy",
+          "confidence": 0.04204642027616501
+        },
+        {
+          "word": "before",
+          "confidence": 0.015752248466014862
+        },
+        {
+          "word": "shirt",
+          "confidence": 0.005929289851337671
+        },
+        {
+          "word": "apple",
+          "confidence": 0.005609890446066856
+        }
+      ],
+      "seconds": 2.875,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "go",
+      "file": "media\\signs\\go.mp4",
+      "sha256": "944d4bfdeb83bec1b208358e41563d39e4179f27a2bc63d247f6de5ca212e0bd",
+      "predicted": "all",
+      "confidence": 0.4304269254207611,
+      "top5": [
+        {
+          "word": "all",
+          "confidence": 0.4304269254207611
+        },
+        {
+          "word": "school",
+          "confidence": 0.0941314697265625
+        },
+        {
+          "word": "before",
+          "confidence": 0.07849810272455215
+        },
+        {
+          "word": "study",
+          "confidence": 0.05365879088640213
+        },
+        {
+          "word": "cool",
+          "confidence": 0.023236162960529327
+        }
+      ],
+      "seconds": 4.688,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "help",
+      "file": "media\\signs\\help.mp4",
+      "sha256": "945e311c433c81ff6a3aa8984469964db46c3fd143acb51e13d1b78584f83d67",
+      "predicted": "before",
+      "confidence": 0.26370394229888916,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.26370394229888916
+        },
+        {
+          "word": "candy",
+          "confidence": 0.16683287918567657
+        },
+        {
+          "word": "book",
+          "confidence": 0.14901089668273926
+        },
+        {
+          "word": "pizza",
+          "confidence": 0.027951495721936226
+        },
+        {
+          "word": "how",
+          "confidence": 0.015488884411752224
+        }
+      ],
+      "seconds": 5.228,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "hot",
+      "file": "media\\signs\\hot.mp4",
+      "sha256": "e9b13497ba8ebdda823866b00e279d0efa3a0f050095146a7ec1d34ff91f618a",
+      "predicted": "fish",
+      "confidence": 0.4872913360595703,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.4872913360595703
+        },
+        {
+          "word": "before",
+          "confidence": 0.1277787834405899
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.07799024134874344
+        },
+        {
+          "word": "give",
+          "confidence": 0.050795603543519974
+        },
+        {
+          "word": "hot",
+          "confidence": 0.04918205365538597
+        }
+      ],
+      "seconds": 4.753,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "how",
+      "file": "media\\signs\\how.mp4",
+      "sha256": "e4c32f8a3bcce5be523966dc27e02c76d1a911bb795bb23f8a1dc8a8a1a872e5",
+      "predicted": "before",
+      "confidence": 0.14853397011756897,
+      "top5": [
+        {
+          "word": "before",
+          "confidence": 0.14853397011756897
+        },
+        {
+          "word": "book",
+          "confidence": 0.06326702237129211
+        },
+        {
+          "word": "how",
+          "confidence": 0.0499851368367672
+        },
+        {
+          "word": "want",
+          "confidence": 0.04065019637346268
+        },
+        {
+          "word": "cook",
+          "confidence": 0.035857126116752625
+        }
+      ],
+      "seconds": 6.09,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "later",
+      "file": "media\\signs\\later.mp4",
+      "sha256": "fb06123d5aa26a9cc69f06850dc0038f522f5e71234a1fcde27e10ab02bfaa05",
+      "predicted": "dog",
+      "confidence": 0.15900123119354248,
+      "top5": [
+        {
+          "word": "dog",
+          "confidence": 0.15900123119354248
+        },
+        {
+          "word": "fish",
+          "confidence": 0.14547376334667206
+        },
+        {
+          "word": "enjoy",
+          "confidence": 0.14116351306438446
+        },
+        {
+          "word": "give",
+          "confidence": 0.10305250436067581
+        },
+        {
+          "word": "before",
+          "confidence": 0.057523470371961594
+        }
+      ],
+      "seconds": 6.574,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "like",
+      "file": "media\\signs\\like.mp4",
+      "sha256": "80d5b75e9f550a3888d050842c6e8e021c992b18ecfc00eb77e1d9907c686a73",
+      "predicted": "fine",
+      "confidence": 0.4099021553993225,
+      "top5": [
+        {
+          "word": "fine",
+          "confidence": 0.4099021553993225
+        },
+        {
+          "word": "thanksgiving",
+          "confidence": 0.06439464539289474
+        },
+        {
+          "word": "hat",
+          "confidence": 0.042531613260507584
+        },
+        {
+          "word": "give",
+          "confidence": 0.04104892909526825
+        },
+        {
+          "word": "cool",
+          "confidence": 0.03329555317759514
+        }
+      ],
+      "seconds": 24.427,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "man",
+      "file": "media\\signs\\man.mp4",
+      "sha256": "36676b60d6ff8202df7ea046879abae9854335cf4705db9a64d2741d24c823ba",
+      "predicted": "birthday",
+      "confidence": 0.11870908737182617,
+      "top5": [
+        {
+          "word": "birthday",
+          "confidence": 0.11870908737182617
+        },
+        {
+          "word": "drink",
+          "confidence": 0.11313916742801666
+        },
+        {
+          "word": "hat",
+          "confidence": 0.08513122797012329
+        },
+        {
+          "word": "black",
+          "confidence": 0.07650050520896912
+        },
+        {
+          "word": "thin",
+          "confidence": 0.046613290905952454
+        }
+      ],
+      "seconds": 17.303,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "mother",
+      "file": "media\\signs\\mother.mp4",
+      "sha256": "eae299a3088393a2addc7128e795aaad711115d9c32622171f2c96f3eda5eea3",
+      "predicted": "brown",
+      "confidence": 0.39420610666275024,
+      "top5": [
+        {
+          "word": "brown",
+          "confidence": 0.39420610666275024
+        },
+        {
+          "word": "africa",
+          "confidence": 0.15612204372882843
+        },
+        {
+          "word": "fine",
+          "confidence": 0.07313528656959534
+        },
+        {
+          "word": "mother",
+          "confidence": 0.05955637991428375
+        },
+        {
+          "word": "but",
+          "confidence": 0.04464460909366608
+        }
+      ],
+      "seconds": 6.284,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "need",
+      "file": "media\\signs\\need.mp4",
+      "sha256": "c19e75c2e0d519e07887afbc8f20cb784b41b176a545ad0a85880cf07bb09103",
+      "predicted": "bowling",
+      "confidence": 0.15287455916404724,
+      "top5": [
+        {
+          "word": "bowling",
+          "confidence": 0.15287455916404724
+        },
+        {
+          "word": "dog",
+          "confidence": 0.11993423849344254
+        },
+        {
+          "word": "cool",
+          "confidence": 0.1119527667760849
+        },
+        {
+          "word": "give",
+          "confidence": 0.06548431515693665
+        },
+        {
+          "word": "bird",
+          "confidence": 0.05453047156333923
+        }
+      ],
+      "seconds": 3.352,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "no",
+      "file": "media\\signs\\no.mp4",
+      "sha256": "2d7b1512215ceef2d93deeaf7c40560bb40a9c1eaad8a5c6abc4bd30ee0f455d",
+      "predicted": "birthday",
+      "confidence": 0.12393246591091156,
+      "top5": [
+        {
+          "word": "birthday",
+          "confidence": 0.12393246591091156
+        },
+        {
+          "word": "yes",
+          "confidence": 0.07163211703300476
+        },
+        {
+          "word": "deaf",
+          "confidence": 0.06792021542787552
+        },
+        {
+          "word": "go",
+          "confidence": 0.06382343173027039
+        },
+        {
+          "word": "need",
+          "confidence": 0.04123421013355255
+        }
+      ],
+      "seconds": 6.545,
+      "correct": false,
+      "top5_correct": false
+    },
+    {
+      "expected": "now",
+      "file": "media\\signs\\now.mp4",
+      "sha256": "73adb394d7814b9bd082145e0c6a6a3fc7ff68baa0153b2aafe646344c57012d",
+      "predicted": "now",
+      "confidence": 0.42832615971565247,
+      "top5": [
+        {
+          "word": "now",
+          "confidence": 0.42832615971565247
+        },
+        {
+          "word": "want",
+          "confidence": 0.10061991214752197
+        },
+        {
+          "word": "before",
+          "confidence": 0.09230007976293564
+        },
+        {
+          "word": "candy",
+          "confidence": 0.06241806223988533
+        },
+        {
+          "word": "play",
+          "confidence": 0.01640245132148266
+        }
+      ],
+      "seconds": 7.33,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "school",
+      "file": "media\\signs\\school.mp4",
+      "sha256": "e109d9e9fd06c0b50b0e1400b06b6f67ce57033b5ff026f9e4a5f362acd2b7aa",
+      "predicted": "school",
+      "confidence": 0.15230250358581543,
+      "top5": [
+        {
+          "word": "school",
+          "confidence": 0.15230250358581543
+        },
+        {
+          "word": "pull",
+          "confidence": 0.12422939389944077
+        },
+        {
+          "word": "paper",
+          "confidence": 0.0665290504693985
+        },
+        {
+          "word": "change",
+          "confidence": 0.03584297373890877
+        },
+        {
+          "word": "bed",
+          "confidence": 0.026121823117136955
+        }
+      ],
+      "seconds": 5.469,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "table",
+      "file": "media\\signs\\table.mp4",
+      "sha256": "94acbb25c8c91b2d974859042e8ee972713356e55b437817e06274b6f3539f78",
+      "predicted": "all",
+      "confidence": 0.28568848967552185,
+      "top5": [
+        {
+          "word": "all",
+          "confidence": 0.28568848967552185
+        },
+        {
+          "word": "school",
+          "confidence": 0.06784887611865997
+        },
+        {
+          "word": "before",
+          "confidence": 0.04895368590950966
+        },
+        {
+          "word": "table",
+          "confidence": 0.03666137903928757
+        },
+        {
+          "word": "enjoy",
+          "confidence": 0.034417763352394104
+        }
+      ],
+      "seconds": 6.661,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "time",
+      "file": "media\\signs\\time.mp4",
+      "sha256": "4b62b6266d3ae0095751a6f395b32754650732aeb62625d623e1ce7d26ead218",
+      "predicted": "time",
+      "confidence": 0.9115688800811768,
+      "top5": [
+        {
+          "word": "time",
+          "confidence": 0.9115688800811768
+        },
+        {
+          "word": "study",
+          "confidence": 0.009169005788862705
+        },
+        {
+          "word": "chair",
+          "confidence": 0.00585760036483407
+        },
+        {
+          "word": "walk",
+          "confidence": 0.004163973033428192
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.0036712379660457373
+        }
+      ],
+      "seconds": 5.715,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "walk",
+      "file": "media\\signs\\walk.mp4",
+      "sha256": "f2351704209253ccf0dea5fc682ac9b95d4fbc4d22c758170f868c9af64b4866",
+      "predicted": "walk",
+      "confidence": 0.7307099103927612,
+      "top5": [
+        {
+          "word": "walk",
+          "confidence": 0.7307099103927612
+        },
+        {
+          "word": "clothes",
+          "confidence": 0.027746375650167465
+        },
+        {
+          "word": "study",
+          "confidence": 0.01574237272143364
+        },
+        {
+          "word": "give",
+          "confidence": 0.0127442991361022
+        },
+        {
+          "word": "play",
+          "confidence": 0.0116177499294281
+        }
+      ],
+      "seconds": 5.871,
+      "correct": true,
+      "top5_correct": true
+    },
+    {
+      "expected": "what",
+      "file": "media\\signs\\what.mp4",
+      "sha256": "709c343e4f1ff6d0485663d4996bc8f9e2adbbe68c4c0032970b49680a5986bb",
+      "predicted": "last",
+      "confidence": 0.1368231475353241,
+      "top5": [
+        {
+          "word": "last",
+          "confidence": 0.1368231475353241
+        },
+        {
+          "word": "fine",
+          "confidence": 0.09725752472877502
+        },
+        {
+          "word": "before",
+          "confidence": 0.05875278264284134
+        },
+        {
+          "word": "decide",
+          "confidence": 0.03811647742986679
+        },
+        {
+          "word": "what",
+          "confidence": 0.033752426505088806
+        }
+      ],
+      "seconds": 3.471,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "who",
+      "file": "media\\signs\\who.mp4",
+      "sha256": "e00039e0ea7b3038677d389df8059be38e53c7d7ffb3705d00bed74ebb909d2f",
+      "predicted": "fish",
+      "confidence": 0.3088022470474243,
+      "top5": [
+        {
+          "word": "fish",
+          "confidence": 0.3088022470474243
+        },
+        {
+          "word": "study",
+          "confidence": 0.14182840287685394
+        },
+        {
+          "word": "who",
+          "confidence": 0.07639789581298828
+        },
+        {
+          "word": "cheat",
+          "confidence": 0.042213402688503265
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03310570493340492
+        }
+      ],
+      "seconds": 5.704,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "work",
+      "file": "media\\signs\\work.mp4",
+      "sha256": "1ed12ce684aa7be8ee6e6bb34327b3da9032dc7dc5d9e688d39ebabc04cb978b",
+      "predicted": "time",
+      "confidence": 0.5658026337623596,
+      "top5": [
+        {
+          "word": "time",
+          "confidence": 0.5658026337623596
+        },
+        {
+          "word": "doctor",
+          "confidence": 0.05141172558069229
+        },
+        {
+          "word": "work",
+          "confidence": 0.03233352676033974
+        },
+        {
+          "word": "paint",
+          "confidence": 0.022753410041332245
+        },
+        {
+          "word": "year",
+          "confidence": 0.020538778975605965
+        }
+      ],
+      "seconds": 5.353,
+      "correct": false,
+      "top5_correct": true
+    },
+    {
+      "expected": "yes",
+      "file": "media\\signs\\yes.mp4",
+      "sha256": "9dd7261b9736ca35c39c41e05813febc24f286c96d7b89a6a021ee4b15ddb18c",
+      "predicted": "deaf",
+      "confidence": 0.21757441759109497,
+      "top5": [
+        {
+          "word": "deaf",
+          "confidence": 0.21757441759109497
+        },
+        {
+          "word": "yes",
+          "confidence": 0.1576339602470398
+        },
+        {
+          "word": "corn",
+          "confidence": 0.14539465308189392
+        },
+        {
+          "word": "birthday",
+          "confidence": 0.03509489446878433
+        },
+        {
+          "word": "hearing",
+          "confidence": 0.032555632293224335
+        }
+      ],
+      "seconds": 5.53,
+      "correct": false,
+      "top5_correct": true
+    }
+  ],
+  "top1_accuracy": 0.2903225806451613,
+  "top5_accuracy": 0.5483870967741935
+}

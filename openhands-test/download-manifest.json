@@ -1,0 +1,416 @@
+{
+  "accident": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\accident.mp4",
+    "frames": 56,
+    "fps": 23.976023976023978,
+    "sha256": "2b5f483b6b969af7de8ecc98d79bf59ad19da3e2cad4ac59bb5f580077625c0f"
+  },
+  "africa": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\africa.mp4",
+    "frames": 66,
+    "fps": 29.97002997002997,
+    "sha256": "cd4cce780073fd9815a960837e1572668dd219c31c633ef867e6984932575bbb"
+  },
+  "all": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\all.mp4",
+    "frames": 72,
+    "fps": 29.97,
+    "sha256": "54f7ee62143661df279cae7322b374b8991c69f103051de63662ab4d5998ecf4"
+  },
+  "apple": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\apple.mp4",
+    "frames": 66,
+    "fps": 29.97,
+    "sha256": "85d885d10aa72c99d106705be155b962e28207ee961c216364b2a538b60979a2"
+  },
+  "basketball": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\basketball.mp4",
+    "frames": 97,
+    "fps": 29.97,
+    "sha256": "8dfea366209a8699bdcc7efb5ce1633f9ca8fffc987f79bde0b88c7837abfa44"
+  },
+  "bird": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\bird.mp4",
+    "frames": 91,
+    "fps": 29.97,
+    "sha256": "897a8b9750152a31a64de3649a11ca8776c2c5a0b58d9ffb2d900797e022ff81"
+  },
+  "birthday": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\birthday.mp4",
+    "frames": 59,
+    "fps": 29.97002997002997,
+    "sha256": "86dd27c028f89d1aa6c21766f598ac4ce1c9b728dde2f3469d1582984bb6d3ad"
+  },
+  "black": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\black.mp4",
+    "frames": 91,
+    "fps": 29.97,
+    "sha256": "20b7f7618c80d577a3c2a850982ee8ae4201416ddad569d10f2f2d99a97af085"
+  },
+  "blue": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\blue.mp4",
+    "frames": 69,
+    "fps": 29.97,
+    "sha256": "ff0fc9b8d68d0cebcc05d17235eb5f2bc30197d698d82164346cfc49434333fb"
+  },
+  "bowling": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\bowling.mp4",
+    "frames": 83,
+    "fps": 29.97002997002997,
+    "sha256": "7301aa378cc0e16ad9d746e449e3f0e0465c74cffe48ff8954b1e10a24eb170c"
+  },
+  "brown": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\brown.mp4",
+    "frames": 82,
+    "fps": 29.97,
+    "sha256": "eefc2536d5c0b9be697064eb614103595e84efe7b199081acf5209ef3630f0ba"
+  },
+  "but": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\but.mp4",
+    "frames": 60,
+    "fps": 23.976023976023978,
+    "sha256": "ec28b176c7e32d917430a89863644f0db7c6e961a6d64e29dc8f073956c494fb"
+  },
+  "candy": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\candy.mp4",
+    "frames": 88,
+    "fps": 29.97,
+    "sha256": "3fe3d4a741ff01c5561255c547f5127a96734a18efc4207648f0e3ca289b4834"
+  },
+  "change": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\change.mp4",
+    "frames": 89,
+    "fps": 29.97002997002997,
+    "sha256": "5014111b080c64df7a9988bbd4e67cdf2ca0d7658cda2e25302f8b9e9a3227b1"
+  },
+  "cheat": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\cheat.mp4",
+    "frames": 76,
+    "fps": 23.976023976023978,
+    "sha256": "f856d83097cbdcbf90a8960962f5601f6d074dae06b5545d5738de876e2764f6"
+  },
+  "city": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\city.mp4",
+    "frames": 60,
+    "fps": 23.976023976023978,
+    "sha256": "d65bc1ec3804eb320c2554b3c62c32b9cb8ee9d21403b029136c980137f44a9a"
+  },
+  "color": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\color.mp4",
+    "frames": 74,
+    "fps": 29.97,
+    "sha256": "31b47a351af08ac48300d7e041a727481c3e9f9825ca2dde710241cf24f5c268"
+  },
+  "computer": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\computer.mp4",
+    "frames": 102,
+    "fps": 29.97002997002997,
+    "sha256": "2953b7790e70ae3904beec2ce17e061381c0b4c127e131e39e153692054e5c6e"
+  },
+  "cook": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\cook.mp4",
+    "frames": 100,
+    "fps": 29.97,
+    "sha256": "b60dfc5a1a725bc1fdd61bcbe09d0efea4a46444cfc9285f1f258b78cfe1d0b7"
+  },
+  "cool": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\cool.mp4",
+    "frames": 74,
+    "fps": 29.97,
+    "sha256": "a2907bf198c21883366b85699a0a2dfb66b18d2a2c26c03e6b2f598f1d154cac"
+  },
+  "corn": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\corn.mp4",
+    "frames": 54,
+    "fps": 23.97608311708814,
+    "sha256": "34c0828283d459b0b1fa1e48c2541dcdb75bc0e0a1a571c64b0440adaff713b8"
+  },
+  "cousin": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\cousin.mp4",
+    "frames": 70,
+    "fps": 23.976069599104893,
+    "sha256": "ad90f041e0f4183227f3461b2a53fb9a8127590ec0845c74e438d67aa599d055"
+  },
+  "cow": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\cow.mp4",
+    "frames": 85,
+    "fps": 29.97,
+    "sha256": "38b83120911a33a551344829302148060e451fff15b76361c778e37011178794"
+  },
+  "dance": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\dance.mp4",
+    "frames": 104,
+    "fps": 29.97002997002997,
+    "sha256": "24e503494fbdcec6c77f7d2db05cfade91034adea8f89fe80b9f5205566edfeb"
+  },
+  "dark": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\dark.mp4",
+    "frames": 60,
+    "fps": 23.976023976023978,
+    "sha256": "479e11a5bed3b071ae6b16b518250de63bd5afa482d77884c685f06788150fc7"
+  },
+  "deaf": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\deaf.mp4",
+    "frames": 108,
+    "fps": 29.97,
+    "sha256": "e15b4f5b1ff00aa0cadc44e510e4bc037ab595028d418798e1ff53458078edec"
+  },
+  "decide": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\decide.mp4",
+    "frames": 53,
+    "fps": 29.97002997002997,
+    "sha256": "255ed94cdbbab3a90122306b80dfe81cf01fd34a314d8a04a62f0279b80ce551"
+  },
+  "doctor": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\doctor.mp4",
+    "frames": 109,
+    "fps": 29.97,
+    "sha256": "e97e25b695206159eee6ce7eb1b1e8d04d08e47ee0e568468cecd35223662030"
+  },
+  "dog": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\dog.mp4",
+    "frames": 68,
+    "fps": 29.97,
+    "sha256": "22d9521ee3e12079a9dec94ac29b8a2784bf5471413233dd6787757afc2fd66b"
+  },
+  "eat": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\eat.mp4",
+    "frames": 67,
+    "fps": 29.97,
+    "sha256": "8e32db20fce963d1ad0995919d9037977e65a2fc69417ae5ad71cd2b169c049e"
+  },
+  "enjoy": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\enjoy.mp4",
+    "frames": 61,
+    "fps": 29.97002997002997,
+    "sha256": "a349cf155f38f0580ea3761600dd91f1113f93839cdf75ac447a3d2a40ada426"
+  },
+  "forget": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\forget.mp4",
+    "frames": 75,
+    "fps": 29.393,
+    "sha256": "616bfcc332e1f8942e378d6148d3b63ee14f42ce58b015b78e49c98ce1cc6dc8"
+  },
+  "full": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\full.mp4",
+    "frames": 95,
+    "fps": 29.97002997002997,
+    "sha256": "5b4d90c538ab892e0356b785e9f263b0f1d18fbeec237114d5c68772a3bcfd67"
+  },
+  "graduate": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\graduate.mp4",
+    "frames": 58,
+    "fps": 29.97002997002997,
+    "sha256": "02a9e162e2aa9291ef68d369aeb399edac39fe7f9662930697589e263439e037"
+  },
+  "hat": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\hat.mp4",
+    "frames": 69,
+    "fps": 29.97002997002997,
+    "sha256": "c9d06cdbbbe2020c81feb76258910714fc15c8fd4f024b3fe504f9cdc7102571"
+  },
+  "hearing": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\hearing.mp4",
+    "frames": 61,
+    "fps": 29.97,
+    "sha256": "eac3f8f0d99d3fb40fc80365e6e4d05a60a0ef636ea8c0dbd48651adf740c59d"
+  },
+  "jacket": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\jacket.mp4",
+    "frames": 90,
+    "fps": 29.97002997002997,
+    "sha256": "665ca3a249044823db1e59159d7acdc1d5090568d1e64f608a8fd9d56a71db6e"
+  },
+  "kiss": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\kiss.mp4",
+    "frames": 58,
+    "fps": 29.97002997002997,
+    "sha256": "a8248d3b80905f3e93a6962bece7a4e9578eb6ab50ffd48af35131304e64ac19"
+  },
+  "language": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\language.mp4",
+    "frames": 60,
+    "fps": 23.976023976023978,
+    "sha256": "836dbb8ad160ba93b82643ff4af879f09afd3efc110c6e27d3064c2cd9330cb1"
+  },
+  "last": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\last.mp4",
+    "frames": 111,
+    "fps": 29.97002997002997,
+    "sha256": "69fb9501b09dabda20ee98cc7e38fbc7d0dd8746824849460c0f8d1e72a3e25f"
+  },
+  "letter": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\letter.mp4",
+    "frames": 66,
+    "fps": 23.97607236414568,
+    "sha256": "883756b0b47ed056412b67a45e0bb149c7c570a63bbff10726b9f4fb5d55d09f"
+  },
+  "many": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\many.mp4",
+    "frames": 68,
+    "fps": 29.97002997002997,
+    "sha256": "65d6b04b168fd109750beafd359a967bc424c73476d965214e45d2db3ad4b15f"
+  },
+  "medicine": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\medicine.mp4",
+    "frames": 89,
+    "fps": 29.97002997002997,
+    "sha256": "c603f6056d274348bff6ed3fd107bbfa99863fa2b0a8322510d75398876ee002"
+  },
+  "meet": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\meet.mp4",
+    "frames": 77,
+    "fps": 29.97,
+    "sha256": "3f40ea232f3a89d3dea4df8b0c7878b9b0528ac91011ccab5d142ca5bbf34777"
+  },
+  "orange": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\orange.mp4",
+    "frames": 91,
+    "fps": 29.97,
+    "sha256": "f99eb6c1e30ff9f009b338defd4ecc8620ae57fc8891f9639c9144d1af62e868"
+  },
+  "paint": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\paint.mp4",
+    "frames": 67,
+    "fps": 29.97002997002997,
+    "sha256": "d2ad705776558abf267387277fd3bf91acba9d9d64c21c8ed26b7a435b1f9ad7"
+  },
+  "paper": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\paper.mp4",
+    "frames": 78,
+    "fps": 29.97,
+    "sha256": "d2e40fc55fb6af8f415f66b54905d8e7b037022255287999389bd260538a1ad0"
+  },
+  "pink": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\pink.mp4",
+    "frames": 71,
+    "fps": 29.97002997002997,
+    "sha256": "64255311eb296f65077c2706a0ea33f9c04224b5e37479f960ff2172aec81d46"
+  },
+  "pizza": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\pizza.mp4",
+    "frames": 74,
+    "fps": 29.97002997002997,
+    "sha256": "32d6b0faf31174196989565017b0cd4cd48f0855c977555d0f5b5086054041b7"
+  },
+  "play": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\play.mp4",
+    "frames": 72,
+    "fps": 29.97,
+    "sha256": "f2c0d8966775f231981be9c34a6f0065504724e35b71b8a0ff58cd58d42ef03f"
+  },
+  "pull": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\pull.mp4",
+    "frames": 87,
+    "fps": 29.97,
+    "sha256": "d5b73893128a16a26b4772bdf49fa17b15b7328d2fc575442ec11477d0db112b"
+  },
+  "purple": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\purple.mp4",
+    "frames": 77,
+    "fps": 29.97,
+    "sha256": "6ae4ad54803710334eb262db4790a43f4e35343eb8584f75b00d20c8a9eab8e4"
+  },
+  "right": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\right.mp4",
+    "frames": 83,
+    "fps": 29.97,
+    "sha256": "5b7fa4ab5e4f7962e7645c6e1048a5f5ffa97df215fa2d42582668fc75301264"
+  },
+  "same": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\same.mp4",
+    "frames": 200,
+    "fps": 29.97002997002997,
+    "sha256": "872d63cabcc15e45011719fafc167520d1550515f2d4c3017970e1c111c85eb2"
+  },
+  "secretary": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\secretary.mp4",
+    "frames": 46,
+    "fps": 23.976093402520384,
+    "sha256": "2e4a817aca65c894cf6686f84ff57b377464d7c90d41a45c2da26b069a9dfe7f"
+  },
+  "shirt": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\shirt.mp4",
+    "frames": 100,
+    "fps": 29.97,
+    "sha256": "44b9892e1103407aa0e037e1f9c5150b5103cf6366d659262f0ab4095d9706c5"
+  },
+  "short": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\short.mp4",
+    "frames": 100,
+    "fps": 29.97,
+    "sha256": "071b27e448c31cc03a4a7d9ebaf7bed97b16bfc12ff2a90c20663d67592186de"
+  },
+  "son": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\son.mp4",
+    "frames": 76,
+    "fps": 29.97002997002997,
+    "sha256": "76839e3dccb474818df5cb3cccdff04b6b4b36adab9c6e56766f60101e557fa2"
+  },
+  "study": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\study.mp4",
+    "frames": 63,
+    "fps": 29.97002997002997,
+    "sha256": "c08369c6ad8f0c2e70e465ed5047a35eb1cb43cda7e8ae8efe3d2e92efab7f1a"
+  },
+  "tall": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\tall.mp4",
+    "frames": 96,
+    "fps": 29.97,
+    "sha256": "83b3cb0ccb765b50226c2358705da5e1020a34f92ec3c55ecfb2f9e5ebc629f7"
+  },
+  "tell": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\tell.mp4",
+    "frames": 47,
+    "fps": 23.976057950642197,
+    "sha256": "d2b4c3c4f4bfba789b15a7dd1c0eeca7c2b12cbe83822f4c9badaa4a326d9afb"
+  },
+  "thanksgiving": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\thanksgiving.mp4",
+    "frames": 69,
+    "fps": 29.97002997002997,
+    "sha256": "30b161c3c9c2b236ffd7113546d45e1a01a93e1cb2206dfb1fd28de2d497ca83"
+  },
+  "thin": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\thin.mp4",
+    "frames": 91,
+    "fps": 29.97002997002997,
+    "sha256": "86daf9a76d943e11a0c510b159fa8455f01ec9ca753a87f0133bcfff62e73d03"
+  },
+  "thursday": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\thursday.mp4",
+    "frames": 87,
+    "fps": 29.97002997002997,
+    "sha256": "fc5751f7ac0d485026895bdcd27e2e088577d7636343a715e5379883c4717f87"
+  },
+  "want": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\want.mp4",
+    "frames": 75,
+    "fps": 29.97,
+    "sha256": "f17718402bd986f754857f6f2fc9bb75ac1d8c2b0823528e2e96e1a14277e63a"
+  },
+  "white": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\white.mp4",
+    "frames": 84,
+    "fps": 29.97,
+    "sha256": "54a800e71eebcbc24e0d444f15d8117bb2c5585b53853671b6e81633bc6572f1"
+  },
+  "woman": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\woman.mp4",
+    "frames": 70,
+    "fps": 29.97,
+    "sha256": "f305bbf23465b568540bf640b8b1dee79c90166532d256c063111305ba9f15d5"
+  },
+  "wrong": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\wrong.mp4",
+    "frames": 61,
+    "fps": 29.97002997002997,
+    "sha256": "de8f5184e9ff2f3ba97510cdfe5706ed63b1b697c855c83a44592fdb3cece70f"
+  },
+  "year": {
+    "path": "C:\\Users\\Squid\\Desktop\\handspeak\\openhands-test\\reference-videos\\year.mp4",
+    "frames": 79,
+    "fps": 29.97,
+    "sha256": "d4730d76aa42ad36912187749ce446322f118edb3ab92bbc0b71d2bec6d8129b"
+  }
+}

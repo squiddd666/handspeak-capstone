@@ -1,0 +1,16 @@
+[
+  {
+    "expected": "like",
+    "result": "Try Again",
+    "status": "Capture rejected: 11 frames, 100% hand tracking, 100% shoulder tracking. Need at least 12 frames and 75% tracked.",
+    "scores": "",
+    "errors": []
+  },
+  {
+    "expected": "book",
+    "result": "Try Again",
+    "status": "Capture too short - sign once with hands visible, then lower them.",
+    "scores": "",
+    "errors": []
+  }
+]

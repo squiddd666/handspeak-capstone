@@ -1,4 +1,4 @@
-import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
+import {isWordEnabled} from './vocabulary-settings.js?v=20261112-count-19-fix';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261020-appearance-1';
 import {motionFrame,encodeMotion} from './motion-model.js?v=20261020-short-runs-1';
 export function createResearchWords({onWord,onStatus,onChange}){
@@ -43,7 +43,9 @@ export function createResearchWords({onWord,onStatus,onChange}){
  async function finish(force=false){
   if(!recording||!active())return;
   if(!force&&recording.frames.length<12){timer=setTimeout(()=>void finish(true),2000);help('Collecting more frames from the slow camera…');return;}
-  const captured=recording;recording=null;clearTimeout(timer);timer=null;
+  const captured=recording;
+  document.dispatchEvent(new CustomEvent('handspeak:word-capture-diagnostics',{detail:{capture:'research-manual',startMediaTime:captured.startMediaTime,endMediaTime:captured.endMediaTime,frames:captured.frames.length}}));
+  recording=null;clearTimeout(timer);timer=null;
   const sequence=encodeMotion(captured.frames,captured.aspect||1);
   if(!sequence){help('Not enough clear hand tracking. Keep your hands in view and record again.');onStatus('No reliable match','Not enough clear hand tracking.');controls();return;}
   nextAutomaticAt=performance.now()+6000;
@@ -79,6 +81,7 @@ export function createResearchWords({onWord,onStatus,onChange}){
   if(now<recording.start||now-last<80)return;
   const aspect=detection.imageAspect||1;
   if(recording.aspect&&Math.abs(recording.aspect-aspect)>.01){cancel();help('Camera orientation changed. Record again.');return;}
+  recording.startMediaTime??=document.querySelector('#webcam').currentTime;recording.endMediaTime=document.querySelector('#webcam').currentTime;
   last=now;recording.aspect=aspect;recording.frames.push(motionFrame(detection));
   help('Recording your movement… finish the sign and pause.');
  }

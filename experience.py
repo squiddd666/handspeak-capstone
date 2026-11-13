@@ -19,7 +19,14 @@ class ExperienceStore:
  def settings(self):
   with self.connect() as db:rows=db.execute('SELECT word_id,description,video_path,hidden,updated_at FROM vocabulary_settings').fetchall()
   labels={x['id']:x['label'] for x in self.catalog()}
-  return {'items':{r['word_id']:{'description':r['description'],'video':r['video_path'],'hidden':bool(r['hidden']),'label':labels.get(r['word_id'],'')} for r in rows}}
+  items={r['word_id']:{'description':r['description'],'video':r['video_path'],'hidden':bool(r['hidden']),'label':labels.get(r['word_id'],'')} for r in rows}
+  policy=self.root/'models/disabled-word-policy.json'
+  if policy.exists():
+   for label in json.loads(policy.read_text(encoding='utf-8')).get('labels',[]):
+    word=re.sub(r'[^a-z0-9]+','-',re.sub(r'[12]$','',label.lower())).strip('-')
+    item=dict(items.get(word,{}));item.update(hidden=True,label=label)
+    item.setdefault('description','');item.setdefault('video','');items[word]=item
+  return {'items':items}
  def save(self,data):
   word=data.get('id');items={x['id']:x for x in self.catalog()}
   if word not in items:raise self.error(422,'Select an existing vocabulary entry.')

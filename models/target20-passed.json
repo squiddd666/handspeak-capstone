@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "checkpointSha256": "e9e558d6e0b4bd003e1bc4e4696160d1b5421df0a337c6a891960a21f4d0559d",
+  "gate": 0.9,
+  "words": {
+    "HELLO": {
+      "correct": 12,
+      "samples": 14,
+      "recall": 0.8571428571428571,
+      "precision": 1.0
+    },
+    "PLEASE": {
+      "correct": 12,
+      "samples": 13,
+      "recall": 0.9230769230769231,
+      "precision": 1.0
+    },
+    "HELP": {
+      "correct": 11,
+      "samples": 13,
+      "recall": 0.8461538461538461,
+      "precision": 1.0
+    },
+    "WATER": {
+      "correct": 11,
+      "samples": 12,
+      "recall": 0.9166666666666666,
+      "precision": 1.0
+    }
+  },
+  "experimental": true,
+  "liveCameraVerified": false
+}

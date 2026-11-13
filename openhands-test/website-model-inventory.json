@@ -1,0 +1,585 @@
+{
+  "capstone-asl": {
+    "available": true,
+    "labels": [
+      "8HOUR",
+      "ANYONE",
+      "APPLE",
+      "ARTICULATESIGN",
+      "AXE1",
+      "BABY2",
+      "BACKPACK1",
+      "BASEBALLCAP",
+      "BASKETBALL1",
+      "BEE1",
+      "BELT1",
+      "BITE1",
+      "BREAKFAST1",
+      "CALENDAR1",
+      "CANCER1",
+      "CAPTURE",
+      "CATAPULT",
+      "CEMETERY",
+      "CHEEK",
+      "CHEESEGRATER",
+      "CHRISTMAS1",
+      "CLOSE",
+      "COMB2",
+      "CONFUSED1",
+      "DARK1",
+      "DEAF1",
+      "DECIDE1",
+      "DEMAND1",
+      "DEVELOP1",
+      "DINNER1",
+      "DOG1",
+      "DOWNSIZE1",
+      "DRAG1",
+      "DUCK2",
+      "EAT1",
+      "EDIT1",
+      "ELEVATOR1",
+      "EMPTY2",
+      "ERUPT2",
+      "FINE1",
+      "FLOAT1",
+      "FOREIGNER1",
+      "GRAMMAR",
+      "GUESS1",
+      "HALLOWEEN1",
+      "HELICOPTER2",
+      "HOPE",
+      "HOSPITAL1",
+      "HOW1",
+      "HURDLE/TRIP1",
+      "IMPOSSIBLE",
+      "INTUITIVE",
+      "JEWELRY",
+      "JOKE",
+      "KNIGHT1",
+      "LETTUCE1",
+      "LOCK1",
+      "LUNCH1",
+      "MAPLE",
+      "MEACULPA",
+      "MEAT1",
+      "MECHANIC1",
+      "MICROSCOPE1",
+      "MOUTH",
+      "MOVIE1",
+      "MYSELF",
+      "NIGHT1",
+      "NOON1",
+      "OFFEND",
+      "OTHER",
+      "PARTY1",
+      "PATIENT2",
+      "PEG2",
+      "PIPE2",
+      "PONDER",
+      "PRESS",
+      "RAZOR2",
+      "RIVER1",
+      "ROCKINGCHAIR1",
+      "SCROLLDOWN",
+      "SHARK1",
+      "SHAVE1",
+      "SHOCKED",
+      "SINCE",
+      "SINK",
+      "SLIDE2",
+      "SOCCER2",
+      "SQUEEZE",
+      "SWEATER2",
+      "TAIL1",
+      "TEACH1",
+      "THEY1",
+      "THIRD1",
+      "TOMATO",
+      "TRACTOR",
+      "TWINS1",
+      "VLOG",
+      "VOMIT",
+      "WALK-TIGHTROPE-CL",
+      "WHATFOR1"
+    ],
+    "coreLabels": [
+      "BELT1",
+      "EAT1",
+      "EMPTY2",
+      "PEG2",
+      "SOCCER2",
+      "SQUEEZE",
+      "VLOG"
+    ],
+    "extendedLabels": [
+      "BELT1",
+      "EAT1",
+      "EMPTY2",
+      "PEG2",
+      "SOCCER2",
+      "SQUEEZE",
+      "VLOG",
+      "BASEBALLCAP",
+      "DEAF1",
+      "DEMAND1",
+      "DRAG1",
+      "DUCK2",
+      "EDIT1",
+      "LOCK1",
+      "MECHANIC1",
+      "MICROSCOPE1",
+      "OTHER",
+      "PARTY1",
+      "WHATFOR1"
+    ],
+    "model": "HandSpeak ST-GCN v4 (100-word, one-hand tolerant, 4-checkpoint ensemble)",
+    "top1": 0.744,
+    "top5": 0.894,
+    "processing": "server-landmarks",
+    "retention": "not stored",
+    "minFrames": 5,
+    "oneHandTolerant": true
+  },
+  "beginner-asl": {
+    "available": true,
+    "labels": [
+      "ANGRY",
+      "BAD",
+      "BATHROOM",
+      "BEFORE",
+      "BROTHER",
+      "CHILD",
+      "FAMILY",
+      "FATHER",
+      "FRIEND",
+      "GIVE",
+      "GOOD",
+      "GOOD MORNING",
+      "HAPPY",
+      "HOW",
+      "INSIDE",
+      "KNOW",
+      "MONEY",
+      "MY / MINE",
+      "OKAY",
+      "OUTSIDE",
+      "PHONE",
+      "RUN",
+      "SAD",
+      "SCARED",
+      "SIT",
+      "SLEEP",
+      "SORRY",
+      "STAND",
+      "STORE",
+      "TAKE",
+      "TEACHER",
+      "THERE",
+      "THIS",
+      "TIRED",
+      "TODAY",
+      "TOMORROW",
+      "WAIT",
+      "WAKE UP",
+      "WELCOME",
+      "WHAT",
+      "WHEN",
+      "WHO",
+      "WHY",
+      "WORK",
+      "YESTERDAY",
+      "YOUR / YOURS"
+    ],
+    "vocabularySize": 46,
+    "trainedLabels": [
+      "GOODBYE",
+      "SORRY",
+      "OKAY",
+      "WELCOME",
+      "GOOD MORNING",
+      "GOOD AFTERNOON",
+      "GOOD NIGHT",
+      "HOW",
+      "WHAT",
+      "WHO",
+      "WHERE",
+      "WHEN",
+      "WHY",
+      "WHICH",
+      "I / ME",
+      "YOU",
+      "HE / SHE",
+      "WE",
+      "THEY",
+      "MY / MINE",
+      "YOUR / YOURS",
+      "THIS",
+      "THAT",
+      "EVERYONE",
+      "MOTHER",
+      "FATHER",
+      "BROTHER",
+      "SISTER",
+      "CHILD",
+      "FRIEND",
+      "TEACHER",
+      "STUDENT",
+      "FAMILY",
+      "SLEEP",
+      "WAKE UP",
+      "WALK",
+      "RUN",
+      "SIT",
+      "STAND",
+      "COME",
+      "HELP",
+      "STOP",
+      "WAIT",
+      "GIVE",
+      "TAKE",
+      "NEED",
+      "KNOW",
+      "HAPPY",
+      "SAD",
+      "ANGRY",
+      "SCARED",
+      "TIRED",
+      "THIRSTY",
+      "GOOD",
+      "BAD",
+      "SCHOOL",
+      "HOSPITAL",
+      "STORE",
+      "BATHROOM",
+      "WORK",
+      "HERE",
+      "THERE",
+      "INSIDE",
+      "OUTSIDE",
+      "AFTER",
+      "BAG",
+      "BEFORE",
+      "BREAD",
+      "CLOTHES",
+      "LATER",
+      "MILK",
+      "MONEY",
+      "NOW",
+      "PHONE",
+      "TIME",
+      "TODAY",
+      "TOMORROW",
+      "YESTERDAY"
+    ],
+    "trainedVocabularySize": 78,
+    "readyThreshold": 0.7,
+    "accuracy": {
+      "ANGRY": {
+        "correct": 5,
+        "total": 5,
+        "top1": 1.0
+      },
+      "BAD": {
+        "correct": 5,
+        "total": 7,
+        "top1": 0.7143
+      },
+      "BATHROOM": {
+        "correct": 9,
+        "total": 11,
+        "top1": 0.8182
+      },
+      "BEFORE": {
+        "correct": 10,
+        "total": 10,
+        "top1": 1.0
+      },
+      "BROTHER": {
+        "correct": 11,
+        "total": 13,
+        "top1": 0.8462
+      },
+      "CHILD": {
+        "correct": 6,
+        "total": 6,
+        "top1": 1.0
+      },
+      "FAMILY": {
+        "correct": 4,
+        "total": 4,
+        "top1": 1.0
+      },
+      "FATHER": {
+        "correct": 8,
+        "total": 10,
+        "top1": 0.8
+      },
+      "FRIEND": {
+        "correct": 5,
+        "total": 6,
+        "top1": 0.8333
+      },
+      "GIVE": {
+        "correct": 4,
+        "total": 5,
+        "top1": 0.8
+      },
+      "GOOD": {
+        "correct": 9,
+        "total": 12,
+        "top1": 0.75
+      },
+      "GOOD MORNING": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "HAPPY": {
+        "correct": 12,
+        "total": 12,
+        "top1": 1.0
+      },
+      "HOW": {
+        "correct": 4,
+        "total": 5,
+        "top1": 0.8
+      },
+      "INSIDE": {
+        "correct": 10,
+        "total": 11,
+        "top1": 0.9091
+      },
+      "KNOW": {
+        "correct": 9,
+        "total": 11,
+        "top1": 0.8182
+      },
+      "MONEY": {
+        "correct": 18,
+        "total": 25,
+        "top1": 0.72
+      },
+      "MY / MINE": {
+        "correct": 4,
+        "total": 5,
+        "top1": 0.8
+      },
+      "OKAY": {
+        "correct": 10,
+        "total": 10,
+        "top1": 1.0
+      },
+      "OUTSIDE": {
+        "correct": 9,
+        "total": 12,
+        "top1": 0.75
+      },
+      "PHONE": {
+        "correct": 9,
+        "total": 11,
+        "top1": 0.8182
+      },
+      "RUN": {
+        "correct": 15,
+        "total": 21,
+        "top1": 0.7143
+      },
+      "SAD": {
+        "correct": 3,
+        "total": 4,
+        "top1": 0.75
+      },
+      "SCARED": {
+        "correct": 6,
+        "total": 6,
+        "top1": 1.0
+      },
+      "SIT": {
+        "correct": 5,
+        "total": 5,
+        "top1": 1.0
+      },
+      "SLEEP": {
+        "correct": 9,
+        "total": 12,
+        "top1": 0.75
+      },
+      "SORRY": {
+        "correct": 3,
+        "total": 3,
+        "top1": 1.0
+      },
+      "STAND": {
+        "correct": 18,
+        "total": 24,
+        "top1": 0.75
+      },
+      "STORE": {
+        "correct": 4,
+        "total": 5,
+        "top1": 0.8
+      },
+      "TAKE": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "TEACHER": {
+        "correct": 6,
+        "total": 6,
+        "top1": 1.0
+      },
+      "THERE": {
+        "correct": 11,
+        "total": 12,
+        "top1": 0.9167
+      },
+      "THIS": {
+        "correct": 9,
+        "total": 11,
+        "top1": 0.8182
+      },
+      "TIRED": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "TODAY": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "TOMORROW": {
+        "correct": 7,
+        "total": 8,
+        "top1": 0.875
+      },
+      "WAIT": {
+        "correct": 10,
+        "total": 13,
+        "top1": 0.7692
+      },
+      "WAKE UP": {
+        "correct": 6,
+        "total": 6,
+        "top1": 1.0
+      },
+      "WELCOME": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "WHAT": {
+        "correct": 21,
+        "total": 25,
+        "top1": 0.84
+      },
+      "WHEN": {
+        "correct": 11,
+        "total": 13,
+        "top1": 0.8462
+      },
+      "WHO": {
+        "correct": 8,
+        "total": 11,
+        "top1": 0.7273
+      },
+      "WHY": {
+        "correct": 8,
+        "total": 10,
+        "top1": 0.8
+      },
+      "WORK": {
+        "correct": 14,
+        "total": 15,
+        "top1": 0.9333
+      },
+      "YESTERDAY": {
+        "correct": 8,
+        "total": 10,
+        "top1": 0.8
+      },
+      "YOUR / YOURS": {
+        "correct": 5,
+        "total": 6,
+        "top1": 0.8333
+      }
+    },
+    "model": "HandSpeak ST-GCN beginner-need79-v6 (hard8 push)",
+    "checkpoint": "beginner-need79-v6.pt",
+    "phase": "need79-v6",
+    "experimental": true,
+    "liveCameraAccuracyVerified": false,
+    "essential": {
+      "available": true,
+      "runtimeAvailable": true,
+      "labels": [
+        "HELP",
+        "I / ME",
+        "YOU",
+        "NEED",
+        "WHERE"
+      ],
+      "gate": 0.9,
+      "test": {
+        "correct": 22,
+        "wrong": 0,
+        "rejected": 41,
+        "known": 63,
+        "negative": 17,
+        "false_accept": 1
+      }
+    },
+    "target20": {
+      "available": true,
+      "labels": [
+        "HELLO",
+        "THANK YOU",
+        "PLEASE",
+        "SORRY",
+        "YES",
+        "NO",
+        "HELP",
+        "LOVE",
+        "I / ME",
+        "YOU",
+        "WANT",
+        "NEED",
+        "LIKE",
+        "GOOD",
+        "BAD",
+        "WHAT",
+        "WHERE",
+        "WHO",
+        "EAT",
+        "WATER"
+      ],
+      "gate": 0.9,
+      "ready": false,
+      "runtimeAvailable": true,
+      "checkpointSha256": null,
+      "modelVersion": "target20-candidate"
+    }
+  },
+  "research-words": {
+    "available": true,
+    "labels": [
+      "NAME",
+      "HOME",
+      "HAVE",
+      "WANT",
+      "LOVE"
+    ],
+    "experimental": true,
+    "test": {
+      "correct": 12,
+      "total": 24,
+      "unsupportedFalse": 0,
+      "unsupportedTotal": 0
+    },
+    "processing": "server-landmarks",
+    "retention": "not stored",
+    "manualOnly": true
+  }
+}

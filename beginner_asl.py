@@ -67,9 +67,22 @@ LOCK = threading.Lock()
 _runtime = None
 _extra = {}
 ESSENTIAL_LABELS = ('HELP', 'I / ME', 'YOU', 'NEED', 'WHERE')
-ESSENTIAL_PATH = Path(os.environ.get('HANDSPEAK_ESSENTIAL_MODEL', str(REPO.parent / 'handspeak-training' / 'essential-candidate.pt')))
+def _research_checkpoint(variable, filename):
+    override = os.environ.get(variable)
+    if override:
+        return Path(override).expanduser()
+    bundled = REPO / 'models' / filename
+    external = REPO.parent / 'handspeak-training' / filename
+    return bundled if bundled.is_file() else external
+
+
+def _runtime_available():
+    return importlib.util.find_spec('torch') is not None
+
+
+ESSENTIAL_PATH = _research_checkpoint('HANDSPEAK_ESSENTIAL_MODEL', 'essential-candidate.pt')
 ESSENTIAL_REPORT = ESSENTIAL_PATH.parent / 'essential-rejection-report.json'
-TARGET20_PATH = Path(os.environ.get('HANDSPEAK_TARGET20_MODEL', str(REPO.parent / 'handspeak-training' / 'target20-candidate.pt')))
+TARGET20_PATH = _research_checkpoint('HANDSPEAK_TARGET20_MODEL', 'target20-candidate.pt')
 
 def target20_status():
     try:
@@ -85,7 +98,23 @@ def target20_status():
         return {'available': TARGET20_PATH.is_file() and importlib.util.find_spec('torch') is not None, 'labels': labs, 'gate': gate, 'ready': False, 'runtimeAvailable': importlib.util.find_spec('torch') is not None,
                 'checkpointSha256': report.get('checkpoint_sha256'), 'modelVersion': TARGET20_PATH.stem}
     except (OSError, ValueError, TypeError, KeyError):
-        return {'available': False, 'labels': [], 'ready': False}
+        return {'available': False, 'labels': [], 'ready': False, 'reason': 'Install target20-candidate.pt and its target20-report.json in models, then restart the server.'}
+
+def passed_target20_status():
+    """Offline-qualified subset; preserve full-model scores and rejection gate."""
+    try:
+        meta = json.loads((REPO / 'models' / 'target20-passed.json').read_text(encoding='utf-8'))
+        info = target20_status()
+        if hashlib.sha256(TARGET20_PATH.read_bytes()).hexdigest() != meta['checkpointSha256']:
+            raise ValueError('Passed-word evidence belongs to another checkpoint')
+        words = meta['words']
+        if not words or not set(words) <= set(info['labels']):
+            raise ValueError('Invalid passed-word vocabulary')
+        return dict(available=info['available'], labels=list(words), metrics=words,
+                    experimental=True, liveCameraVerified=False)
+    except (OSError, ValueError, KeyError, TypeError):
+        return dict(available=False, labels=[], experimental=True, liveCameraVerified=False)
+
 
 def _load_target20():
     if not target20_status()['available']:
@@ -112,10 +141,10 @@ def essential_status():
         gate = float(report['gate'])
         if not 0 < gate < 1:
             raise ValueError('Invalid gate')
-        return {'available': ESSENTIAL_PATH.is_file(), 'labels': list(ESSENTIAL_LABELS),
+        return {'available': ESSENTIAL_PATH.is_file() and _runtime_available(), 'runtimeAvailable': _runtime_available(), 'labels': list(ESSENTIAL_LABELS),
                 'gate': gate, 'test': report['test']}
     except (OSError, ValueError, KeyError, TypeError):
-        return {'available': False, 'labels': list(ESSENTIAL_LABELS)}
+        return {'available': False, 'labels': list(ESSENTIAL_LABELS), 'reason': 'Install essential-candidate.pt and essential-rejection-report.json in models, then restart the server.'}
 
 def _load_essential():
     if not essential_status()['available']:
@@ -159,7 +188,7 @@ def _ready_meta() -> dict:
 
 
 def available() -> bool:
-    return _checkpoint_path() is not None
+    return _checkpoint_path() is not None and _runtime_available()
 
 
 def all_labels() -> list[str]:
@@ -256,6 +285,7 @@ def status() -> dict:
         "liveCameraAccuracyVerified": False,
         "essential": essential_status(),
         "target20": target20_status(),
+        "passedTarget20": passed_target20_status(),
     }
 
 
@@ -378,7 +408,10 @@ def recognize(payload):
         and set(closed) <= set(CLOSED_PRACTICE)
     )
     use_essential = payload.get('vocabulary') == 'essential'
-    use_target20 = payload.get('vocabulary') == 'target20'
+    use_passed = payload.get('vocabulary') == 'target20-passed'
+    use_target20 = payload.get('vocabulary') in ('target20', 'target20-passed')
+    if use_passed and not passed_target20_status()['available']:
+        raise BeginnerASLError('The offline-qualified word model is unavailable.')
     if use_target20:
         from target20_quality import capture_quality
         try:
@@ -413,7 +446,7 @@ def recognize(payload):
     batch = torch.tensor(tensor[None].astype(np.float32))
     with LOCK, torch.no_grad():
         probs = torch.softmax(model(batch), 1)[0].numpy()
-    ready = set(target20_status()['labels']) if use_target20 else set(ESSENTIAL_LABELS) if use_essential else set(closed) if use_closed else set(ready_labels())
+    ready = set(passed_target20_status()['labels']) if use_passed else set(target20_status()['labels']) if use_target20 else set(ESSENTIAL_LABELS) if use_essential else set(closed) if use_closed else set(ready_labels())
     if use_essential or use_target20:
         # Preserve full-vocabulary probabilities: filtering and renormalizing
         # would turn unrelated signs into confident five-word suggestions.
@@ -466,7 +499,7 @@ def recognize(payload):
         "activeFrames": [0, len(frames) - 1],
         "frames": len(frames),
         "model": 'HandSpeak 20-word research candidate' if use_target20 else 'HandSpeak five-word research candidate' if use_essential else status().get("model", "HandSpeak ST-GCN beginner"),
-        "vocabulary": 'target20' if use_target20 else 'essential' if use_essential else "beginner-ready",
+        "vocabulary": 'target20-passed' if use_passed else 'target20' if use_target20 else 'essential' if use_essential else "beginner-ready",
         "vocabularySize": len(ready) if ready else len(label_list),
         "minScore": min_score,
         "lowConfidence": low_confidence,

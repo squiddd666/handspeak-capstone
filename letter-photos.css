@@ -1,4 +1,6 @@
-/* Direct, locally hosted reference photos; show the entire hand without cropping. */
-#signGrid .sign-visual.sign-photo {height:auto;aspect-ratio:212 / 199;overflow:hidden;background:#845127;}
-#signGrid .sign-photo img {display:block;width:100%;height:100%;object-fit:contain;}
+/* Original SignSpeak alphabet references; J/Z use motion videos. */
+#signGrid .sign-visual.sign-photo {height:auto;aspect-ratio:1 / 1;overflow:hidden;background:#101510;}
+#signGrid .sign-photo img,
+#signGrid .sign-photo video {display:block;width:100%;height:100%;object-fit:contain;background:#101510;}
+#signGrid .sign-visual.sign-motion {aspect-ratio:1 / 1;background:#101510;}
 .sign-photo-credit {color:#aab5a2;font-size:12px;line-height:1.6;margin:18px 0 0;max-width:850px;}

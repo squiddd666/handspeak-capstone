@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const source=fs.readFileSync(new URL('../interpreter-words.js',import.meta.url));
+const {wordLogState,commitCurrentWord}=await import('data:text/javascript;base64,'+source.toString('base64'));
+assert.deepEqual(wordLogState(''),{current:'',completed:[]});
+assert.deepEqual(wordLogState('HELLO'),{current:'HELLO',completed:[]});
+const logged=commitCurrentWord('HELLO');
+assert.deepEqual(wordLogState(logged),{current:'',completed:['HELLO']});
+assert.equal(commitCurrentWord(logged),logged);
+assert.deepEqual(wordLogState(logged+'WORLD'),{current:'WORLD',completed:['HELLO']});
+assert.deepEqual(wordLogState(commitCurrentWord(logged+'WORLD')),{current:'',completed:['HELLO','WORLD']});
+assert.deepEqual(wordLogState('HI THERE '),{current:'',completed:['HI','THERE']});
+assert.equal(commitCurrentWord('X'.repeat(1000)),null);
+assert.deepEqual(wordLogState(''),{current:'',completed:[]});
+console.log('Word log: commit, duplicate prevention, multiple words, edits, clearing and length limit passed');

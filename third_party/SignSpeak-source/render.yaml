@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: signspeak
+    runtime: docker
+    repo: https://github.com/medhu0505/SignSpeak.git
+    branch: main
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000

@@ -26,6 +26,7 @@ def get_archive():
 def download(cache):
     rows=[]
     with get_archive() as z:
+        (cache/'use.txt').write_bytes(z.read('ASL_Citizen/use.txt'))
         for split in ['train','val','test']:
             data=z.read(f'ASL_Citizen/splits/{split}.csv');(cache/f'{split}.csv').write_bytes(data)
             source=list(csv.DictReader(io.StringIO(data.decode('utf-8-sig'))))
@@ -34,14 +35,19 @@ def download(cache):
                 selected += [r for r in source if r['Gloss']==gloss][:4 if split=='train' else 3]
             for r in selected:
                 member='ASL_Citizen/videos/'+r['Video file'];path=cache/split/r['Video file'];path.parent.mkdir(exist_ok=True)
-                if not path.exists():
+                info=z.getinfo(member)
+                if not path.exists() or path.stat().st_size != info.file_size:
                     for attempt in range(4):
-                        try:path.write_bytes(z.read(member));break
+                        try:
+                            data=z.read(member)
+                            if len(data)!=info.file_size:raise ValueError('Incomplete clip download')
+                            partial=path.with_suffix(path.suffix+'.partial')
+                            partial.write_bytes(data);partial.replace(path);break
                         except Exception:
                             if attempt==3:raise
                             time.sleep(2)
                 rows.append(dict(file=str(path.resolve()),label=TARGETS.get(r['Gloss'],'UNKNOWN'),gloss=r['Gloss'],split=split,participant=r['Participant ID'],member=member,sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
-                if len(rows)%50==0:print('download',len(rows),flush=True)
+                print('download',len(rows),split,rows[-1]['label'],flush=True)
     participants={s:{r['participant'] for r in rows if r['split']==s} for s in ['train','val','test']}
     assert all(not participants[a]&participants[b] for a,b in [('train','val'),('train','test'),('val','test')])
     hashes={s:{r['sha256'] for r in rows if r['split']==s} for s in participants}

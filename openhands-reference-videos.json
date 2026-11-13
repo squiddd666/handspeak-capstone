@@ -1,0 +1,2148 @@
+{
+  "checked_utc": "2026-11-11T18:53:16.059254+00:00",
+  "count": 69,
+  "verified_video_count": 69,
+  "verified_page_count": 69,
+  "note": "Reference links only. HTTP/media checks are not human verification of sign meaning or full video playback. Licenses remain with source owners. WLASL candidates are metadata only and may overlap OpenHands training, regardless of original split. These links have not been used in a new accuracy evaluation.",
+  "rows": [
+    {
+      "word": "accident",
+      "page": "https://www.signasl.org/sign/accident",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/ACCIDENT-2047.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "00618",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 24
+        },
+        {
+          "url": "http://www.aslsearch.com/signs/videos/accident.mp4",
+          "video_id": "00639",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 89
+        },
+        {
+          "url": "https://media.spreadthesign.com/video/mp4/13/72311.mp4",
+          "video_id": "00624",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 93
+        }
+      ],
+      "video_count": 10
+    },
+    {
+      "word": "africa",
+      "page": "https://www.signasl.org/sign/africa",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/africa.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "01382",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 38
+        },
+        {
+          "url": "https://media.spreadthesign.com/video/mp4/13/50049.mp4",
+          "video_id": "01383",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 124
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/africa.mp4",
+          "video_id": "01384",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 56
+        }
+      ],
+      "video_count": 7
+    },
+    {
+      "word": "all",
+      "page": "https://www.signasl.org/sign/all",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsearch/mp4/whole.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "01912",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/all.mp4",
+          "video_id": "69206",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 76
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Gmj2_uVjhqI",
+          "video_id": "68001",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 87
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "apple",
+      "page": "https://www.signasl.org/sign/apple",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/apple.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "02997",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/apple.mp4",
+          "video_id": "69213",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 78
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BT3cFFLNzD8",
+          "video_id": "68003",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 84
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "basketball",
+      "page": "https://www.signasl.org/sign/basketball",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/basketball.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "05227",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/basketball.mp4",
+          "video_id": "69225",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 79
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JxtYMfvnp58",
+          "video_id": "68612",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 74
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "bird",
+      "page": "https://www.signasl.org/sign/bird",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/bird.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "06326",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 60
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/bird.mp4",
+          "video_id": "69233",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 72
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lvqGMGFmuV4",
+          "video_id": "70107",
+          "original_split": "train",
+          "frame_start": 830,
+          "frame_end": 933
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "birthday",
+      "page": "https://www.signasl.org/sign/birthday",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/birthday.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "06355",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/BI/BIRTHDAY-412.mp4",
+          "video_id": "65192",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 65
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aSvUHxoby4U",
+          "video_id": "68338",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 47
+        }
+      ],
+      "video_count": 11
+    },
+    {
+      "word": "black",
+      "page": "https://www.signasl.org/sign/black",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/black.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "06455",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/black.mp4",
+          "video_id": "69236",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 54
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2YRASxmXLD0",
+          "video_id": "68230",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 49
+        }
+      ],
+      "video_count": 21
+    },
+    {
+      "word": "blue",
+      "page": "https://www.signasl.org/sign/blue",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/blue.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "06822",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/blue.mp4",
+          "video_id": "69238",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 53
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6I9PNDl8A_U",
+          "video_id": "68274",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 36
+        }
+      ],
+      "video_count": 22
+    },
+    {
+      "word": "bowling",
+      "page": "https://www.signasl.org/sign/bowling",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/bowling.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "07383",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "http://www.aslpro.com//main/b/bowling.swf",
+          "video_id": "07403",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 81
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/bowling.mp4",
+          "video_id": "07389",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 70
+        }
+      ],
+      "video_count": 4
+    },
+    {
+      "word": "brown",
+      "page": "https://www.signasl.org/sign/brown",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/brown.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "07957",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/brown.mp4",
+          "video_id": "69252",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 62
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WprUBqi3iBc",
+          "video_id": "70242",
+          "original_split": "train",
+          "frame_start": 869,
+          "frame_end": 964
+        }
+      ],
+      "video_count": 15
+    },
+    {
+      "word": "but",
+      "page": "https://www.signasl.org/sign/but",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/BUT-61.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "08421",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=c17A0edBIaA",
+          "video_id": "68368",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 39
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cFlUlLhRbTE",
+          "video_id": "68016",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 42
+        }
+      ],
+      "video_count": 9
+    },
+    {
+      "word": "candy",
+      "page": "https://www.signasl.org/sign/candy",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/candy.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "08909",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LMQ4kaHPS48",
+          "video_id": "68018",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 87
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pc0-gVEETVg",
+          "video_id": "70326",
+          "original_split": "train",
+          "frame_start": 5286,
+          "frame_end": 5411
+        }
+      ],
+      "video_count": 22
+    },
+    {
+      "word": "change",
+      "page": "https://www.signasl.org/sign/change",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/change.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "09945",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z25ng9maolE",
+          "video_id": "70379",
+          "original_split": "val",
+          "frame_start": 5827,
+          "frame_end": 5943
+        },
+        {
+          "url": "https://www.signingsavvy.com/signs/mp4/5/5424.mp4",
+          "video_id": "09966",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 62
+        }
+      ],
+      "video_count": 21
+    },
+    {
+      "word": "cheat",
+      "page": "https://www.signasl.org/sign/cheat",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CHEAT_1-1058.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "10146",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M-YTVGOSvqA",
+          "video_id": "10161",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 70
+        },
+        {
+          "url": "http://www.aslpro.com/main/c/cheat_1.swf",
+          "video_id": "10162",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 48
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "city",
+      "page": "https://www.signasl.org/sign/city",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CITY-551.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "10888",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/city.mp4",
+          "video_id": "69269",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 78
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cEbPqZiaAqQ",
+          "video_id": "68374",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 61
+        }
+      ],
+      "video_count": 11
+    },
+    {
+      "word": "color",
+      "page": "https://www.signasl.org/sign/color",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/color.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "11752",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 54
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/color.mp4",
+          "video_id": "69274",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 92
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=13NxXYPYpb0",
+          "video_id": "68202",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 44
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "computer",
+      "page": "https://www.signasl.org/sign/computer",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/computer-2.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "12306",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=H-tAzh-nuV8",
+          "video_id": "68028",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 89
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YEFd7zsUNXU",
+          "video_id": "69054",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 72
+        }
+      ],
+      "video_count": 25
+    },
+    {
+      "word": "cook",
+      "page": "https://www.signasl.org/sign/cook",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/cook.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "13154",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sErq0TJMKEo",
+          "video_id": "70030",
+          "original_split": "test",
+          "frame_start": 3522,
+          "frame_end": 3613
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sK9DAZw4_zs",
+          "video_id": "68029",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 87
+        }
+      ],
+      "video_count": 8
+    },
+    {
+      "word": "cool",
+      "page": "https://www.signasl.org/sign/cool",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsearch/mp4/cool.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/cool.mp4",
+          "video_id": "69281",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 66
+        },
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/CO/COOL-1158.mp4",
+          "video_id": "65403",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 77
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WGfiiDgrq1I",
+          "video_id": "70271",
+          "original_split": "test",
+          "frame_start": 4948,
+          "frame_end": 5095
+        }
+      ],
+      "video_count": 17
+    },
+    {
+      "word": "corn",
+      "page": "https://www.signasl.org/sign/corn",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/CORN_2-2464.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "13309",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/corn.mp4",
+          "video_id": "69282",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 74
+        },
+        {
+          "url": "http://www.aslsearch.com/signs/videos/corn.mp4",
+          "video_id": "13337",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 68
+        }
+      ],
+      "video_count": 16
+    },
+    {
+      "word": "cousin",
+      "page": "https://www.signasl.org/sign/cousin",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/COUSIN-1171.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/CO/COUSIN-1171.mp4",
+          "video_id": "65415",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 73
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bq-HmgjGzmw",
+          "video_id": "70332",
+          "original_split": "train",
+          "frame_start": 1161,
+          "frame_end": 1262
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jC6sHiZBEyI",
+          "video_id": "68592",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 39
+        }
+      ],
+      "video_count": 7
+    },
+    {
+      "word": "cow",
+      "page": "https://www.signasl.org/sign/cow",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/cow.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "13681",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 33
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/cow.mp4",
+          "video_id": "69283",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 68
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Cow-6-hRTBII8CE.mp4",
+          "video_id": "13697",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 39
+        }
+      ],
+      "video_count": 9
+    },
+    {
+      "word": "dance",
+      "page": "https://www.signasl.org/sign/dance",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/dance.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "14621",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G6pN8BFQYDI",
+          "video_id": "68032",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 107
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VwejDy96MzM",
+          "video_id": "70152",
+          "original_split": "train",
+          "frame_start": 7250,
+          "frame_end": 7361
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "dark",
+      "page": "https://www.signasl.org/sign/dark",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/DARK-100.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "14669",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/dark.mp4",
+          "video_id": "69290",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 59
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Dark%203-5soiYfTU5hI.mp4",
+          "video_id": "14673",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 47
+        }
+      ],
+      "video_count": 28
+    },
+    {
+      "word": "deaf",
+      "page": "https://www.signasl.org/sign/deaf",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/deaf.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "14855",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=25ymRY7hbjs",
+          "video_id": "70015",
+          "original_split": "train",
+          "frame_start": 4420,
+          "frame_end": 4511
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J9hiREjgVe0",
+          "video_id": "68586",
+          "original_split": "train",
+          "frame_start": 80,
+          "frame_end": 137
+        }
+      ],
+      "video_count": 22
+    },
+    {
+      "word": "decide",
+      "page": "https://www.signasl.org/sign/decide",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/decide.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "15031",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lvqGMGFmuV4",
+          "video_id": "70119",
+          "original_split": "test",
+          "frame_start": 4053,
+          "frame_end": 4158
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Decide%2C%20Definitely-a6H-G5Vhz6w.mp4",
+          "video_id": "15034",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 30
+        }
+      ],
+      "video_count": 6
+    },
+    {
+      "word": "doctor",
+      "page": "https://www.signasl.org/sign/doctor",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/doctor.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "17007",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QPiZO8Aswgo",
+          "video_id": "68842",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 102
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sErq0TJMKEo",
+          "video_id": "70049",
+          "original_split": "train",
+          "frame_start": 7390,
+          "frame_end": 7475
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "dog",
+      "page": "https://www.signasl.org/sign/dog",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/dog.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "17076",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 54
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/dog.mp4",
+          "video_id": "69298",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 69
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kMcaG9BjXXg",
+          "video_id": "68632",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 67
+        }
+      ],
+      "video_count": 23
+    },
+    {
+      "word": "eat",
+      "page": "https://www.signasl.org/sign/eat",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/eat.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "18316",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/eat.mp4",
+          "video_id": "69307",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 53
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HAqSIA2GG3g",
+          "video_id": "68520",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 65
+        }
+      ],
+      "video_count": 17
+    },
+    {
+      "word": "enjoy",
+      "page": "https://www.signasl.org/sign/enjoy",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/enjoy.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "19255",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 66
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aYMV4_YuPi8",
+          "video_id": "68344",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 128
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rNb-ogcyRAE",
+          "video_id": "68046",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 103
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "forget",
+      "page": "https://www.signasl.org/sign/forget",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslstudy/mp4/392130769.sd.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/FO/FORGET-565.mp4",
+          "video_id": "65761",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=l_aBsu7kVqI",
+          "video_id": "68053",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 101
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mK0OtDTC5To",
+          "video_id": "68692",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 47
+        }
+      ],
+      "video_count": 6
+    },
+    {
+      "word": "full",
+      "page": "https://www.signasl.org/sign/full",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/full.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/FU/FULL-139.mp4",
+          "video_id": "65792",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sErq0TJMKEo",
+          "video_id": "70029",
+          "original_split": "test",
+          "frame_start": 3367,
+          "frame_end": 3478
+        },
+        {
+          "url": "http://www.aslsearch.com/signs/videos/full.mp4",
+          "video_id": "23782",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 63
+        }
+      ],
+      "video_count": 16
+    },
+    {
+      "word": "graduate",
+      "page": "https://www.signasl.org/sign/graduate",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/graduate.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "25318",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 27
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=F5Wef1_PtLk",
+          "video_id": "70176",
+          "original_split": "val",
+          "frame_start": 6345,
+          "frame_end": 6474
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HNp5UcfuRSI",
+          "video_id": "68528",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 41
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "hat",
+      "page": "https://www.signasl.org/sign/hat",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/hat.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "26688",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/hat.mp4",
+          "video_id": "69359",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 84
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Cw7DfeqaQu0",
+          "video_id": "68396",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 53
+        }
+      ],
+      "video_count": 15
+    },
+    {
+      "word": "hearing",
+      "page": "https://www.signasl.org/sign/hearing",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/hearing.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/HE/HEARING-1773.mp4",
+          "video_id": "65884",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 76
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=25ymRY7hbjs",
+          "video_id": "70016",
+          "original_split": "val",
+          "frame_start": 4707,
+          "frame_end": 4798
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ba87IfnWL9s",
+          "video_id": "68350",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 143
+        }
+      ],
+      "video_count": 12
+    },
+    {
+      "word": "jacket",
+      "page": "https://www.signasl.org/sign/jacket",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/jacket.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "30830",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9YdNdSUawfc",
+          "video_id": "68320",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lMSfIEHvClM",
+          "video_id": "68079",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 44
+        }
+      ],
+      "video_count": 11
+    },
+    {
+      "word": "kiss",
+      "page": "https://www.signasl.org/sign/kiss",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/kiss.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "31746",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 71
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TT0VsmSeuEw",
+          "video_id": "31765",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 48
+        },
+        {
+          "url": "http://www.aslpro.com/main/k/kiss.swf",
+          "video_id": "31766",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 60
+        }
+      ],
+      "video_count": 15
+    },
+    {
+      "word": "language",
+      "page": "https://www.signasl.org/sign/language",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/LANGUAGE-2463.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "32146",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 24
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IRuaSHyrm6o",
+          "video_id": "68084",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iYwt-z7Roz4",
+          "video_id": "68085",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 126
+        }
+      ],
+      "video_count": 11
+    },
+    {
+      "word": "last",
+      "page": "https://www.signasl.org/sign/last",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/tsdvideo/mp4/57.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/LA/LAST-168.mp4",
+          "video_id": "66010",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 54
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BsaWM5I_G1o",
+          "video_id": "68086",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 37
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Yp5z7Px_aV8",
+          "video_id": "69068",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 52
+        }
+      ],
+      "video_count": 20
+    },
+    {
+      "word": "letter",
+      "page": "https://www.signasl.org/sign/letter",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/MAIL-356.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/LE/LETTER-642.mp4",
+          "video_id": "66038",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 61
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Kw9nFq7HD4Y",
+          "video_id": "68636",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pc0-gVEETVg",
+          "video_id": "70325",
+          "original_split": "test",
+          "frame_start": 5137,
+          "frame_end": 5241
+        }
+      ],
+      "video_count": 12
+    },
+    {
+      "word": "many",
+      "page": "https://www.signasl.org/sign/many",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/many.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "34822",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/many.mp4",
+          "video_id": "69396",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 76
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pc0-gVEETVg",
+          "video_id": "70308",
+          "original_split": "val",
+          "frame_start": 1524,
+          "frame_end": 1638
+        }
+      ],
+      "video_count": 8
+    },
+    {
+      "word": "medicine",
+      "page": "https://www.signasl.org/sign/medicine",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/medicine.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://aslsignbank.haskins.yale.edu/dictionary/protected_media/glossvideo/ME/MEDICINE-1621.mp4",
+          "video_id": "66111",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 75
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pupBwmtznhI",
+          "video_id": "68810",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 102
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/SignSchool%20Medicine.mp4",
+          "video_id": "35454",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 89
+        }
+      ],
+      "video_count": 6
+    },
+    {
+      "word": "meet",
+      "page": "https://www.signasl.org/sign/meet",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsearch/mp4/meet.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "35506",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 27
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pWFDhzkId9o",
+          "video_id": "68099",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VSBIqNFEQxI",
+          "video_id": "68974",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 59
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "orange",
+      "page": "https://www.signasl.org/sign/orange",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsearch/mp4/orange.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "40114",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/orange.mp4",
+          "video_id": "69422",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 51
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pc0-gVEETVg",
+          "video_id": "70310",
+          "original_split": "val",
+          "frame_start": 1835,
+          "frame_end": 1938
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "paint",
+      "page": "https://www.signasl.org/sign/paint",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/PAINTBRUSH-3018.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "40816",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 63
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bzeoojCEbX0",
+          "video_id": "68364",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 91
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VPeBrHewtSY",
+          "video_id": "68125",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 106
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "paper",
+      "page": "https://www.signasl.org/sign/paper",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/paper.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "41008",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=f85vUmJJP8I",
+          "video_id": "68446",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 56
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hjS0dQDgbjo",
+          "video_id": "70211",
+          "original_split": "train",
+          "frame_start": 2006,
+          "frame_end": 2106
+        }
+      ],
+      "video_count": 20
+    },
+    {
+      "word": "pink",
+      "page": "https://www.signasl.org/sign/pink",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/pink.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "42827",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 60
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/pink.mp4",
+          "video_id": "69430",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 58
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2igUp9Fvq-E",
+          "video_id": "68132",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 44
+        }
+      ],
+      "video_count": 16
+    },
+    {
+      "word": "pizza",
+      "page": "https://www.signasl.org/sign/pizza",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/pizza-2.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "42953",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/pizza.mp4",
+          "video_id": "69431",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 64
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XIZ2DrdEU3k",
+          "video_id": "42974",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 58
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "play",
+      "page": "https://www.signasl.org/sign/play",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/play.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/play.mp4",
+          "video_id": "69433",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 63
+        },
+        {
+          "url": "https://media.spreadthesign.com/video/mp4/13/116328.mp4",
+          "video_id": "43166",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 92
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=75FwzqQqyM0",
+          "video_id": "68288",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 88
+        }
+      ],
+      "video_count": 36
+    },
+    {
+      "word": "pull",
+      "page": "https://www.signasl.org/sign/pull",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsearch/mp4/pull.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "45252",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/pull.mp4",
+          "video_id": "69439",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 101
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z25ng9maolE",
+          "video_id": "70378",
+          "original_split": "train",
+          "frame_start": 5233,
+          "frame_end": 5344
+        }
+      ],
+      "video_count": 28
+    },
+    {
+      "word": "purple",
+      "page": "https://www.signasl.org/sign/purple",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/purple.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "45432",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 35
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/purple.mp4",
+          "video_id": "69440",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ESK6NAvvsKg",
+          "video_id": "68137",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 49
+        }
+      ],
+      "video_count": 13
+    },
+    {
+      "word": "right",
+      "page": "https://www.signasl.org/sign/right",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/right.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://www.youtube.com/watch?v=e1RF5h4OgOg",
+          "video_id": "68142",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 47
+        },
+        {
+          "url": "http://www.aslpro.com/main/r/right_correct.swf",
+          "video_id": "48122",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "http://www.aslpro.com/main/r/right_direction.swf",
+          "video_id": "48123",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 53
+        }
+      ],
+      "video_count": 18
+    },
+    {
+      "word": "same",
+      "page": "https://www.signasl.org/sign/same",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/tsdvideo/mp4/190.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://media.spreadthesign.com/video/mp4/13/50775.mp4",
+          "video_id": "49173",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 87
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rDAGt54vEsI",
+          "video_id": "68856",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 39
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Same%2C%20Similar-u52CAu7ygrY.mp4",
+          "video_id": "49175",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 39
+        }
+      ],
+      "video_count": 12
+    },
+    {
+      "word": "secretary",
+      "page": "https://www.signasl.org/sign/secretary",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/SECRETARY-1010.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "50036",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://media.spreadthesign.com/video/mp4/13/51753.mp4",
+          "video_id": "50037",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 101
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/secretary.mp4",
+          "video_id": "50038",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 81
+        }
+      ],
+      "video_count": 6
+    },
+    {
+      "word": "shirt",
+      "page": "https://www.signasl.org/sign/shirt",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/shirt.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "51054",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u7GIbrpxyFU",
+          "video_id": "68928",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 56
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/shirt.mp4",
+          "video_id": "51057",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 85
+        }
+      ],
+      "video_count": 8
+    },
+    {
+      "word": "short",
+      "page": "https://www.signasl.org/sign/short",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/short.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "51206",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 38
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bq-HmgjGzmw",
+          "video_id": "70355",
+          "original_split": "train",
+          "frame_start": 6591,
+          "frame_end": 6697
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/short.mp4",
+          "video_id": "51221",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 85
+        }
+      ],
+      "video_count": 17
+    },
+    {
+      "word": "son",
+      "page": "https://www.signasl.org/sign/son",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/son.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "53258",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Aq6l7fEWRVM",
+          "video_id": "68336",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 57
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bq-HmgjGzmw",
+          "video_id": "70335",
+          "original_split": "train",
+          "frame_start": 1749,
+          "frame_end": 1869
+        }
+      ],
+      "video_count": 11
+    },
+    {
+      "word": "study",
+      "page": "https://www.signasl.org/sign/study",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/examine.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "55356",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=edaot0Pm6NI",
+          "video_id": "68428",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 84
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JSwDsjPxKk0",
+          "video_id": "68162",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 119
+        }
+      ],
+      "video_count": 33
+    },
+    {
+      "word": "tall",
+      "page": "https://www.signasl.org/sign/tall",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/tall.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "56835",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "http://www.aslpro.com/main/t/tall.swf",
+          "video_id": "56851",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 62
+        },
+        {
+          "url": "http://www.aslsearch.com/signs/videos/tall.mp4",
+          "video_id": "56852",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 72
+        }
+      ],
+      "video_count": 10
+    },
+    {
+      "word": "tell",
+      "page": "https://www.signasl.org/sign/tell",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/aslsignbank/mp4/SAY-536.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "57273",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 33
+        },
+        {
+          "url": "https://www.asldeafined.com/media/vocabulary/1468943705.2416.mp4",
+          "video_id": "57278",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 66
+        },
+        {
+          "url": "https://www.handspeak.com/word/t/tell-me.mp4",
+          "video_id": "57279",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 55
+        }
+      ],
+      "video_count": 15
+    },
+    {
+      "word": "thanksgiving",
+      "page": "https://www.signasl.org/sign/thanksgiving",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/thanksgiving.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZxOqr6aCVLc",
+          "video_id": "69092",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 49
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SX3ppKcVdKA",
+          "video_id": "57645",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 73
+        },
+        {
+          "url": "http://www.aslpro.com/main/t/thanksgiving.swf",
+          "video_id": "57646",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        }
+      ],
+      "video_count": 9
+    },
+    {
+      "word": "thin",
+      "page": "https://www.signasl.org/sign/thin",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/thin-2.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "57919",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "https://www.signingsavvy.com/signs/mp4/22/22387.mp4",
+          "video_id": "57948",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.signingsavvy.com/signs/mp4/22/22387.mp4",
+          "video_id": "57949",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 46
+        }
+      ],
+      "video_count": 30
+    },
+    {
+      "word": "thursday",
+      "page": "https://www.signasl.org/sign/thursday",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/thursday.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "58359",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 46
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sErq0TJMKEo",
+          "video_id": "70026",
+          "original_split": "test",
+          "frame_start": 1402,
+          "frame_end": 1493
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Thursday-rvL5KYKyuS8.mp4",
+          "video_id": "58362",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 50
+        }
+      ],
+      "video_count": 14
+    },
+    {
+      "word": "want",
+      "page": "https://www.signasl.org/sign/want",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/want.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "62241",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 43
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/want.mp4",
+          "video_id": "69524",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 59
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=co7zdtkJW1E",
+          "video_id": "68178",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 73
+        }
+      ],
+      "video_count": 18
+    },
+    {
+      "word": "white",
+      "page": "https://www.signasl.org/sign/white",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/white.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "63191",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 41
+        },
+        {
+          "url": "http://aslbricks.org/New/ASL-Videos/white.mp4",
+          "video_id": "69533",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 64
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kddq0oAgBS0",
+          "video_id": "68622",
+          "original_split": "train",
+          "frame_start": 1,
+          "frame_end": 44
+        }
+      ],
+      "video_count": 16
+    },
+    {
+      "word": "woman",
+      "page": "https://www.signasl.org/sign/woman",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/woman.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "63662",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=i47aN_PUDvk",
+          "video_id": "68187",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 117
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OgcjUatW9LA",
+          "video_id": "68764",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 54
+        }
+      ],
+      "video_count": 8
+    },
+    {
+      "word": "wrong",
+      "page": "https://www.signasl.org/sign/wrong",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/wrong.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "64082",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BNOGQec2v8M",
+          "video_id": "68189",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 52
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CSj7IScvZnE",
+          "video_id": "70296",
+          "original_split": "train",
+          "frame_start": 4359,
+          "frame_end": 4470
+        }
+      ],
+      "video_count": 12
+    },
+    {
+      "word": "year",
+      "page": "https://www.signasl.org/sign/year",
+      "page_verified": true,
+      "video": "https://media.signbsl.com/videos/asl/startasl/mp4/year.mp4",
+      "video_verified": true,
+      "wlasl_candidates": [
+        {
+          "url": "",
+          "video_id": "64201",
+          "original_split": "test",
+          "frame_start": 1,
+          "frame_end": 66
+        },
+        {
+          "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Year-8JUNM67_g9g.mp4",
+          "video_id": "64211",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DnDbjT1fq8I",
+          "video_id": "68416",
+          "original_split": "val",
+          "frame_start": 1,
+          "frame_end": 64
+        }
+      ],
+      "video_count": 14
+    }
+  ]
+}

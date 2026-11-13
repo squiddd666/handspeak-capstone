@@ -1,0 +1,811 @@
+{
+  "candidate": "experiments/candidate34_controlled.json",
+  "split": {
+    "train_signers": [
+      "BRAVO",
+      "CHARLIE",
+      "ECHO",
+      "FOXTROT",
+      "GOLF"
+    ],
+    "test_signers": [
+      "ALPHA",
+      "DELTA",
+      "HOTEL"
+    ],
+    "test_segments": 1224
+  },
+  "candidate34": {
+    "top1": 0.7450980392156863,
+    "top1_ci": [
+      0.7199,
+      0.7687
+    ],
+    "macro_f1": 0.6262066188802634,
+    "balanced_accuracy": 0.6706188692458022,
+    "added_macro_f1": 0.4271929028884579,
+    "added_macro_recall": 0.4033966161715522,
+    "added_micro_top1": 0.44559585492227977,
+    "old24_subset_top1": 0.8011639185257032,
+    "by_test_signer": {
+      "ALPHA": {
+        "n": 581,
+        "top1": 0.8347676419965576
+      },
+      "DELTA": {
+        "n": 395,
+        "top1": 0.7063291139240506
+      },
+      "HOTEL": {
+        "n": 248,
+        "top1": 0.5967741935483871
+      }
+    },
+    "test_epoch_selection_biased": false,
+    "selection": "Configuration and epoch selected on ECHO validation; candidate refit on five development signers; untouched ALPHA/DELTA/HOTEL test run once."
+  },
+  "original24": {
+    "common_test_segments": 1031,
+    "common_top1": 0.9000969932104753,
+    "common_macro_f1": 0.8913145062499893,
+    "signer_independent": false,
+    "note": "Original CLERC release model trained on the release signers, including test signers here; score is contextual only, not a fair signer-independent comparator."
+  },
+  "per_word": [
+    {
+      "word": "YOU",
+      "support": 217,
+      "correct": 169,
+      "precision": 0.8622448979591837,
+      "recall": 0.7788018433179723,
+      "f1": 0.8184019370460048,
+      "recall_ci": [
+        0.719,
+        0.8289
+      ],
+      "top_confusions": [
+        [
+          "I",
+          10
+        ],
+        [
+          "NEED",
+          7
+        ],
+        [
+          "NAME",
+          6
+        ]
+      ]
+    },
+    {
+      "word": "QUESTION",
+      "support": 228,
+      "correct": 184,
+      "precision": 0.8846153846153846,
+      "recall": 0.8070175438596491,
+      "f1": 0.8440366972477065,
+      "recall_ci": [
+        0.7509,
+        0.853
+      ],
+      "top_confusions": [
+        [
+          "WHERE",
+          25
+        ],
+        [
+          "YOUR",
+          9
+        ],
+        [
+          "YOU",
+          4
+        ]
+      ]
+    },
+    {
+      "word": "WHAT",
+      "support": 81,
+      "correct": 57,
+      "precision": 0.7307692307692307,
+      "recall": 0.7037037037037037,
+      "f1": 0.7169811320754716,
+      "recall_ci": [
+        0.5969,
+        0.7921
+      ],
+      "top_confusions": [
+        [
+          "WANT",
+          16
+        ],
+        [
+          "GOOD",
+          3
+        ],
+        [
+          "I",
+          2
+        ]
+      ]
+    },
+    {
+      "word": "WHERE",
+      "support": 46,
+      "correct": 22,
+      "precision": 0.43137254901960786,
+      "recall": 0.4782608695652174,
+      "f1": 0.4536082474226804,
+      "recall_ci": [
+        0.3412,
+        0.6186
+      ],
+      "top_confusions": [
+        [
+          "YOUR",
+          13
+        ],
+        [
+          "QUESTION",
+          9
+        ],
+        [
+          "DAY",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "HAVE",
+      "support": 47,
+      "correct": 45,
+      "precision": 0.8333333333333334,
+      "recall": 0.9574468085106383,
+      "f1": 0.8910891089108911,
+      "recall_ci": [
+        0.8575,
+        0.9883
+      ],
+      "top_confusions": [
+        [
+          "STUDENT",
+          1
+        ],
+        [
+          "UNDERSTAND",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "WANT",
+      "support": 33,
+      "correct": 24,
+      "precision": 0.5853658536585366,
+      "recall": 0.7272727272727273,
+      "f1": 0.6486486486486487,
+      "recall_ci": [
+        0.5578,
+        0.8493
+      ],
+      "top_confusions": [
+        [
+          "WHAT",
+          6
+        ],
+        [
+          "GOOD",
+          3
+        ]
+      ]
+    },
+    {
+      "word": "LIKE",
+      "support": 24,
+      "correct": 23,
+      "precision": 0.6571428571428571,
+      "recall": 0.9583333333333334,
+      "f1": 0.7796610169491526,
+      "recall_ci": [
+        0.7976,
+        0.9926
+      ],
+      "top_confusions": [
+        [
+          "HUNGRY",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "YOUR",
+      "support": 140,
+      "correct": 134,
+      "precision": 0.8220858895705522,
+      "recall": 0.9571428571428572,
+      "f1": 0.8844884488448845,
+      "recall_ci": [
+        0.9097,
+        0.9802
+      ],
+      "top_confusions": [
+        [
+          "QUESTION",
+          1
+        ],
+        [
+          "SEE",
+          1
+        ],
+        [
+          "WHAT",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "WHY",
+      "support": 15,
+      "correct": 7,
+      "precision": 0.4375,
+      "recall": 0.4666666666666667,
+      "f1": 0.45161290322580644,
+      "recall_ci": [
+        0.2481,
+        0.6988
+      ],
+      "top_confusions": [
+        [
+          "HELLO",
+          7
+        ],
+        [
+          "DAY",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "NAME",
+      "support": 43,
+      "correct": 41,
+      "precision": 0.8723404255319149,
+      "recall": 0.9534883720930233,
+      "f1": 0.9111111111111111,
+      "recall_ci": [
+        0.8454,
+        0.9872
+      ],
+      "top_confusions": [
+        [
+          "YOU",
+          2
+        ]
+      ]
+    },
+    {
+      "word": "WHO",
+      "support": 17,
+      "correct": 11,
+      "precision": 0.6111111111111112,
+      "recall": 0.6470588235294118,
+      "f1": 0.6285714285714286,
+      "recall_ci": [
+        0.413,
+        0.8269
+      ],
+      "top_confusions": [
+        [
+          "DAY",
+          3
+        ],
+        [
+          "QUESTION",
+          2
+        ],
+        [
+          "YOUR",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "BATHROOM",
+      "support": 10,
+      "correct": 6,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "recall_ci": [
+        0.3127,
+        0.8318
+      ],
+      "top_confusions": [
+        [
+          "YOUR",
+          2
+        ],
+        [
+          "WHERE",
+          1
+        ],
+        [
+          "QUESTION",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "FEEL",
+      "support": 7,
+      "correct": 5,
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "f1": 0.8333333333333334,
+      "recall_ci": [
+        0.3589,
+        0.9178
+      ],
+      "top_confusions": [
+        [
+          "HAVE",
+          1
+        ],
+        [
+          "I",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "STUDENT",
+      "support": 11,
+      "correct": 7,
+      "precision": 0.7777777777777778,
+      "recall": 0.6363636363636364,
+      "f1": 0.7,
+      "recall_ci": [
+        0.3538,
+        0.8483
+      ],
+      "top_confusions": [
+        [
+          "WHAT",
+          2
+        ],
+        [
+          "I",
+          2
+        ]
+      ]
+    },
+    {
+      "word": "SEE",
+      "support": 10,
+      "correct": 10,
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1": 0.8333333333333334,
+      "recall_ci": [
+        0.7225,
+        1.0
+      ],
+      "top_confusions": []
+    },
+    {
+      "word": "NEED",
+      "support": 17,
+      "correct": 3,
+      "precision": 0.23076923076923078,
+      "recall": 0.17647058823529413,
+      "f1": 0.2,
+      "recall_ci": [
+        0.0619,
+        0.4103
+      ],
+      "top_confusions": [
+        [
+          "QUESTION",
+          8
+        ],
+        [
+          "YOU",
+          4
+        ],
+        [
+          "WHERE",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "HELP",
+      "support": 6,
+      "correct": 5,
+      "precision": 0.3333333333333333,
+      "recall": 0.8333333333333334,
+      "f1": 0.47619047619047616,
+      "recall_ci": [
+        0.4365,
+        0.9699
+      ],
+      "top_confusions": [
+        [
+          "WHAT",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "WHEN",
+      "support": 11,
+      "correct": 11,
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "f1": 0.9166666666666666,
+      "recall_ci": [
+        0.7412,
+        1.0
+      ],
+      "top_confusions": []
+    },
+    {
+      "word": "DAY",
+      "support": 5,
+      "correct": 4,
+      "precision": 0.21052631578947367,
+      "recall": 0.8,
+      "f1": 0.3333333333333333,
+      "recall_ci": [
+        0.3755,
+        0.9638
+      ],
+      "top_confusions": [
+        [
+          "BROTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "MORE",
+      "support": 6,
+      "correct": 6,
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1": 0.9230769230769231,
+      "recall_ci": [
+        0.6097,
+        1.0
+      ],
+      "top_confusions": []
+    },
+    {
+      "word": "BROTHER",
+      "support": 11,
+      "correct": 11,
+      "precision": 0.6875,
+      "recall": 1.0,
+      "f1": 0.8148148148148148,
+      "recall_ci": [
+        0.7412,
+        1.0
+      ],
+      "top_confusions": []
+    },
+    {
+      "word": "CAN",
+      "support": 28,
+      "correct": 25,
+      "precision": 0.9615384615384616,
+      "recall": 0.8928571428571429,
+      "f1": 0.9259259259259259,
+      "recall_ci": [
+        0.728,
+        0.9629
+      ],
+      "top_confusions": [
+        [
+          "GO",
+          2
+        ],
+        [
+          "YOUR",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "FATHER",
+      "support": 14,
+      "correct": 13,
+      "precision": 0.5416666666666666,
+      "recall": 0.9285714285714286,
+      "f1": 0.6842105263157895,
+      "recall_ci": [
+        0.6853,
+        0.9873
+      ],
+      "top_confusions": [
+        [
+          "BROTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "LOVE",
+      "support": 4,
+      "correct": 3,
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "recall_ci": [
+        0.3006,
+        0.9544
+      ],
+      "top_confusions": [
+        [
+          "BROTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "HELLO",
+      "support": 12,
+      "correct": 2,
+      "precision": 0.16666666666666666,
+      "recall": 0.16666666666666666,
+      "f1": 0.16666666666666666,
+      "recall_ci": [
+        0.047,
+        0.448
+      ],
+      "top_confusions": [
+        [
+          "FATHER",
+          9
+        ],
+        [
+          "I",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "THANK YOU",
+      "support": 6,
+      "correct": 1,
+      "precision": 0.5,
+      "recall": 0.16666666666666666,
+      "f1": 0.25,
+      "recall_ci": [
+        0.0301,
+        0.5635
+      ],
+      "top_confusions": [
+        [
+          "GOOD",
+          2
+        ],
+        [
+          "WHAT",
+          1
+        ],
+        [
+          "EAT",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "I",
+      "support": 85,
+      "correct": 40,
+      "precision": 0.7017543859649122,
+      "recall": 0.47058823529411764,
+      "f1": 0.5633802816901409,
+      "recall_ci": [
+        0.3681,
+        0.5757
+      ],
+      "top_confusions": [
+        [
+          "YOU",
+          15
+        ],
+        [
+          "HAVE",
+          7
+        ],
+        [
+          "WHAT",
+          6
+        ]
+      ]
+    },
+    {
+      "word": "HOW",
+      "support": 23,
+      "correct": 18,
+      "precision": 0.9,
+      "recall": 0.782608695652174,
+      "f1": 0.8372093023255814,
+      "recall_ci": [
+        0.581,
+        0.9034
+      ],
+      "top_confusions": [
+        [
+          "HELP",
+          3
+        ],
+        [
+          "WHAT",
+          2
+        ]
+      ]
+    },
+    {
+      "word": "GOOD",
+      "support": 6,
+      "correct": 3,
+      "precision": 0.21428571428571427,
+      "recall": 0.5,
+      "f1": 0.3,
+      "recall_ci": [
+        0.1876,
+        0.8124
+      ],
+      "top_confusions": [
+        [
+          "HELP",
+          2
+        ],
+        [
+          "EAT",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "EAT",
+      "support": 24,
+      "correct": 6,
+      "precision": 0.6666666666666666,
+      "recall": 0.25,
+      "f1": 0.36363636363636365,
+      "recall_ci": [
+        0.12,
+        0.449
+      ],
+      "top_confusions": [
+        [
+          "WHY",
+          5
+        ],
+        [
+          "WHO",
+          4
+        ],
+        [
+          "GOOD",
+          2
+        ]
+      ]
+    },
+    {
+      "word": "DRINK",
+      "support": 8,
+      "correct": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285714,
+      "recall_ci": [
+        0.2152,
+        0.7848
+      ],
+      "top_confusions": [
+        [
+          "BROTHER",
+          1
+        ],
+        [
+          "YOUR",
+          1
+        ],
+        [
+          "FATHER",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "GO",
+      "support": 10,
+      "correct": 8,
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "f1": 0.6666666666666666,
+      "recall_ci": [
+        0.4902,
+        0.9433
+      ],
+      "top_confusions": [
+        [
+          "I",
+          1
+        ],
+        [
+          "YOU",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "HUNGRY",
+      "support": 13,
+      "correct": 3,
+      "precision": 0.75,
+      "recall": 0.23076923076923078,
+      "f1": 0.35294117647058826,
+      "recall_ci": [
+        0.0818,
+        0.5026
+      ],
+      "top_confusions": [
+        [
+          "LIKE",
+          7
+        ],
+        [
+          "HELP",
+          1
+        ],
+        [
+          "LOVE",
+          1
+        ]
+      ]
+    },
+    {
+      "word": "UNDERSTAND",
+      "support": 6,
+      "correct": 1,
+      "precision": 0.25,
+      "recall": 0.16666666666666666,
+      "f1": 0.2,
+      "recall_ci": [
+        0.0301,
+        0.5635
+      ],
+      "top_confusions": [
+        [
+          "WHY",
+          4
+        ],
+        [
+          "EAT",
+          1
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Controlled candidate is signer-independent on specified held-out test, but rare added words have only 3-5 fit examples.",
+    "Original 24-class model trained on release signers so its score here is not signer-independent.",
+    "Segmented keypoint evaluation is not live-camera evaluation.",
+    "No independent physical webcam test or reliable unknown rejection."
+  ],
+  "prior_v2_baseline": {
+    "model": "candidate34_v2.json",
+    "test_selected": true,
+    "top1": 0.7573529411764706,
+    "macro_f1": 0.6321824396959774,
+    "added_macro_f1": 0.4950088713219148,
+    "added_micro_top1": 0.46113989637305697,
+    "note": "Best epoch selected using held-out test accuracy; upward-biased benchmark."
+  }
+}

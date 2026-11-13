@@ -1,4 +1,4 @@
-import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
+import {isWordEnabled} from './vocabulary-settings.js?v=20261112-count-19-fix';
 import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261020-short-runs-1';
 import {recognizeExpandedMotion} from './expanded-motion.js?v=20261109-vm-sync-1';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261020-appearance-1';
@@ -109,7 +109,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
     const tracked=active.frames.filter(frame=>frame.some(Boolean)).length;
     if(active.frames.length<12){onStatus('Not enough frames','The recording was too slow. See the details below the camera.');setHelp(`Not enough camera frames: ${active.frames.length}/12 minimum. Try again with fewer apps open or a faster device.`);return;}
     const sequence=encodeMotion(active.frames,active.imageAspect||1);
-    onDiagnostic({capture:'manual',frames:active.frames.length,trackedFrames:tracked,validSequence:Boolean(sequence)});
+    onDiagnostic({capture:'manual',startMediaTime:active.startMediaTime,endMediaTime:active.endMediaTime,frames:active.frames.length,trackedFrames:tracked,validSequence:Boolean(sequence)});
     if(!sequence){onStatus('Hands not tracked','Keep both hands fully visible. See the details below the camera.');setHelp(`Not enough clear hand tracking: hands visible in ${tracked}/${active.frames.length} frames. Keep your hands fully in view and use front lighting.`);return;}
     if(active.label){
       const updated=examples.concat({label:active.label,sequence});
@@ -118,7 +118,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
       }catch{setHelp('Could not save this recording. Browser storage may be full.');}
     }else{
       pending=recognize(sequence,active.frames,active.imageAspect||1);
-      onDiagnostic({capture:'manual',frames:active.frames.length,trackedFrames:tracked,validSequence:true,match:pending?.label||null,sequence});
+      onDiagnostic({capture:'manual',startMediaTime:active.startMediaTime,endMediaTime:active.endMediaTime,frames:active.frames.length,trackedFrames:tracked,validSequence:true,match:pending?.label||null,sequence});
       setHelp(pending?`Possible match: “${pending.label}”. Check it before adding it to your message.`:`Captured ${active.frames.length} frames, but the model found no clear match. This experimental model may not recognize your signing reliably.`);
       onStatus(pending?.label||'No reliable match',pending?'Possible match — verify before adding':'The model did not recognize this recording. Your sign may still be correct.');
       maybeAddToSentence();
@@ -195,10 +195,26 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
     catch{setHelp('Could not update browser storage.');}
   });
   render();
-  void loadPretrained();
-  void loadExpansion();
-  void loadBinaryModels();
+  const ready=Promise.all([loadPretrained(),loadExpansion(),loadBinaryModels()]);
+  let combined=null,combinedHistory=[];
   return {
+    ready,
+    beginCombined(options={}){const start=options.startMediaTime??document.querySelector('#webcam').currentTime;const history=combinedHistory.filter(x=>x.mediaTime>=start);combined={frames:history.map(x=>x.frame),last:history.at(-1)?.now??-Infinity,aspect:history.at(-1)?.aspect??null,startMediaTime:start};},
+    cancelCombined(){combined=null;},
+    clearCombinedHistory(){combinedHistory=[];},
+    frameCombined(detection,now){
+      const mediaTime=document.querySelector('#webcam').currentTime;
+      if(!combinedHistory.length||now-combinedHistory.at(-1).now>=80){combinedHistory.push({frame:motionFrame(detection),now,mediaTime,aspect:detection.imageAspect||1});combinedHistory=combinedHistory.filter(x=>mediaTime-x.mediaTime<=3);}
+      if(!combined||now-combined.last<80)return;
+      combined.last=now;combined.aspect=detection.imageAspect||1;
+      combined.frames.push(motionFrame(detection));
+    },
+    finishCombined(){
+      const clip=combined;combined=null;if(!clip)return {label:null,error:'No browser capture'};
+      const sequence=encodeMotion(clip.frames,clip.aspect||1);
+      const match=sequence?recognize(sequence,clip.frames,clip.aspect||1):null;
+      return {label:match?.label||null,model:'Browser',frames:clip.frames.length,trackedFrames:clip.frames.filter(f=>f.some(Boolean)).length,startMediaTime:clip.startMediaTime,endMediaTime:document.querySelector('#webcam').currentTime,error:sequence?null:'Not enough usable hand frames'};
+    },
     usesTemporalModel:()=>isTemporalWordModel(categoryModel),
     hasPersonalWord:label=>!isTemporalWordModel(categoryModel)&&examples.some(example=>example.label===label),
     setVocabulary(model,name=''){
@@ -226,6 +242,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
       if(now-lastSample>=(isTemporalWordModel(categoryModel)?30:80)){
         const aspect=detection.imageAspect||1;
         if(capture.imageAspect&&Math.abs(capture.imageAspect-aspect)>.01){cancel();setHelp('Camera orientation changed. Record the sign again.');return;}
+        capture.startMediaTime??=document.querySelector('#webcam').currentTime;capture.endMediaTime=document.querySelector('#webcam').currentTime;
         capture.imageAspect=aspect;capture.frames.push(motionFrame(detection));lastSample=now;
         if(now>=capture.end&&capture.frames.length>=12)finish(true);
       }
